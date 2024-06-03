@@ -1,9 +1,9 @@
-'use client';
-import {CodeBlock, tomorrowNightEighties} from "react-code-blocks";
+"use client";
+import { CodeBlock, tomorrowNightEighties } from "react-code-blocks";
 import React from "react";
 
 export const ExampleJsonInput = () => {
-    const code = `[
+  const code = `[
     {
         question: "What is A?",
         correct: ["A1", "A2"],
@@ -16,19 +16,28 @@ export const ExampleJsonInput = () => {
     }
 ];`;
 
-    const customStyle = {
-        paddingLeft: '40px',
-        paddingTop: '20px',
-        paddingBottom: '20px',
-    };
+  const customStyle = {
+    paddingLeft: "40px",
+    paddingTop: "20px",
+    paddingBottom: "20px",
+  };
 
-    const theme = {
-        ...tomorrowNightEighties,
-        backgroundColor: "#161017",
-        textColor: "#ececec",
-        stringColor: "#9E1899",
-    }
-    return <div className="rounded-xl w-96 max-w-96">
-        <CodeBlock codeBlockStyle={customStyle} codeContainerStyle={customStyle} text={code} language="json" theme={theme} showLineNumbers={false} />
-    </div>;
-}
+  const theme = {
+    ...tomorrowNightEighties,
+    backgroundColor: "#161017",
+    textColor: "#ececec",
+    stringColor: "#9E1899",
+  };
+  return (
+    <div className="w-96 max-w-96 rounded-xl">
+      <CodeBlock
+        codeBlockStyle={customStyle}
+        codeContainerStyle={customStyle}
+        text={code}
+        language="json"
+        theme={theme}
+        showLineNumbers={false}
+      />
+    </div>
+  );
+};

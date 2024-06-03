@@ -15,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`bg-gradient-to-b from-black to-[#150415] text-white ${GeistSans.variable}`}>
-      <body className="h-screen">{children}</body>
+    <html
+      lang="en"
+      className={`bg-gradient-to-b from-black to-[#150415] text-white ${GeistSans.variable}`}
+    >
+      <body className="min-h-screen">{children}</body>
     </html>
   );
 }

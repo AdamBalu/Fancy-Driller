@@ -1,3 +1,123 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --hue: 255;
+    --fg: hsl(var(--hue),10%,10%);
+    --trans-dur: 0.3s;
+    --trans-timing: cubic-bezier(0.65,0,0.35,1);
+}
+
+.login__segmented,
+.login__segmented-btn,
+.login__segmented-focus {
+    position: relative;
+    transition:
+            background-color var(--trans-dur),
+            color var(--trans-dur),
+            opacity var(--trans-dur);
+}
+
+.login__segmented {
+    border-radius: 0.45em;
+    display: flex;
+}
+
+.login__segmented-btn {
+    border-radius: 0.575em;
+    color: white;
+    cursor: pointer;
+    outline: transparent;
+    padding: 0.85em;
+    margin-left: .5rem;
+    width: 100%;
+    z-index: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.login__segmented-btn[aria-selected="true"] {
+    color: white;
+}
+
+.login__segmented-focus {
+    background-color: hsl(0,0%,100%);
+    border-radius: 0.425em;
+    pointer-events: none;
+    position: absolute;
+    top: 0.25em;
+    bottom: 0.25em;
+    left: 0.25em;
+    width: calc(50% - 0.5em);
+    transition:
+            background-color var(--trans-dur),
+            opacity var(--trans-dur),
+            transform var(--trans-dur) var(--trans-timing);
+}
+
+.login__segmented-btn[aria-selected="true"]:nth-child(2) ~ .login__segmented-focus {
+    transform: translateX(calc(100% + 0.5em));
+}
+
+.login__form {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.login__form-pages {
+    display: flex;
+    overflow: hidden;
+}
+
+.login__form-page {
+    flex: 0 0 100%;
+    padding: 0 0.5em;
+    width: 100%;
+    transition:
+            transform var(--trans-dur) var(--trans-timing),
+            visibility var(--trans-dur) steps(1,jump-both);
+}
+
+.login__form-page + .login__form-page {
+    visibility: hidden;
+}
+
+.login__form-pages[data-stage="1"] .login__form-page {
+    transform: translateX(-100%);
+}
+
+.login__form-pages[data-stage="1"] .login__form-page:first-child {
+    visibility: hidden;
+}
+
+.login__form-pages[data-stage="1"] .login__form-page:nth-child(2) {
+    visibility: visible;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    .login__segmented {
+        background-color: black;
+        border: 1px solid #9E1899;
+    }
+
+    .login__segmented-btn {
+        color: #afafaf;
+    }
+
+    .login__segmented-focus {
+        background-color: #9E1899;
+    }
+}
+
+/* Beyond mobile */
+@media (min-width: 900px) {
+    .login__column {
+    }
+    .login__form {
+        max-width: 22em;
+    }
+}

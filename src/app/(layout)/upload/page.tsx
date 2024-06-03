@@ -1,17 +1,13 @@
-import React from 'react';
-import { type Metadata } from 'next';
-import {ExampleJsonInput} from "~/components/upload/example-json-input";
-import {UploadButton} from "~/components/upload/upload-button";
+import React from "react";
+import { type Metadata } from "next";
+import { UploadPageContent } from "~/components/upload/upload-page-content";
 
 export const metadata: Metadata = {
-    title: 'Upload'
+  title: "Upload",
 };
 
 const UploadPage = async () => {
-    return <>
-        <div>Upload your JSON questions in the following format</div>
-        <ExampleJsonInput />
-        <UploadButton />
-    </>;
+  return <UploadPageContent />;
 };
+
 export default UploadPage;
