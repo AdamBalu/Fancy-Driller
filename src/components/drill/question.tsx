@@ -39,9 +39,13 @@ export const Question = ({
     return null;
   }
   const checkCorrectAnswers = () => {
-    const wasAnsweredCorrectly = selectedAnswers.every((answer) =>
-      currentQuestion.correct.includes(answer),
-    );
+    const wasAnsweredCorrectly =
+      currentQuestion.correct.every((correctAnswer) =>
+        selectedAnswers.includes(correctAnswer),
+      ) &&
+      currentQuestion.wrong.every(
+        (wrongAnswer) => !selectedAnswers.includes(wrongAnswer),
+      );
     questionContext.setQuestion(
       currentQuestion,
       wasAnsweredCorrectly ? "correct" : "wrong",

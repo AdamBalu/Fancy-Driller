@@ -30,7 +30,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </a>
         </div>
       </header>
-      <main className="flex flex-1 flex-col items-center gap-4">
+      <main className="flex min-h-screen flex-1 flex-col items-center gap-4 bg-[#0C030B]">
         {children}
       </main>
     </>

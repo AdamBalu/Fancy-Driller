@@ -1,11 +1,12 @@
-import React from 'react';
-import { type Metadata } from 'next';
+import React from "react";
+import { type Metadata } from "next";
+import { DrillGrid } from "~/components/drills/drill-grid";
 
 export const metadata: Metadata = {
-    title: 'Drills'
+  title: "Drills",
 };
 
 const DrillsPage = async () => {
-    return <div>Hello</div>;
+  return <DrillGrid />;
 };
 export default DrillsPage;

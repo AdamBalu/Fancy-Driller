@@ -4,14 +4,10 @@ import React, { useRef } from "react";
 import Button from "~/components/common/button";
 
 type UploadButtonProps = {
-  questions: QuestionExtendedInfo[];
   setQuestions: (questions: QuestionExtendedInfo[]) => void;
 };
 
-export const UploadButton = ({
-  questions,
-  setQuestions,
-}: UploadButtonProps) => {
+export const UploadButton = ({ setQuestions }: UploadButtonProps) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {

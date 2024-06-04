@@ -1,10 +1,22 @@
 import { useEffect } from "react";
 import OrderingType from "~/lib/ordering-type";
 
-export const SelectOrderButton = () => {
+type SelectOrderButtonProps = {
+  isSequentialState: [boolean, (value: boolean) => void];
+};
+
+export const SelectOrderButton = ({
+  isSequentialState,
+}: SelectOrderButtonProps) => {
+  const [sequential, setSequential] = isSequentialState;
+
   useEffect(() => {
-    new OrderingType(".login");
-  }, []);
+    const orderingType = new OrderingType(".login", setSequential);
+    return () => {
+      // eslint-disable-next-line @typescript-eslint/unbound-method
+      orderingType.el?.removeEventListener("click", orderingType.clickAction);
+    };
+  }, [setSequential]);
 
   return (
     <form className="login flex justify-center" method="post" action="">
@@ -14,20 +26,20 @@ export const SelectOrderButton = () => {
             <div className="login__form-page">
               <div className="login__segmented">
                 <button
-                  className="login__segmented-btn"
+                  className={`login__segmented-btn ${!sequential ? "selected" : ""}`}
                   type="button"
                   role="tab"
-                  aria-selected="true"
+                  aria-selected={!sequential}
                   data-action="access"
                   data-access="0"
                 >
                   Random
                 </button>
                 <button
-                  className="login__segmented-btn"
+                  className={`login__segmented-btn ${sequential ? "selected" : ""}`}
                   type="button"
                   role="tab"
-                  aria-selected="false"
+                  aria-selected={sequential}
                   data-action="access"
                   data-access="1"
                 >
