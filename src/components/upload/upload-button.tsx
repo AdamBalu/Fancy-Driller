@@ -1,11 +1,11 @@
 "use client";
-import { type Question } from "~/types/question";
+import { type Question, type QuestionExtendedInfo } from "~/types/question";
 import React, { useRef } from "react";
 import Button from "~/components/common/button";
 
 type UploadButtonProps = {
-  questions: Question[];
-  setQuestions: (questions: Question[]) => void;
+  questions: QuestionExtendedInfo[];
+  setQuestions: (questions: QuestionExtendedInfo[]) => void;
 };
 
 export const UploadButton = ({
@@ -24,7 +24,16 @@ export const UploadButton = ({
             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             const questions: Question[] = JSON.parse(e.target.result as string);
             console.log("JSON parsed successfully:", questions);
-            setQuestions(questions);
+
+            setQuestions(
+              questions.map((question, index) => {
+                return {
+                  ...question,
+                  order: index + 1,
+                  answer: "none",
+                };
+              }),
+            );
           } catch (error) {
             console.error("Invalid JSON file");
             // Handle invalid JSON case

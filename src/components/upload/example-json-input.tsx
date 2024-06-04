@@ -28,6 +28,7 @@ export const ExampleJsonInput = () => {
     textColor: "#ececec",
     stringColor: "#9E1899",
   };
+
   return (
     <div className="w-96 max-w-96 rounded-xl">
       <CodeBlock

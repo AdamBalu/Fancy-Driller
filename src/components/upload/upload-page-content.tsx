@@ -1,42 +1,73 @@
 "use client";
 import { ExampleJsonInput } from "~/components/upload/example-json-input";
-import React from "react";
+import React, { useContext, useState } from "react";
 import UploadButton from "~/components/upload/upload-button";
-import { type Question } from "~/types/question";
 import { SelectOrderButton } from "~/components/upload/select-order-button";
 import { StartDrillButton } from "~/components/upload/start-drill-button";
+import Checkbox from "~/components/common/checkbox";
+import { QuestionContext } from "~/hooks/question-context";
 
 export const UploadPageContent = () => {
-  const [questions, setQuestions] = React.useState<Question[]>([]);
+  const questionsContext = useContext(QuestionContext);
+  const [sequential, setSequential] = useState(false);
+
+  if (questionsContext === null) {
+    return null;
+  }
 
   return (
     <>
-      {questions.length === 0 && (
+      {questionsContext.selectedQuestions?.length === 0 && (
         <>
           <div>Upload your JSON questions in the following format</div>
           <ExampleJsonInput />
-          <UploadButton questions={questions} setQuestions={setQuestions} />
+          <UploadButton
+            questions={questionsContext.selectedQuestions}
+            setQuestions={questionsContext.setSelectedQuestions}
+          />
         </>
       )}
 
-      {questions.length > 0 && (
+      {questionsContext.selectedQuestions?.length > 0 && (
         <div className="mb-8 flex flex-col items-center gap-4">
-          <StartDrillButton />
+          <StartDrillButton sequential={sequential} />
+          <div className="flex gap-4">
+            <Checkbox
+              id="instant-checks"
+              onChange={() =>
+                questionsContext.setInstantChecks(
+                  !questionsContext.instantChecks,
+                )
+              }
+              checked={questionsContext.instantChecks}
+            >
+              Instant checks
+            </Checkbox>
+            <Checkbox
+              id="auto-advance"
+              onChange={() =>
+                questionsContext.setAutoAdvance(!questionsContext.autoAdvance)
+              }
+              checked={questionsContext.autoAdvance}
+            >
+              Auto-advance
+            </Checkbox>
+          </div>
           <SelectOrderButton />
-          {questions.map((question, index) => (
+          {questionsContext.selectedQuestions.map((question) => (
             <div
-              key={index}
-              className="flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg bg-[#161017] p-4 md:w-[70dvw] lg:w-[50dvw]"
+              key={question.question}
+              className="bg-secondary flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg p-4 md:w-[70dvw] lg:w-[50dvw]"
             >
               <div className="text-xl font-bold">{question.question}</div>
-              <div className="border-l-2 border-green-500 pl-2 text-sm">
-                {question.correct.map((q) => (
-                  <div key={q}>{q}</div>
+              <div className="border-correct border-l-2 pl-2 text-sm">
+                {question.correct.map((a) => (
+                  <div key={a}>{a}</div>
                 ))}
               </div>
-              <div className="border-l-2 border-red-500 pl-2 text-sm">
-                {question.wrong.map((q) => (
-                  <div key={q}>{q}</div>
+              <div className="border-incorrect border-l-2 pl-2 text-sm">
+                {question.wrong.map((a) => (
+                  <div key={a}>{a}</div>
                 ))}
               </div>
             </div>

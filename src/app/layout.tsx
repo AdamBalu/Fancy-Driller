@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import React from "react";
+import { QuestionContextProvider } from "~/hooks/question-context";
 
 export const metadata = {
   title: "Fancy Driller",
@@ -19,7 +20,9 @@ export default function RootLayout({
       lang="en"
       className={`bg-gradient-to-b from-black to-[#150415] text-white ${GeistSans.variable}`}
     >
-      <body className="min-h-screen">{children}</body>
+      <body className="min-h-screen">
+        <QuestionContextProvider>{children}</QuestionContextProvider>
+      </body>
     </html>
   );
 }
