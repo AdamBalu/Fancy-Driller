@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import React from "react";
 import { QuestionContextProvider } from "~/hooks/question-context";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Fancy Driller",
@@ -22,6 +23,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen">
         <QuestionContextProvider>{children}</QuestionContextProvider>
+        <Toaster position="bottom-center" reverseOrder={false} />
       </body>
     </html>
   );

@@ -2,6 +2,7 @@ import Button from "~/components/common/button";
 import { useContext, useState } from "react";
 import { type QuestionExtendedInfo } from "~/types/question";
 import { QuestionContext } from "~/hooks/question-context";
+import { toastError, toastSuccess } from "../common/toast-custom";
 
 type AnswerButtonProps = {
   answer: string;
@@ -44,9 +45,11 @@ export const AnswerButton = ({
       if (isAnswerCorrect) {
         questionContext.setQuestion(currentQuestion, "correct");
         onNextQuestionClick();
+        toastSuccess("Correct!");
       } else if (isAnswerWrong) {
         questionContext.setQuestion(currentQuestion, "wrong");
         onNextQuestionClick();
+        toastError("Wrong");
       }
     }
   };
