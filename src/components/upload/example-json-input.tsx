@@ -20,17 +20,18 @@ export const ExampleJsonInput = () => {
     paddingLeft: "40px",
     paddingTop: "20px",
     paddingBottom: "20px",
+    paddingRight: "40px",
   };
 
   const theme = {
     ...tomorrowNightEighties,
-    backgroundColor: "#161017",
+    backgroundColor: "#011627",
     textColor: "#ececec",
-    stringColor: "#9E1899",
+    stringColor: "#124fbd",
   };
 
   return (
-    <div className="w-96 max-w-96 rounded-xl">
+    <div className="max-w-96 rounded-xl text-xs sm:text-base">
       <CodeBlock
         codeBlockStyle={customStyle}
         codeContainerStyle={customStyle}

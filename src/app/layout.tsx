@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-gradient-to-b from-black to-[#150415] text-white ${GeistSans.variable}`}
+      className={`to-mainBackgroundGradient bg-gradient-to-b from-black text-secondary ${GeistSans.variable}`}
     >
       <body className="min-h-screen">
         <QuestionContextProvider>{children}</QuestionContextProvider>
