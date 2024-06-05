@@ -6,12 +6,14 @@ type ButtonProps = {
   children: ReactNode;
   onClick: () => void;
   className?: string;
+  disabled?: boolean;
 };
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, onClick, className }: ButtonProps, ref) => (
+  ({ children, onClick, className, disabled }: ButtonProps, ref) => (
     <button
       ref={ref}
+      disabled={disabled}
       onClick={onClick}
       className={`flex max-w-sm flex-col items-center gap-4 rounded-md border-2 p-4 text-center
         text-white transition duration-200 ease-in-out hover:border-[#FF00F5] hover:text-[#9E1899]
