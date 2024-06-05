@@ -61,18 +61,6 @@ export const Question = ({
       <h1 className="text-md pb-5 text-center font-bold sm:text-xl md:text-2xl">
         {currentQuestion.question}
       </h1>
-      {/*<p className="text-center text-sm">*/}
-      {/*  {currentQuestion.answer === "correct" && (*/}
-      {/*    <span className="-translate-y-2 font-bold text-correct transition duration-200">*/}
-      {/*      Correct!*/}
-      {/*    </span>*/}
-      {/*  )}*/}
-      {/*  {currentQuestion.answer === "wrong" && (*/}
-      {/*    <span className="-translate-y-2 font-bold text-incorrect transition duration-200">*/}
-      {/*      Incorrect*/}
-      {/*    </span>*/}
-      {/*  )}*/}
-      {/*</p>*/}
       {shuffledAnswers?.map((answer) => (
         <AnswerButton
           key={answer}

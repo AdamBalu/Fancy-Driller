@@ -57,6 +57,7 @@ export const AnswerButton = ({
   return (
     <Button
       onClick={onClick}
+      disabled={currentQuestion.answer !== "none"}
       className={`!w-full !max-w-screen-xl ${
         selected
           ? "border-correct !text-correct hover:border-correct " +
