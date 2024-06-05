@@ -58,13 +58,12 @@ export const AnswerButton = ({
     <Button
       onClick={onClick}
       disabled={currentQuestion.answer !== "none"}
-      className={`!w-full !max-w-screen-xl ${
+      className={`hover:bg-primaryCard !w-full !max-w-screen-xl hover:!text-secondary ${
         selected
-          ? "border-correct !text-correct hover:border-correct " +
-            "hover:text-correct"
+          ? "border-selectedCard bg-selectedCard hover:border-selected hover:bg-selectedCard hover:text-secondary"
           : "bg-transparent"
-      } ${currentQuestion.correct.includes(answer) && currentQuestion.answer !== "none" && "border-correctCard !bg-correctCard !text-white hover:border-correctCard hover:text-white"} 
-        ${currentQuestion.wrong.includes(answer) && currentQuestion.answer !== "none" && "border-incorrectCard !bg-incorrectCard !text-white hover:border-incorrectCard hover:text-white"}`}
+      } ${currentQuestion.correct.includes(answer) && currentQuestion.answer !== "none" && "!border-correctCard !bg-correctCard !text-secondary hover:border-correctCard hover:text-secondary"} 
+        ${currentQuestion.wrong.includes(answer) && currentQuestion.answer !== "none" && "!border-incorrectCard !bg-incorrectCard !text-secondary hover:border-incorrectCard hover:text-secondary"}`}
     >
       {answer}
     </Button>

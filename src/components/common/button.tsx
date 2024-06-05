@@ -16,7 +16,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       disabled={disabled}
       onClick={onClick}
       className={`flex max-w-sm flex-col items-center gap-4 rounded-md border-2 p-4 text-center
-        text-white transition duration-200 ease-in-out hover:border-[#FF00F5] hover:text-[#9E1899]
+        text-secondary transition duration-200 ease-in-out hover:border-border hover:text-primary
         active:scale-95 ${className}`}
     >
       {children}

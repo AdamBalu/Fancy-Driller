@@ -19,7 +19,9 @@ export const UploadPageContent = () => {
     <>
       {questionsContext.selectedQuestions?.length === 0 && (
         <>
-          <div>Upload your JSON questions in the following format</div>
+          <div className="text-center">
+            Upload your JSON questions in the following format
+          </div>
           <ExampleJsonInput />
           <UploadButton setQuestions={questionsContext.setSelectedQuestions} />
         </>
@@ -41,7 +43,7 @@ export const UploadPageContent = () => {
           {questionsContext.selectedQuestions.map((question) => (
             <div
               key={question.question}
-              className="flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg bg-secondary p-4 md:w-[70dvw] lg:w-[50dvw]"
+              className="bg-primaryCard flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg p-4 md:w-[70dvw] lg:w-[50dvw]"
             >
               <div className="text-xl font-bold">{question.question}</div>
               <div className="border-l-2 border-correct pl-2 text-sm">

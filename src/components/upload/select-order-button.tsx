@@ -24,7 +24,7 @@ export const SelectOrderButton = ({
         <div className="login__form">
           <div className="login__form-pages" data-stage="0">
             <div className="login__form-page">
-              <div className="login__segmented">
+              <div className="login__segmented border border-primary">
                 <button
                   className={`login__segmented-btn ${!sequential ? "selected" : ""}`}
                   type="button"
@@ -45,7 +45,7 @@ export const SelectOrderButton = ({
                 >
                   Sequential
                 </button>
-                <div className="login__segmented-focus"></div>
+                <div className="login__segmented-focus bg-primary"></div>
               </div>
             </div>
           </div>
