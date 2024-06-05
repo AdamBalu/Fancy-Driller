@@ -3,6 +3,7 @@ import { AnswerButton } from "./answer-button";
 import Button from "../common/button";
 import { type QuestionExtendedInfo } from "~/types/question";
 import { QuestionContext } from "~/hooks/question-context";
+import { toastError, toastSuccess } from "~/components/common/toast-custom";
 
 type QuestionProps = {
   currentQuestion: QuestionExtendedInfo;
@@ -50,6 +51,9 @@ export const Question = ({
       currentQuestion,
       wasAnsweredCorrectly ? "correct" : "wrong",
     );
+
+    wasAnsweredCorrectly && toastSuccess("Correct!");
+    !wasAnsweredCorrectly && toastError("Wrong");
   };
 
   return (
