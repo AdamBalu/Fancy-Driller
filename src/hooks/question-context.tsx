@@ -6,18 +6,15 @@ type QuestionContextProps = {
   selectedQuestions: QuestionExtendedInfo[];
   setSelectedQuestions: (q: QuestionExtendedInfo[]) => void;
   setQuestion: (q: QuestionExtendedInfo, value: Answer) => void;
-  instantChecks: boolean;
-  setInstantChecks: (i: boolean) => void;
-  autoAdvance: boolean;
-  setAutoAdvance: (a: boolean) => void;
+  fastMode: boolean;
+  setFastMode: (i: boolean) => void;
 };
 
 export const QuestionContext = createContext<QuestionContextProps | null>(null);
 
 export const QuestionContextProvider = ({ children }: PropsWithChildren) => {
   const [questions, setQuestions] = useState<QuestionExtendedInfo[]>([]);
-  const [instantChecks, setInstantChecks] = useState<boolean>(true);
-  const [autoAdvance, setAutoAdvance] = useState<boolean>(true);
+  const [fastMode, setFastMode] = useState<boolean>(false);
 
   const setSelectedQuestions = (q: QuestionExtendedInfo[]) => {
     setQuestions(q);
@@ -36,10 +33,8 @@ export const QuestionContextProvider = ({ children }: PropsWithChildren) => {
         selectedQuestions: questions,
         setSelectedQuestions,
         setQuestion,
-        instantChecks,
-        setInstantChecks,
-        autoAdvance,
-        setAutoAdvance,
+        fastMode,
+        setFastMode,
       }}
     >
       {children}

@@ -5,6 +5,7 @@ import UploadButton from "~/components/upload/upload-button";
 import { SelectOrderButton } from "~/components/upload/select-order-button";
 import { StartDrillButton } from "~/components/upload/start-drill-button";
 import { QuestionContext } from "~/hooks/question-context";
+import Checkbox from "~/components/common/checkbox";
 
 export const UploadPageContent = () => {
   const questionsContext = useContext(QuestionContext);
@@ -27,28 +28,15 @@ export const UploadPageContent = () => {
       {questionsContext.selectedQuestions?.length > 0 && (
         <div className="mb-8 flex flex-col items-center gap-4">
           <StartDrillButton sequential={sequential} />
-          {/*<div className="flex gap-4">*/}
-          {/*  <Checkbox*/}
-          {/*    id="instant-checks"*/}
-          {/*    onChange={() =>*/}
-          {/*      questionsContext.setInstantChecks(*/}
-          {/*        !questionsContext.instantChecks,*/}
-          {/*      )*/}
-          {/*    }*/}
-          {/*    checked={questionsContext.instantChecks}*/}
-          {/*  >*/}
-          {/*    Instant checks*/}
-          {/*  </Checkbox>*/}
-          {/*  <Checkbox*/}
-          {/*    id="auto-advance"*/}
-          {/*    onChange={() =>*/}
-          {/*      questionsContext.setAutoAdvance(!questionsContext.autoAdvance)*/}
-          {/*    }*/}
-          {/*    checked={questionsContext.autoAdvance}*/}
-          {/*  >*/}
-          {/*    Auto-advance*/}
-          {/*  </Checkbox>*/}
-          {/*</div>*/}
+          <Checkbox
+            id="fast-mode"
+            onChange={() =>
+              questionsContext.setFastMode(!questionsContext.fastMode)
+            }
+            checked={questionsContext.fastMode}
+          >
+            Fast mode
+          </Checkbox>
           <SelectOrderButton isSequentialState={[sequential, setSequential]} />
           {questionsContext.selectedQuestions.map((question) => (
             <div

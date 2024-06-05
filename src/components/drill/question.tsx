@@ -75,16 +75,17 @@ export const Question = ({
           answer={answer}
           selectedAnswersState={[selectedAnswers, setSelectedAnswers]}
           currentQuestion={currentQuestion}
+          onNextQuestionClick={onNextQuestionClick}
         />
       ))}
 
-      {currentQuestion.answer === "none" && (
+      {currentQuestion.answer === "none" && !questionContext.fastMode && (
         <Button onClick={checkCorrectAnswers} className="mt-10 w-full">
           Check
         </Button>
       )}
 
-      {currentQuestion.answer !== "none" && (
+      {currentQuestion.answer !== "none" && !questionContext.fastMode && (
         <Button onClick={onNextQuestionClick} className="mt-10 w-full">
           Next Question
         </Button>
