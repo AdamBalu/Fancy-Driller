@@ -26,7 +26,7 @@ export const PublicDrill = ({ drill }: { drill: string }) => {
     });
     questionsContext?.setSelectedQuestions(q);
 
-    router.push(`/upload`);
+    router.push(`/drill`);
   };
 
   return (

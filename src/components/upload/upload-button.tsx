@@ -1,14 +1,20 @@
 "use client";
-import { type Question, type QuestionExtendedInfo } from "~/types/question";
-import React, { useRef } from "react";
+import { type Question } from "~/types/question";
+import React, { useContext, useRef } from "react";
 import Button from "~/components/common/button";
+import { QuestionContext } from "~/hooks/question-context";
+import { useRouter } from "next/navigation";
+import { isValidJsonQuestions } from "~/common/check-json-correctness";
+import { toastError } from "../common/toast-custom";
 
-type UploadButtonProps = {
-  setQuestions: (questions: QuestionExtendedInfo[]) => void;
-};
-
-export const UploadButton = ({ setQuestions }: UploadButtonProps) => {
+export const UploadButton = () => {
+  const questionsContext = useContext(QuestionContext);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const router = useRouter();
+
+  if (questionsContext === null) {
+    return null;
+  }
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -17,22 +23,29 @@ export const UploadButton = ({ setQuestions }: UploadButtonProps) => {
       reader.onload = (e: ProgressEvent<FileReader>) => {
         if (e.target?.result) {
           try {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            const questions: Question[] = JSON.parse(e.target.result as string);
-            console.log("JSON parsed successfully:", questions);
+            const questions: Question[] = JSON.parse(
+              e.target.result as string,
+            ) as Question[];
+            isValidJsonQuestions(questions);
 
-            setQuestions(
-              questions.map((question, index) => {
-                return {
-                  ...question,
-                  order: index + 1,
-                  answer: "none",
-                };
-              }),
+            questionsContext.setSelectedQuestions(
+              questions.map((question, index) => ({
+                ...question,
+                order: index + 1,
+                answer: "none",
+              })),
             );
+            router.push("/drill");
           } catch (error) {
-            console.error("Invalid JSON file");
-            // Handle invalid JSON case
+            let errorMessage = "Invalid JSON";
+            if (error instanceof Error) {
+              errorMessage = error.message;
+            }
+            toastError(`Invalid JSON: ${errorMessage}`);
+          } finally {
+            if (fileInputRef.current) {
+              fileInputRef.current.value = "";
+            }
           }
         }
       };

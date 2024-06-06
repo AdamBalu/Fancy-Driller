@@ -16,8 +16,8 @@ export default {
         incorrectCard: "#5c0808",
         mainBackground: "#01060b",
         mainBackgroundGradient: "#041c35",
-        selected: "#ff9f1c",
-        selectedCard: "#73460d",
+        selected: "#3879f4",
+        selectedCard: "#124fbd",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],

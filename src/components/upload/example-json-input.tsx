@@ -25,9 +25,9 @@ export const ExampleJsonInput = () => {
 
   const theme = {
     ...tomorrowNightEighties,
-    backgroundColor: "#011627",
+    backgroundColor: "#011220",
     textColor: "#ececec",
-    stringColor: "#124fbd",
+    stringColor: "#3887ff",
   };
 
   return (

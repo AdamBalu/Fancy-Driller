@@ -58,7 +58,7 @@ export const AnswerButton = ({
     <Button
       onClick={onClick}
       disabled={currentQuestion.answer !== "none"}
-      className={`hover:bg-primaryCard !w-full !max-w-screen-xl hover:!text-secondary ${
+      className={`!w-full !max-w-screen-xl transition duration-200 hover:bg-primaryCard hover:!text-secondary ${
         selected
           ? "border-selectedCard bg-selectedCard hover:border-selected hover:bg-selectedCard hover:text-secondary"
           : "bg-transparent"
