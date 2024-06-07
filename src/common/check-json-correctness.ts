@@ -1,4 +1,4 @@
-import { type Question } from "~/types/question";
+import { type Question } from "~/schema";
 
 const validateAnswers = (answers: unknown[], propertyName: string) => {
   if (!Array.isArray(answers)) {

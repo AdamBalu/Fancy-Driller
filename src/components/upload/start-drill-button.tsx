@@ -3,18 +3,21 @@ import Button from "~/components/common/button";
 import { useRouter } from "next/navigation";
 import { QuestionContext } from "~/hooks/question-context";
 import { useContext } from "react";
-import { type QuestionExtendedInfo } from "~/types/question";
+import { type QuestionExtendedInfo } from "~/schema";
 
-export const StartDrillButton = ({ sequential }: { sequential: boolean }) => {
+type StartDrillButtonProps = {
+  sequential: boolean;
+  providedQuestions?: QuestionExtendedInfo[];
+};
+
+export const StartDrillButton = ({
+  sequential,
+  providedQuestions,
+}: StartDrillButtonProps) => {
   const router = useRouter();
-  const questions = useContext(QuestionContext);
   const questionsContext = useContext(QuestionContext);
 
   if (questionsContext === null) {
-    return null;
-  }
-
-  if (questions?.selectedQuestions?.length === 0) {
     return null;
   }
 
@@ -26,15 +29,16 @@ export const StartDrillButton = ({ sequential }: { sequential: boolean }) => {
     return array;
   };
 
+  const finalQuestions =
+    providedQuestions ?? questionsContext.selectedQuestions;
+
   return (
     <Button
       onClick={() => {
-        if (!sequential) {
-          questionsContext?.setSelectedQuestions(
-            shuffle(questionsContext.selectedQuestions),
-          );
-        }
-        router.push(`/drill/${questionsContext.selectedQuestions[0]!.order}`);
+        questionsContext.setSelectedQuestions(
+          sequential ? finalQuestions : shuffle(finalQuestions),
+        );
+        router.push(`/drills/current-drill/${finalQuestions[0]?.order}`);
       }}
       className="w-full"
     >

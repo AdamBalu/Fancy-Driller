@@ -1,6 +1,6 @@
 import Button from "~/components/common/button";
 import { useContext, useState } from "react";
-import { type QuestionExtendedInfo } from "~/types/question";
+import { type QuestionExtendedInfo } from "~/schema";
 import { QuestionContext } from "~/hooks/question-context";
 import { toastError, toastSuccess } from "../common/toast-custom";
 

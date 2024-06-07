@@ -1,0 +1,718 @@
+[
+  {
+    "name": "PA179",
+    "questions": [
+      {
+        "correct": [
+          "Pemporary, Change driving, Uncertain, Unique"
+        ],
+        "wrong": [
+          "Repetitive, Stable, Linear, Event driven",
+          "Permanent, Simple, Flexible, Task driven"
+        ],
+        "question": "1. What are the main characteristics of a project?"
+      },
+      {
+        "correct": [
+          "Time, Cost, Scope"
+        ],
+        "wrong": [
+          "Risk, Quality, Procurement",
+          "Plan, Change, Progress"
+        ],
+        "question": "2. What are the usual dimensions of project manager’s triple constraint?"
+      },
+      {
+        "correct": [
+          "To add value to business",
+          "To fulfil strategic goals"
+        ],
+        "wrong": [
+          "To create a unique product"
+        ],
+        "question": "3. What is the aim of Project Portfolio?"
+      },
+      {
+        "correct": [
+          "Flow chart."
+        ],
+        "wrong": [
+          "Gantt chart.",
+          "Use case diagram."
+        ],
+        "question": "4. A process is best visualized with:"
+      },
+      {
+        "correct": [
+          "Manage by exceptions"
+        ],
+        "wrong": [
+          "Continued business justification",
+          "Manage by stages"
+        ],
+        "question": "5. Which PRINCE2 principle implies referring exceeded tolerances up next management level ?"
+      },
+      {
+        "correct": [
+          "Organization"
+        ],
+        "wrong": [
+          "Business Case",
+          "Progress"
+        ],
+        "question": "6. Which PRINCE2 theme addresses the need to identify stakeholders?"
+      },
+      {
+        "correct": [
+          "Initiating a project"
+        ],
+        "wrong": [
+          "Starting up a project",
+          "Controlling a stage"
+        ],
+        "question": "7. Which PRINCE2 process is dedicated to creating a Project Plan?"
+      },
+      {
+        "correct": [
+          "A project where comprehensive reporting is required",
+          "A project team that requires firm control",
+          "Entry-level project managers"
+        ],
+        "wrong": [],
+        "question": "8. Which of these is PRINCE2 suitable for?"
+      },
+      {
+        "correct": [
+          "Integration, Scope, Schedule, Cost",
+          "Quality, Communications, Risk, Procurement"
+        ],
+        "wrong": [
+          "Business Case, Process, Progress, Talent"
+        ],
+        "question": "9. PMBOK’s Knowledge areas include:"
+      },
+      {
+        "correct": [
+          "Process inputs",
+          "Process tools and techniques",
+          "Process outputs"
+        ],
+        "wrong": [],
+        "question": "10. In PMBOK, every process definition includes:"
+      },
+      {
+        "correct": [
+          "Procurement"
+        ],
+        "wrong": [
+          "Scope",
+          "Communications"
+        ],
+        "question": "11. In PMBOK, which Knowledge area is dedicated to selecting and contracting outsourced products?"
+      },
+      {
+        "correct": [
+          "A handbook on different knowledge areas"
+        ],
+        "wrong": [
+          "A step-by-step method to follow",
+          "A guide to project manager’s competencies"
+        ],
+        "question": "12. PMBOK is best used as:"
+      },
+      {
+        "correct": [
+          "Knowledge, skills and abilities"
+        ],
+        "wrong": [
+          "Wisdom, creativity and understanding",
+          "Intelligence, information and experience"
+        ],
+        "question": "13. A competence is an application of:"
+      },
+      {
+        "correct": [
+          "Governance structures and processes, Compliance standards and regulations, Strategy",
+          "Strategy, Power and interest, Culture and Values"
+        ],
+        "wrong": [
+          "Quality, Change and transformation, Time"
+        ],
+        "question": "14. ICB’s perspective competencies include:"
+      },
+      {
+        "correct": [
+          "Personal communication, Conflict and crisis, Resourcefulness",
+          "Negotiation, Self-reflection and self-management, Teamwork",
+          "Leadership, Relations and engagement, Results orientation"
+        ],
+        "wrong": [],
+        "question": "15. ICB’s people competencies include:"
+      },
+      {
+        "correct": [
+          "Individual Competence Baseline"
+        ],
+        "wrong": [
+          "International Competence Baseline",
+          "International Confidence Baseline"
+        ],
+        "question": "16. What does ICB stand for?"
+      },
+      {
+        "correct": [
+          "Increased need for risk management"
+        ],
+        "wrong": [
+          "Stability of resources",
+          "Frequent unplanned requirements changes"
+        ],
+        "question": "17. What are the specifics of IT projects?"
+      },
+      {
+        "correct": [
+          "It helps us understand what service we’re creating or substantially changing"
+        ],
+        "wrong": [
+          "It helps us determine who will run and monitor our project’s output",
+          "It helps us evaluate our project’s risks"
+        ],
+        "question": "18. How is the ITIL Service Strategy process useful with regards to IT project management?"
+      },
+      {
+        "correct": [
+          "It is iterative and thus allows for changes later in the project"
+        ],
+        "wrong": [
+          "It is straightforward and easy to implement",
+          "Spiral model is not suitable for SW development"
+        ],
+        "question": "19. Why is spiral lifecycle model more suitable for SW development?"
+      },
+      {
+        "correct": [
+          "Focus on people"
+        ],
+        "wrong": [
+          "Thorough upfront planning",
+          "Focus on processes"
+        ],
+        "question": "20. What is typical in agile development?"
+      },
+      {
+        "correct": [
+          "Risk driven",
+          "Iterative and incremental"
+        ],
+        "wrong": [
+          "Linear"
+        ],
+        "question": "21. What are the characteristics of UP?"
+      },
+      {
+        "correct": [
+          "Business Modelling, Analysis, Requirements and Design, Implementation, Test, Deployment"
+        ],
+        "wrong": [
+          "Business Modelling, Requirements, Implementation, Test, Deployment",
+          "Inception, Elaboration, Construction, Transition"
+        ],
+        "question": "22. What are the possible workflows of each iteration?"
+      },
+      {
+        "correct": [
+          "Collect requirements",
+          "Create baseline architecture"
+        ],
+        "wrong": [
+          "Test operational capability"
+        ],
+        "question": "23. The Elaboration phase’s goals are:"
+      },
+      {
+        "correct": [
+          "Use case diagram"
+        ],
+        "wrong": [
+          "Class diagram",
+          "Activity diagram"
+        ],
+        "question": "24. Which type of UML diagram is most suitable for modelling requirements?"
+      },
+      {
+        "correct": [
+          "Managing the SCRUM process"
+        ],
+        "wrong": [
+          "Communication",
+          "Delivering the product"
+        ],
+        "question": "25. What is the core responsibility of Scrum Master?"
+      },
+      {
+        "correct": [
+          "Product Owner"
+        ],
+        "wrong": [
+          "Scrum Master",
+          "Team of Developers"
+        ],
+        "question": "26. Who is responsible for items in Product Backlog?"
+      },
+      {
+        "correct": [
+          "It should not be longer than one month",
+          "It ends with the release of usable increment"
+        ],
+        "wrong": [
+          "It includes development of all Product Backlog items"
+        ],
+        "question": "27. What are the characteristics of SPRINT?"
+      },
+      {
+        "correct": [
+          "Process that allows early delivery of a usable product",
+          "Iterative and incremental SW development framework."
+        ],
+        "wrong": [
+          "Predictive SW development framework"
+        ],
+        "question": "28. What is a SCRUM?"
+      },
+      {
+        "correct": [
+          "Project manager needs comprehensive method to follow",
+          "The company’s culture requires comprehensive reporting"
+        ],
+        "wrong": [
+          "Bureaucratic overload is not welcome"
+        ],
+        "question": "29. PRINCE2 is the right choice of standard when:"
+      },
+      {
+        "correct": [
+          "Exact requirements are not known upfront",
+          "Time to market is key factor"
+        ],
+        "wrong": [
+          "The managed team is distributed across various locations"
+        ],
+        "question": "30. SCRUM is the right choice of standard when:"
+      },
+      {
+        "correct": [
+          "The use of soft skills is crucial for the project’s success"
+        ],
+        "wrong": [
+          "Project manager has little experience",
+          "Project manager needs comprehensive method to follow"
+        ],
+        "question": "31. IPMA is the right choice of standard when:"
+      },
+      {
+        "correct": [
+          "Team experience, skills and collaboration",
+          "Project’s domain, scale and requirements",
+          "Advantages and limitations of the standard in consideration"
+        ],
+        "wrong": [],
+        "question": "32. What needs to be taken into consideration when choosing appropriate standard for the project?"
+      },
+      {
+        "correct": [
+          "Welcome changing requirements, even late in delivery",
+          "Build projects around motivated individuals"
+        ],
+        "wrong": [
+          "Always stick to the plan."
+        ],
+        "question": "33. Which of these are principles of agile SW development?"
+      },
+      {
+        "correct": [
+          "Coaching"
+        ],
+        "wrong": [
+          "Directive",
+          "Bureaucratic"
+        ],
+        "question": "34. Which approach is typical for agile project manager?"
+      },
+      {
+        "correct": [
+          "Product description",
+          "Business case"
+        ],
+        "wrong": [
+          "Detailed quality management plan"
+        ],
+        "question": "35. Which of these are usually included in Project charter?"
+      },
+      {
+        "correct": [
+          "Finish-to-start (FS)"
+        ],
+        "wrong": [
+          "Start-to-start (SS)",
+          "Finish-to-finish (FF)"
+        ],
+        "question": "36. Choose correct PDM relationship for this sequence of activities: „Testing of Component 1 cannot start until build of Component 1 has finished.“"
+      },
+      {
+        "correct": [
+          "New technologies",
+          "Dependencies",
+          "New suppliers"
+        ],
+        "wrong": [],
+        "question": "37. What are common sources of risks?"
+      },
+      {
+        "correct": [
+          "Probability and Impact"
+        ],
+        "wrong": [
+          "Duration and Quality",
+          "Responsibility and participation"
+        ],
+        "question": "38. Which two dimensions are estimated when assessing risks?"
+      },
+      {
+        "correct": [
+          "Reduce",
+          "Transfer"
+        ],
+        "wrong": [
+          "Run"
+        ],
+        "question": "39. Which of these are risk responses?"
+      },
+      {
+        "correct": [
+          "Shift possible impact to a third party"
+        ],
+        "wrong": [
+          "Avoid risk completely",
+          "Nothing"
+        ],
+        "question": "40. What do we do when transferring risks?"
+      },
+      {
+        "correct": [
+          "Everything that is required for Product backlog item or Increment completion."
+        ],
+        "wrong": [
+          "Plan for the next Sprint.",
+          "Meeting held at the beginning of Sprint."
+        ],
+        "question": "41. What is Definition of Done?"
+      },
+      {
+        "correct": [
+          "Remaining work."
+        ],
+        "wrong": [
+          "Remaining days of project.",
+          "Top 10 to-do for today."
+        ],
+        "question": "42. What does a Burndown chart display?"
+      },
+      {
+        "correct": [
+          "To forecast how long it will take to deliver items from Sprint or Product backlog.",
+          "To better understand quality of the process."
+        ],
+        "wrong": [
+          "To predict customer’s satisfaction."
+        ],
+        "question": "43. Why do we count Team velocity?"
+      },
+      {
+        "correct": [
+          "Sprint retrospective",
+          "Definition of done",
+          "User stories"
+        ],
+        "wrong": [],
+        "question": "44. Which of these are built-in SCRUM measures for managing quality?"
+      },
+      {
+        "correct": [
+          "Description of a system feature."
+        ],
+        "wrong": [
+          "List of tasks to be done during the Sprint.",
+          "A product-related report from the user."
+        ],
+        "question": "45. What is a user story?"
+      },
+      {
+        "correct": [
+          "They help define User story implementation boundaries.",
+          "They serve as a baseline for functional testing."
+        ],
+        "wrong": [
+          "They specify risks related to user story."
+        ],
+        "question": "46. What are the advantages of adding acceptance criteria to User stories?"
+      },
+      {
+        "correct": [
+          "A metric of potential team effort to implement a User story."
+        ],
+        "wrong": [
+          "Benefit points for achieving estimated financial budget.",
+          "Agile tool for describing requirements."
+        ],
+        "question": "47. What are story points?"
+      },
+      {
+        "correct": [
+          "The amount of risk removed.",
+          "Value to customer."
+        ],
+        "wrong": [
+          "What developers had for breakfast."
+        ],
+        "question": "48. What should be considered when prioritizing the Product backlog?"
+      },
+      {
+        "correct": [
+          "Sprint Backlog"
+        ],
+        "wrong": [
+          "Sprint Goal",
+          "One process improvement"
+        ],
+        "question": "49. What are the main outcomes of Sprint review meeting?"
+      },
+      {
+        "correct": [
+          "An aggregate contribution of developing current Sprint’s user stories"
+        ],
+        "wrong": [
+          "Total amount of team effort to fully implement a user story",
+          "Clear-language description of a system feature"
+        ],
+        "question": "50. What is a Sprint goal?"
+      },
+      {
+        "correct": [
+          "What did I do yesterday?",
+          "Did I see any obstructions/ blocking issues?"
+        ],
+        "wrong": [
+          "What did I have for breakfast?"
+        ],
+        "question": "51. Which of these questions are answered at Daily SCRUM meeting?"
+      },
+      {
+        "correct": [
+          "To review Product Backlog",
+          "To inspect Increment"
+        ],
+        "wrong": [
+          "To inspect current Sprint’s relationships"
+        ],
+        "question": "52. Why does the team hold a Sprint Review?"
+      },
+      {
+        "correct": [
+          "Act calm",
+          "Listen actively"
+        ],
+        "wrong": [
+          "Make tasteless jokes"
+        ],
+        "question": "53. Which of these are conflict deescalation techniques?"
+      },
+      {
+        "correct": [
+          "Other feature will not get developed",
+          "Risk register will change"
+        ],
+        "wrong": [
+          "Contract will have to be changed"
+        ],
+        "question": "54. Which of these could be a consequence of adding an item to Product Backlog?"
+      },
+      {
+        "correct": [
+          "At the end of last Sprint"
+        ],
+        "wrong": [
+          "When all user stories from the Product Backlog have been implemented",
+          "With the release of last increment"
+        ],
+        "question": "55. When is the product considered fully released?"
+      },
+      {
+        "correct": [
+          "To learn from successes and failures",
+          "To review a completed project"
+        ],
+        "wrong": [
+          "To plan for next project"
+        ],
+        "question": "56. Why is Project Retrospective meeting being held?"
+      },
+      {
+        "correct": [
+          "A foundation document upon which the Project Board decides to proceed."
+        ],
+        "wrong": [
+          "List of product requirements from the customer.",
+          "Short meeting at the beginning of the project."
+        ],
+        "question": "57. In PRINCE2, what is a Project Brief?"
+      },
+      {
+        "correct": [
+          "Senior user",
+          "Executive"
+        ],
+        "wrong": [
+          "QA Engineer"
+        ],
+        "question": "58. Which of these roles are a part of the Project Board?"
+      },
+      {
+        "correct": [
+          "Project management standards",
+          "Corporate or programme strategies",
+          "External dependencies and prerequisites to the project"
+        ],
+        "wrong": [],
+        "question": "59. What needs to be taken into consideration when defining management approach?"
+      },
+      {
+        "correct": [
+          "Milestones",
+          "Estimated duration of activities",
+          "Roles and responsibilities"
+        ],
+        "wrong": [],
+        "question": "60. What needs to be defined in the Next stage plan?"
+      },
+      {
+        "correct": [
+          "Work Package"
+        ],
+        "wrong": [
+          "Unimportant deliverable",
+          "User story"
+        ],
+        "question": "61. What do we call the lowest level of Work Breakdown Structure?"
+      },
+      {
+        "correct": [
+          "Technique for evaluating time effort"
+        ],
+        "wrong": [
+          "Technique for calculating critical path",
+          "Product description"
+        ],
+        "question": "62. What is PERT?"
+      },
+      {
+        "correct": [
+          "Start and end points",
+          "Dependencies"
+        ],
+        "wrong": [
+          "Responsibility"
+        ],
+        "question": "63. What do we need to know about an activity in order to calculate Critical path?"
+      },
+      {
+        "correct": [
+          "Review of team performance",
+          "Summary of current issues and risks"
+        ],
+        "wrong": [
+          "Detailed plan for next stage"
+        ],
+        "question": "64. Which of these do we include in End stage report?"
+      },
+      {
+        "correct": [
+          "All major technical risks get resolved early",
+          "Organizing teams around architecture minimizes communication overload"
+        ],
+        "wrong": [
+          "There are no advantages to this approach"
+        ],
+        "question": "65. What are the advantages of planning a project around robust architecture?"
+      },
+      {
+        "correct": [
+          "A plan that usually follows an Exception report",
+          "A plan of recovery from exceeded project’s tolerances"
+        ],
+        "wrong": [
+          "A report of current progress"
+        ],
+        "question": "66. What is an exception plan?"
+      },
+      {
+        "correct": [
+          "Team manager"
+        ],
+        "wrong": [
+          "Executive",
+          "Configurations manager"
+        ],
+        "question": "67. According to PRINCE2, who manages the product delivery?"
+      },
+      {
+        "correct": [
+          "Time",
+          "Scope",
+          "Cost"
+        ],
+        "wrong": [],
+        "question": "68. Which of these project’s variables can be affected by a request for change?"
+      },
+      {
+        "correct": [
+          "Creating documentation",
+          "Beta testing with subset of users",
+          "Providing user’s training"
+        ],
+        "wrong": [],
+        "question": "69. What are the usual activities in UP’s Transition phase?"
+      },
+      {
+        "correct": [
+          "Review of team performance",
+          "Benefits achieved to date",
+          "Summary of project performance"
+        ],
+        "wrong": [],
+        "question": "70. Which of these are included in End project report?"
+      },
+      {
+        "correct": [
+          "To embed positive lessons in the organization’s way of working",
+          "To avoid negative experience in future projects"
+        ],
+        "wrong": [
+          "To test product features"
+        ],
+        "question": "71. What is the purpose of lessons report?"
+      },
+      {
+        "correct": [
+          "Creating End project report",
+          "Requesting and obtaining Acceptance records"
+        ],
+        "wrong": [
+          "Planning the next project"
+        ],
+        "question": "72. Which of these activities are a part of a PRINCE2 Closing phase?"
+      }
+    ]
+  }
+]
+
+

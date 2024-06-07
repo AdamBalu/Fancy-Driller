@@ -1,6 +1,6 @@
 "use client";
 import { type PropsWithChildren, createContext, useState } from "react";
-import { type Answer, type QuestionExtendedInfo } from "~/types/question";
+import { type Answer, type QuestionExtendedInfo } from "~/schema";
 
 type QuestionContextProps = {
   selectedQuestions: QuestionExtendedInfo[];

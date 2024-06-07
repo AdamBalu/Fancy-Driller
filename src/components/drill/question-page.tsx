@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { QuestionContext } from "~/hooks/question-context";
 import { Question } from "./question";
-import { type QuestionExtendedInfo } from "~/types/question";
+import { type QuestionExtendedInfo } from "~/schema";
 import { useRouter } from "next/navigation";
 
 type QuestionPageProps = {
@@ -37,14 +37,9 @@ export const QuestionPage = ({ id }: QuestionPageProps) => {
     const nextQuestion =
       questionsContext.selectedQuestions[
         questionsContext.selectedQuestions.indexOf(currentQuestion) + 1
-      ];
+      ] ?? questionsContext.selectedQuestions[0]!;
 
-    if (nextQuestion === undefined) {
-      router.push("/drill");
-      return;
-    }
-
-    router.push(`/drill/${nextQuestion.order.toString()}`);
+    router.push(`/drills/current-drill/${nextQuestion.order.toString()}`);
   };
 
   return (
