@@ -41,8 +41,10 @@ export const DrillContent = ({
 
   return (
     <Transition>
-      <div className="mb-8 flex flex-col items-center gap-4">
-        <h2 className="my-4 text-3xl font-bold">{currentDrill?.name}</h2>
+      <div className="mb-8 flex flex-col items-center gap-2 sm:gap-4">
+        <h2 className="transition-color my-2 text-3xl font-bold text-secondary duration-500 ease-in-out dark:text-secondaryDark sm:my-4">
+          {currentDrill?.name}
+        </h2>
         <StartDrillButton
           sequential={sequential}
           providedQuestions={currQuestions}
@@ -63,15 +65,15 @@ export const DrillContent = ({
         {currQuestions.map((question) => (
           <div
             key={question.question}
-            className="flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg bg-primaryCard p-4 md:w-[70dvw] lg:w-[50dvw]"
+            className="transition-background flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg bg-primaryCard p-4 text-secondary duration-200 ease-in-out dark:bg-primaryCardDark dark:text-secondaryDark md:w-[70dvw] lg:w-[50dvw]"
           >
             <div className="text-xl font-bold">{question.question}</div>
-            <div className="border-l-2 border-correct pl-2 text-sm">
+            <div className="border-l-2 border-correct pl-2 text-sm ease-in-out md:text-base">
               {question.correct.map((a) => (
                 <div key={a}>{a}</div>
               ))}
             </div>
-            <div className="border-l-2 border-incorrect pl-2 text-sm">
+            <div className="border-l-2 border-incorrect pl-2 text-sm ease-in-out md:text-base">
               {question.wrong.map((a) => (
                 <div key={a}>{a}</div>
               ))}

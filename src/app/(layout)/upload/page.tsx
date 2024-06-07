@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const Page = async () => (
   <Transition>
     <div className="mt-10 flex flex-col items-center justify-center gap-8">
-      <div className="text-center">
+      <div className="text-center text-secondary dark:text-secondaryDark">
         Upload your JSON questions in the following format
       </div>
       <ExampleJsonInput />

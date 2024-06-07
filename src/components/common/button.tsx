@@ -17,8 +17,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     <button
       ref={ref}
       className={cn(
-        "flex max-w-sm flex-col items-center gap-4 rounded-md border-2 p-4 text-center text-secondary " +
-          "transition duration-200 ease-in-out hover:border-border hover:text-primary active:scale-95",
+        "flex max-w-sm flex-col items-center gap-4 rounded-md border bg-primaryCard p-4 text-center font-bold text-secondaryButton hover:bg-primaryDark dark:border-2 dark:border-secondaryDark dark:bg-transparent dark:font-normal dark:text-secondaryDark " +
+          "transition duration-300 ease-in-out hover:border-border hover:bg-primaryCardHovered active:scale-95 hover:dark:border-borderDark dark:hover:text-primaryDark hover:dark:text-primaryDark",
         className,
       )}
       {...buttonProps}

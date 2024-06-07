@@ -58,12 +58,12 @@ export const AnswerButton = ({
     <Button
       onClick={onClick}
       disabled={currentQuestion.answer !== "none"}
-      className={`!w-full !max-w-screen-xl transition duration-200 hover:bg-primaryCard hover:!text-secondary ${
+      className={`!w-full !max-w-screen-xl border-2 border-selectedCard transition duration-200 hover:bg-primaryCard hover:text-secondary dark:hover:text-primaryDark ${
         selected
-          ? "border-selectedCard bg-selectedCard hover:border-selected hover:bg-selectedCard hover:text-secondary"
+          ? "border-selectedCard bg-selectedCard hover:border-selected hover:bg-selectedCard hover:text-secondary dark:border-selectedCardDark dark:bg-selectedCardDark dark:hover:border-selectedDark dark:hover:text-secondaryDark"
           : "bg-transparent"
-      } ${currentQuestion.correct.includes(answer) && currentQuestion.answer !== "none" && "!border-correctCard !bg-correctCard !text-secondary hover:border-correctCard hover:text-secondary"} 
-        ${currentQuestion.wrong.includes(answer) && currentQuestion.answer !== "none" && "!border-incorrectCard !bg-incorrectCard !text-secondary hover:border-incorrectCard hover:text-secondary"}`}
+      } ${currentQuestion.correct.includes(answer) && currentQuestion.answer !== "none" && "border-correctCard !bg-correctCard text-secondaryDark hover:border-correctCard hover:!text-secondaryDark dark:!border-correctCardDark dark:!bg-correctCardDark"} 
+        ${currentQuestion.wrong.includes(answer) && currentQuestion.answer !== "none" && "border-incorrectCard !bg-incorrectCard text-secondaryDark hover:border-incorrectCard hover:!text-secondaryDark dark:!border-incorrectCardDark dark:!bg-incorrectCardDark"}`}
     >
       {answer}
     </Button>

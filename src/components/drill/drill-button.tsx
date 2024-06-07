@@ -28,7 +28,7 @@ export const DrillButton = ({ drill }: { drill: Drill }) => {
   return (
     <Button
       onClick={onDrillClick}
-      className="h-40 w-40 border-none bg-primaryCard shadow-none shadow-selectedCard hover:text-secondary hover:shadow-md hover:shadow-primary"
+      className="dark:bg-primaryCardDark h-40 w-40 border-none bg-primaryCard shadow-none shadow-secondary hover:-translate-y-1 hover:shadow-xl dark:shadow-selectedCard dark:hover:text-secondaryDark dark:hover:shadow-md"
     >
       <h2 className="my-4 text-3xl font-bold">{drill.name}</h2>
     </Button>

@@ -57,10 +57,10 @@ export const Question = ({
   };
 
   return (
-    <div className="mx-4 flex min-h-[calc(100dvh-68px)] w-[90dvw] max-w-screen-md flex-col items-center justify-center gap-5 sm:w-[70dvw]">
-      <h1 className="text-md pb-5 text-center font-bold sm:text-xl md:text-2xl">
+    <div className="mx-2 flex min-h-[calc(100dvh-68px)] w-[90dvw] max-w-screen-md flex-col items-center justify-center gap-5 sm:mx-4 sm:w-[70dvw]">
+      <h2 className="transition-color text-md pb-5 text-center font-bold text-secondary duration-500 ease-in-out dark:text-secondaryDark sm:text-xl md:text-2xl">
         {currentQuestion.question}
-      </h1>
+      </h2>
       {shuffledAnswers?.map((answer) => (
         <AnswerButton
           key={answer}

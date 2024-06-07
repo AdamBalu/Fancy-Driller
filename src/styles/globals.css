@@ -38,10 +38,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.login__segmented-btn[aria-selected="true"] {
-    color: white;
-}
-
 .login__segmented-focus {
     border-radius: 0.425em;
     pointer-events: none;
@@ -95,21 +91,8 @@
     visibility: visible;
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-    .login__segmented {
-        background-color: black;
-    }
-
-    .login__segmented-btn {
-        color: #afafaf;
-    }
-}
-
 /* Beyond mobile */
 @media (min-width: 900px) {
-    .login__column {
-    }
     .login__form {
         max-width: 22em;
     }

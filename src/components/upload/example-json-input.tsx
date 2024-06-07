@@ -1,8 +1,11 @@
 "use client";
 import { CodeBlock, tomorrowNightEighties } from "react-code-blocks";
 import React from "react";
+import { useTheme } from "next-themes";
 
 export const ExampleJsonInput = () => {
+  const { theme } = useTheme();
+
   const code = `[
     {
         question: "What is A?",
@@ -23,12 +26,20 @@ export const ExampleJsonInput = () => {
     paddingRight: "40px",
   };
 
-  const theme = {
-    ...tomorrowNightEighties,
-    backgroundColor: "#011220",
-    textColor: "#ececec",
-    stringColor: "#3887ff",
-  };
+  const codeTheme =
+    theme === "dark"
+      ? {
+          ...tomorrowNightEighties,
+          backgroundColor: "#011220",
+          textColor: "#ececec",
+          stringColor: "#3887ff",
+        }
+      : {
+          ...tomorrowNightEighties,
+          backgroundColor: "#cbdff1",
+          textColor: "#1d1f21",
+          stringColor: "#3887ff",
+        };
 
   return (
     <div className="max-w-96 rounded-xl text-xs sm:text-base">
@@ -37,7 +48,7 @@ export const ExampleJsonInput = () => {
         codeContainerStyle={customStyle}
         text={code}
         language="json"
-        theme={theme}
+        theme={codeTheme}
         showLineNumbers={false}
       />
     </div>
