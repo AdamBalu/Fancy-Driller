@@ -1,11 +1,11 @@
 "use client";
-import { type Question } from "~/types/question";
 import React, { useContext, useRef } from "react";
 import Button from "~/components/common/button";
 import { QuestionContext } from "~/hooks/question-context";
 import { useRouter } from "next/navigation";
 import { isValidJsonQuestions } from "~/common/check-json-correctness";
 import { toastError } from "../common/toast-custom";
+import { type Question } from "~/schema";
 
 export const UploadButton = () => {
   const questionsContext = useContext(QuestionContext);
@@ -35,7 +35,7 @@ export const UploadButton = () => {
                 answer: "none",
               })),
             );
-            router.push("/drill");
+            router.push("/drills/custom-drill");
           } catch (error) {
             let errorMessage = "Invalid JSON";
             if (error instanceof Error) {

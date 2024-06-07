@@ -5,9 +5,9 @@ import React from "react";
 
 const Transition = ({ children }: { children: React.ReactNode }) => (
   <motion.div
-    initial={{ y: 10, opacity: 0 }}
+    initial={{ y: 6, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
-    transition={{ ease: "easeInOut", duration: 0.65 }}
+    transition={{ ease: "easeInOut", duration: 0.35 }}
   >
     {children}
   </motion.div>
