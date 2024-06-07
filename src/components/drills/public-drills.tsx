@@ -14,7 +14,7 @@ export const PublicDrills = () => {
   if (isLoading) {
     return (
       <div className="mt-20 flex h-screen items-start">
-        <div className="h-20 w-20 animate-ping rounded-full bg-primary"></div>
+        <div className="h-20 w-20 animate-ping rounded-full bg-primaryCard dark:bg-primaryCardDark"></div>
       </div>
     );
   }

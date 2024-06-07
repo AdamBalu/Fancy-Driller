@@ -8,10 +8,10 @@ export type QuestionProps = {
 export const QuestionInGrid = ({ question }: QuestionProps) => {
   return (
     <Link
-      className={`rounded-md border-2 p-4 text-center transition duration-100 
-      ${question.answer === "none" && "border-secondary"} 
+      className={`rounded-md border-2 p-4 text-center text-secondary transition duration-100 dark:text-secondaryDark 
+      ${question.answer === "none" && "border-secondary dark:border-secondaryDark"} 
       ${question.answer === "correct" && "border-correct"} 
-      ${question.answer === "wrong" && "border-incorrect"} hover:border-border hover:text-border`}
+      ${question.answer === "wrong" && "border-incorrect"} dark:hover:border-borderDark dark:hover:text-borderDark hover:border-border hover:text-border`}
       href={`/drills/current-drill/${question.order}`}
     >
       {question.order}

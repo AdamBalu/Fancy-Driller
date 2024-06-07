@@ -18,8 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html
+      suppressHydrationWarning
       lang="en"
-      className={`bg-gradient-to-b from-black to-mainBackgroundGradient text-secondary ${GeistSans.variable}`}
+      className={`bg-gradient-to-b from-secondary to-black text-secondaryDark ${GeistSans.variable}`}
     >
       <body className="min-h-screen">
         <Providers>{children}</Providers>

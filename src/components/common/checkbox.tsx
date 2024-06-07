@@ -17,12 +17,12 @@ const Checkbox = ({
   onChange,
   className,
 }: CheckboxProps) => (
-  <div className="flex items-center gap-2">
+  <div className="transition-color flex items-center gap-2 text-xs text-secondary duration-500 ease-in-out dark:text-secondaryDark sm:text-base">
     <input
       onChange={onChange}
       type="checkbox"
       id={id}
-      className={`accent-primary ${className}`}
+      className={`accent-primary dark:accent-primaryDark ${className}`}
       checked={checked}
     />
     <label htmlFor={id}>{children}</label>

@@ -1,12 +1,13 @@
 import React from "react";
 import { Great_Vibes } from "next/font/google";
+import { ChangeThemeButton } from "~/components/common/change-theme-button";
 
 const GreatVibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <header className="bg-mainBackground flex items-center justify-between px-6 py-4 text-secondary">
+      <header className="transition-bgColor flex items-center justify-between bg-mainBackground px-6 py-4 text-secondary duration-500 dark:bg-mainBackgroundDark dark:text-secondaryDark">
         <a href="/">
           <h1
             className={`text-xl font-bold text-primary sm:text-3xl ${GreatVibes.className}`}
@@ -17,20 +18,21 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="text-md xl:text-md flex w-full justify-center gap-4 font-bold uppercase sm:gap-12">
           <a
             href="/drills"
-            className="transition duration-200 hover:text-primary"
+            className="transition duration-200 hover:text-primary dark:hover:text-primaryDark"
           >
             Drills
           </a>
-          <span className="border-mainBackgroundGradient border-r-2" />
+          <span className="border-r-2 border-primaryCard dark:border-mainBackgroundGradient" />
           <a
             href="/upload"
-            className="transition duration-200 hover:text-primary"
+            className="transition duration-200 hover:text-primary dark:hover:text-primaryDark"
           >
             Upload
           </a>
         </div>
+        <ChangeThemeButton />
       </header>
-      <main className="to-mainBackground from-mainBackground flex min-h-screen flex-1 flex-col items-center gap-4 bg-gradient-to-b px-2">
+      <main className="transition-bgColor flex min-h-screen flex-1 flex-col items-center gap-4 bg-mainBackground px-2 duration-500 ease-in-out dark:bg-mainBackgroundDark">
         {children}
       </main>
     </>
