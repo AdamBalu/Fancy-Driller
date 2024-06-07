@@ -27,7 +27,7 @@ export const ExampleJsonInput = () => {
   };
 
   const codeTheme =
-    theme === "dark"
+    theme === "dark" || theme === undefined
       ? {
           ...tomorrowNightEighties,
           backgroundColor: "#011220",
