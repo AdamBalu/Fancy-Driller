@@ -1,10 +1,20 @@
 "use client";
 import { CodeBlock, tomorrowNightEighties } from "react-code-blocks";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 export const ExampleJsonInput = () => {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // mounting to prevent theme mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   const code = `[
     {
