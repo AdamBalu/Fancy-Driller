@@ -7,8 +7,6 @@ export const GET = async () => {
 
     return Response.json(drills);
   } catch (error) {
-    console.log(error);
-
     if (error instanceof ZodError) {
       return Response.json({ error: error.errors }, { status: 400 });
     }

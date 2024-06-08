@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-const Transition = ({
+const TransitionOpacity = ({
   delaySeconds,
   duration,
   children,
@@ -13,11 +13,11 @@ const Transition = ({
   children: React.ReactNode;
 }) => (
   <motion.div
-    initial={{ y: 6, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
     transition={{
       ease: "easeInOut",
-      duration: duration ?? 0.35,
+      duration: duration ?? 0.25,
       delay: delaySeconds,
     }}
   >
@@ -25,4 +25,4 @@ const Transition = ({
   </motion.div>
 );
 
-export default Transition;
+export default TransitionOpacity;

@@ -5,7 +5,7 @@ import { QuestionContext } from "~/hooks/question-context";
 import { useRouter } from "next/navigation";
 import { isValidJsonQuestions } from "~/common/check-json-correctness";
 import { toastError } from "../common/toast-custom";
-import { type Question } from "~/schema";
+import { type Question, type QuestionExtendedInfo } from "~/schema";
 
 export const UploadButton = () => {
   const questionsContext = useContext(QuestionContext);
@@ -28,13 +28,17 @@ export const UploadButton = () => {
             ) as Question[];
             isValidJsonQuestions(questions);
 
-            questionsContext.setSelectedQuestions(
-              questions.map((question, index) => ({
+            const questionsBaseState: QuestionExtendedInfo[] = questions.map(
+              (question, index) => ({
                 ...question,
                 order: index + 1,
                 answer: "none",
-              })),
+              }),
             );
+
+            questionsContext.setSelectedQuestions(questionsBaseState);
+            questionsContext.setInitialQuestions(questionsBaseState);
+            questionsContext.setCurrentDrillName("custom-drill");
             router.push("/drills/custom-drill");
           } catch (error) {
             let errorMessage = "Invalid JSON";

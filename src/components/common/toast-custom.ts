@@ -1,8 +1,8 @@
 import toast from "react-hot-toast";
 
-export const toastSuccess = (message: string) => {
+export const toastSuccess = (message: string, duration = 1500) => {
   toast.success(message, {
-    duration: 1500,
+    duration: duration,
     style: {
       border: "1px solid #20a10e",
       padding: "16px",
@@ -12,9 +12,9 @@ export const toastSuccess = (message: string) => {
   });
 };
 
-export const toastError = (message: string) => {
+export const toastError = (message: string, duration = 1500) => {
   toast.error(message, {
-    duration: 1500,
+    duration: duration,
     style: {
       border: "1px solid #cc0e0e",
       padding: "16px",
