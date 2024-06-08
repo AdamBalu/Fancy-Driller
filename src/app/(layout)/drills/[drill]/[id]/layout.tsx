@@ -12,10 +12,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <>
       <ProgressBar
         value={
-          (questionsContext.selectedQuestions.filter((q) => q.answer !== "none")
-            .length /
-            questionsContext.selectedQuestions.length) *
-          100
+          questionsContext.selectedQuestions.filter((q) => q.answer !== "none")
+            .length
         }
         max={questionsContext.selectedQuestions.length}
       />
