@@ -19,7 +19,7 @@ export const Question = ({
   const [shuffledAnswers, setShuffledAnswers] = useState<string[] | null>(null);
 
   useEffect(() => {
-    if (!shuffledAnswers && currentQuestion.answer === "none") {
+    if (!shuffledAnswers) {
       const shuffle = (array: string[]) => {
         for (let i = array.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
