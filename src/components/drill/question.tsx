@@ -57,7 +57,7 @@ export const Question = ({
   };
 
   return (
-    <div className="mx-2 flex min-h-[calc(100dvh-68px)] w-[90dvw] max-w-screen-md flex-col items-center justify-center gap-5 sm:mx-4 sm:w-[70dvw]">
+    <div className="mx-2 flex min-h-[calc(100dvh-68px)] w-[90dvw] max-w-screen-md flex-col items-center justify-center gap-2 sm:mx-4 sm:w-[70dvw] sm:gap-5">
       <h2 className="text-md pb-5 text-center font-bold text-secondary transition-color duration-500 ease-in-out dark:text-secondaryDark sm:text-xl md:text-2xl">
         {currentQuestion.question}
       </h2>

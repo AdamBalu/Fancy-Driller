@@ -62,9 +62,9 @@ export const DrillContent = ({
           </Checkbox>
         </div>
 
-        {currQuestions.map((question) => (
+        {currQuestions.map((question, index) => (
           <div
-            key={question.question}
+            key={question.question + index}
             className="transition-background flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg bg-primaryCard p-4 text-secondary duration-200 ease-in-out dark:bg-primaryCardDark dark:text-secondaryDark md:w-[70dvw] lg:w-[50dvw]"
           >
             <div className="text-sm font-bold sm:text-base">

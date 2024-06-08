@@ -40,13 +40,13 @@ export const ExampleJsonInput = () => {
     theme === "dark" || theme === undefined
       ? {
           ...tomorrowNightEighties,
-          backgroundColor: "#011220",
+          backgroundColor: "#011a2e",
           textColor: "#ececec",
           stringColor: "#3887ff",
         }
       : {
           ...tomorrowNightEighties,
-          backgroundColor: "#cbdff1",
+          backgroundColor: "#c0d9ef",
           textColor: "#1d1f21",
           stringColor: "#3887ff",
         };
