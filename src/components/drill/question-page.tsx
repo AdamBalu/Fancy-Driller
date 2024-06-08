@@ -4,6 +4,10 @@ import { QuestionContext } from "~/hooks/question-context";
 import { Question } from "./question";
 import { type QuestionExtendedInfo } from "~/schema";
 import { useRouter } from "next/navigation";
+import {
+  getFirstUnanswered,
+  getFirstUnansweredAfterIndex,
+} from "~/lib/questions";
 
 type QuestionPageProps = {
   id: string;
@@ -34,12 +38,24 @@ export const QuestionPage = ({ id }: QuestionPageProps) => {
   }
 
   const onNextQuestionClick = () => {
-    const nextQuestion =
-      questionsContext.selectedQuestions[
-        questionsContext.selectedQuestions.indexOf(currentQuestion) + 1
-      ] ?? questionsContext.selectedQuestions[0]!;
+    const { selectedQuestions } = questionsContext;
+    const currentIndex = selectedQuestions.indexOf(currentQuestion);
 
-    router.push(`/drills/current-drill/${nextQuestion.order.toString()}`);
+    let firstUnansweredQuestion = getFirstUnansweredAfterIndex(
+      selectedQuestions,
+      currentIndex,
+    );
+
+    if (!firstUnansweredQuestion) {
+      firstUnansweredQuestion = getFirstUnanswered(selectedQuestions);
+    }
+
+    if (!firstUnansweredQuestion) {
+      router.push("/drills/current-drill/end");
+      return;
+    }
+
+    router.push(`/drills/current-drill/${firstUnansweredQuestion.order}`);
   };
 
   return (

@@ -42,7 +42,7 @@ export const DrillContent = ({
   return (
     <Transition>
       <div className="mb-8 flex flex-col items-center gap-2 sm:gap-4">
-        <h2 className="transition-color my-2 text-3xl font-bold text-secondary duration-500 ease-in-out dark:text-secondaryDark sm:my-4">
+        <h2 className="my-2 text-3xl font-bold text-secondary transition-color duration-500 ease-in-out dark:text-secondaryDark sm:my-4">
           {currentDrill?.name}
         </h2>
         <StartDrillButton
@@ -67,7 +67,9 @@ export const DrillContent = ({
             key={question.question}
             className="transition-background flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg bg-primaryCard p-4 text-secondary duration-200 ease-in-out dark:bg-primaryCardDark dark:text-secondaryDark md:w-[70dvw] lg:w-[50dvw]"
           >
-            <div className="text-xl font-bold">{question.question}</div>
+            <div className="text-sm font-bold sm:text-base">
+              {question.question}
+            </div>
             <div className="border-l-2 border-correct pl-2 text-sm ease-in-out md:text-base">
               {question.correct.map((a) => (
                 <div key={a}>{a}</div>

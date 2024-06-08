@@ -18,17 +18,19 @@ export const DrillButton = ({ drill }: { drill: Drill }) => {
       (question) => ({
         ...question,
         answer: "none",
-        order: questionsContext.selectedQuestions.length,
+        order: 0,
       }),
     );
+    questionsContext.setInitialQuestions(questionsExtendedInfo);
     questionsContext.setSelectedQuestions(questionsExtendedInfo);
+    questionsContext.setCurrentDrillName(drill.name);
     router.push(`/drills/${drill.name}`);
   };
 
   return (
     <Button
       onClick={onDrillClick}
-      className="dark:bg-primaryCardDark h-40 w-40 border-none bg-primaryCard shadow-none shadow-secondary hover:-translate-y-1 hover:shadow-xl dark:shadow-selectedCard dark:hover:text-secondaryDark dark:hover:shadow-md"
+      className="h-40 w-40 border-none bg-primaryCard shadow-none shadow-secondary hover:-translate-y-1 hover:shadow-xl dark:bg-primaryCardDark dark:shadow-selectedCard dark:hover:text-secondaryDark dark:hover:shadow-md"
     >
       <h2 className="my-4 text-3xl font-bold">{drill.name}</h2>
     </Button>

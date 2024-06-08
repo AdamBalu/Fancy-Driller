@@ -7,7 +7,7 @@ const GreatVibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <header className="transition-bgColor flex items-center justify-between bg-mainBackground px-6 py-4 text-secondary duration-500 dark:bg-mainBackgroundDark dark:text-secondaryDark">
+      <header className="flex items-center justify-between bg-mainBackground px-6 py-4 text-secondary transition-bgColor duration-500 dark:bg-mainBackgroundDark dark:text-secondaryDark">
         <a href="/">
           <h1
             className={`text-xl font-bold text-primary sm:text-3xl ${GreatVibes.className}`}
@@ -32,7 +32,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
         <ChangeThemeButton />
       </header>
-      <main className="transition-bgColor flex min-h-screen flex-1 flex-col items-center gap-4 bg-mainBackground px-2 duration-500 ease-in-out dark:bg-mainBackgroundDark">
+      <main className="flex min-h-screen flex-1 flex-col items-center gap-4 bg-mainBackground px-2 transition-bgColor duration-500 ease-in-out dark:bg-mainBackgroundDark">
         {children}
       </main>
     </>

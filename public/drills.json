@@ -712,6 +712,51 @@
         "question": "72. Which of these activities are a part of a PRINCE2 Closing phase?"
       }
     ]
+  },
+  {
+    "name": "TEST",
+    "questions": [
+      {
+        "correct": [
+          "Temporary, Change driving, Uncertain, Unique"
+        ],
+        "wrong": [
+          "Repetitive, Stable, Linear, Event driven",
+          "Permanent, Simple, Flexible, Task driven"
+        ],
+        "question": "1. What are the main characteristics of a project?"
+      },
+      {
+        "correct": [
+          "Time, Cost, Scope"
+        ],
+        "wrong": [
+          "Risk, Quality, Procurement",
+          "Plan, Change, Progress"
+        ],
+        "question": "2. What are the usual dimensions of project manager’s triple constraint?"
+      },
+      {
+        "correct": [
+          "To add value to business",
+          "To fulfil strategic goals"
+        ],
+        "wrong": [
+          "To create a unique product"
+        ],
+        "question": "3. What is the aim of Project Portfolio?"
+      },
+      {
+        "correct": [
+          "Flow chart."
+        ],
+        "wrong": [
+          "Gantt chart.",
+          "Use case diagram."
+        ],
+        "question": "4. A process is best visualized with:"
+      }
+    ]
   }
 ]
 

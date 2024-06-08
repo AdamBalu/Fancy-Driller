@@ -62,8 +62,8 @@ export const AnswerButton = ({
         selected
           ? "border-selectedCard bg-selectedCard hover:border-selected hover:bg-selectedCard hover:text-secondary dark:border-selectedCardDark dark:bg-selectedCardDark dark:hover:border-selectedDark dark:hover:text-secondaryDark"
           : "bg-transparent"
-      } ${currentQuestion.correct.includes(answer) && currentQuestion.answer !== "none" && "border-correctCard !bg-correctCard text-secondaryDark hover:border-correctCard hover:!text-secondaryDark dark:!border-correctCardDark dark:!bg-correctCardDark"} 
-        ${currentQuestion.wrong.includes(answer) && currentQuestion.answer !== "none" && "border-incorrectCard !bg-incorrectCard text-secondaryDark hover:border-incorrectCard hover:!text-secondaryDark dark:!border-incorrectCardDark dark:!bg-incorrectCardDark"}`}
+      } ${currentQuestion.correct.includes(answer) && currentQuestion.answer !== "none" && "text-onAnsweredButton hover:!text-onAnsweredButton border-correctCard !bg-correctCard hover:border-correctCard dark:!border-correctCardDark dark:!bg-correctCardDark"} 
+        ${currentQuestion.wrong.includes(answer) && currentQuestion.answer !== "none" && "text-onAnsweredButton hover:!text-onAnsweredButton border-incorrectCard !bg-incorrectCard hover:border-incorrectCard dark:!border-incorrectCardDark dark:!bg-incorrectCardDark"}`}
     >
       {answer}
     </Button>
