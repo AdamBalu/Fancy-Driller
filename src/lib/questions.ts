@@ -17,3 +17,12 @@ export const getFirstUnansweredAfterIndex = (
 
 export const getFirstUnanswered = (selectedQuestions: QuestionExtendedInfo[]) =>
   selectedQuestions.find((question) => question.answer === "none");
+
+export const getFirstUnansweredWithCurrentQuestionCheck = (
+  selectedQuestions: QuestionExtendedInfo[],
+  currentQuestion: QuestionExtendedInfo,
+) =>
+  selectedQuestions.find(
+    (question) =>
+      question.answer === "none" && question.order !== currentQuestion.order,
+  );

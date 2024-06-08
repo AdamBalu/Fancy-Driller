@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import {
   getFirstUnanswered,
   getFirstUnansweredAfterIndex,
+  getFirstUnansweredWithCurrentQuestionCheck,
 } from "~/lib/questions";
 
 type QuestionPageProps = {
@@ -37,7 +38,7 @@ export const QuestionPage = ({ id }: QuestionPageProps) => {
     return null;
   }
 
-  const onNextQuestionClick = () => {
+  const onNextQuestionClick = (isCurrentQuestionBeingAnswered = false) => {
     const { selectedQuestions } = questionsContext;
     const currentIndex = selectedQuestions.indexOf(currentQuestion);
 
@@ -47,7 +48,14 @@ export const QuestionPage = ({ id }: QuestionPageProps) => {
     );
 
     if (!firstUnansweredQuestion) {
-      firstUnansweredQuestion = getFirstUnanswered(selectedQuestions);
+      if (isCurrentQuestionBeingAnswered) {
+        firstUnansweredQuestion = getFirstUnansweredWithCurrentQuestionCheck(
+          selectedQuestions,
+          currentQuestion,
+        );
+      } else {
+        firstUnansweredQuestion = getFirstUnanswered(selectedQuestions);
+      }
     }
 
     if (!firstUnansweredQuestion) {

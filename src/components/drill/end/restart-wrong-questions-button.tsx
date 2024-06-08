@@ -27,10 +27,10 @@ export const RestartWrongQuestionsButton = () => {
       },
     );
 
-    questionContext.setSelectedQuestions(wrongQuestionsReset);
     if (wrongQuestionsReset.length === 0) {
-      toastSuccess("You already answered all questions correctly", 2500);
+      toastSuccess("All questions answered correctly!", 2500);
     } else {
+      questionContext.setSelectedQuestions(wrongQuestionsReset);
       router.push(`/drills/current-drill/${wrongQuestionsReset[0]?.order}`);
     }
   };

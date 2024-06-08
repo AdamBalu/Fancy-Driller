@@ -11,7 +11,7 @@ export const QuestionGrid = () => {
   return (
     <div className="mb-40 mt-8 grid grid-cols-4 gap-4 md:grid-cols-8 lg:grid-cols-10">
       {questionsContext.selectedQuestions?.map((question) => {
-        return <QuestionInGrid key={question.order} question={question} />;
+        return <QuestionInGrid key={question.question} question={question} />;
       })}
     </div>
   );
