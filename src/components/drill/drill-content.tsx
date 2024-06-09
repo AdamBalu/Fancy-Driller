@@ -29,7 +29,9 @@ export const DrillContent = ({
   const questionsContext = useContext(QuestionContext);
   const [sequential, setSequential] = useState(false);
 
-  const currentDrill = drill?.data?.find((d) => d.name === drillName);
+  const currentDrill = drill?.data?.find(
+    (d) => d.name === decodeURI(drillName),
+  );
 
   if (questionsContext === null) {
     return null;
@@ -42,7 +44,7 @@ export const DrillContent = ({
   return (
     <Transition>
       <div className="mb-8 flex flex-col items-center gap-2 sm:gap-4">
-        <h2 className="my-2 text-3xl font-bold text-secondary transition-color duration-500 ease-in-out dark:text-secondaryDark sm:my-4">
+        <h2 className="my-2 text-center text-3xl font-bold text-secondary transition-color duration-500 ease-in-out dark:text-secondaryDark sm:my-4">
           {currentDrill?.name}
         </h2>
         <StartDrillButton

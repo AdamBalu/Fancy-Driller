@@ -14,7 +14,7 @@ export const PublicDrills = () => {
   if (isLoading) {
     return (
       <div className="mt-20 flex h-screen items-start">
-        <div className="bg-button h-20 w-20 animate-ping rounded-full dark:bg-primaryCardDark"></div>
+        <div className="h-20 w-20 animate-ping rounded-full bg-button dark:bg-primaryCardDark"></div>
       </div>
     );
   }
@@ -29,7 +29,7 @@ export const PublicDrills = () => {
 
   return (
     <Transition>
-      <div className="grid grid-cols-2 items-center justify-center gap-4 text-center sm:grid-cols-2">
+      <div className="mx-4 grid grid-cols-2 items-center justify-center gap-4 text-center sm:grid-cols-3">
         {data?.map((d, idx) => <DrillButton key={d.name + idx} drill={d} />)}
       </div>
     </Transition>

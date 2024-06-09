@@ -714,6 +714,176 @@
     ]
   },
   {
+    "name": "PA179 - exam questions",
+    "questions": [
+      {
+        "question": "Choose true statements about Project",
+        "correct": [
+          "Project contains repeatable processes",
+          "Project delivers a unique product or service"
+        ],
+        "wrong": [
+          "A Project is repeatable",
+          "Project is best visualized with BPD"
+        ]
+      },
+      {
+        "question": "Which of the following characteristics discourage from using PRINCE2 standard?",
+        "correct": [
+          "Research type of project, unclear scope"
+        ],
+        "wrong": [
+          "Junior project manager",
+          "Critical infrastructure delivery",
+          "Hierarchic organizational structure, large teams in different locations"
+        ]
+      },
+      {
+        "question": "Which of the following combinations is suitable for large projects (one year or more)?",
+        "correct": [
+          "UP and PRINCE2"
+        ],
+        "wrong": [
+          "UP and IPMA ICB",
+          "UP and PM BOK",
+          "UP and Scrum"
+        ]
+      },
+      {
+        "question": "Which consequences may result from adding an item to Product Backlog (in a project according to Scrum)?",
+        "correct": [
+          "Other item may not be developed",
+          "Risk register may change"
+        ],
+        "wrong": [
+          "Contract has to be changed",
+          "Current Sprint may be stopped"
+        ]
+      },
+      {
+        "question": "What is the outcome of Sprint Retrospective?",
+        "correct": [
+          "Identification of one process improvement"
+        ],
+        "wrong": [
+          "Next stage plan",
+          "Updating Sprint Backlog",
+          "Updating Sprint Retrospectlog"
+        ]
+      },
+      {
+        "question": "Which of the following knowledge areas in PMBOK is focusing on definition of sequence of project activities?",
+        "correct": [
+          "Schedule"
+        ],
+        "wrong": [
+          "Plan",
+          "Integration",
+          "Scope"
+        ]
+      },
+      {
+        "question": "Which of the following UML diagrams is suitable for capturing requirements?",
+        "correct": [
+          "Use Case Diagram"
+        ],
+        "wrong": [
+          "Requirements Diagram",
+          "Sequence Diagram",
+          "User Story"
+        ]
+      },
+      {
+        "question": "Who is responsible for Product Backlog?",
+        "correct": [
+          "Product Owner"
+        ],
+        "wrong": [
+          "Scrum Master",
+          "Product Master",
+          "Team of developers"
+        ]
+      },
+      {
+        "question": "Which of the following combinations is suitable for projects with complex and unpredictable scope?",
+        "correct": [
+          "Scrum and IPMA ICB"
+        ],
+        "wrong": [
+          "Scrum and PRINCE2",
+          "UP and IPMA ICB",
+          "UP and PRINCE2"
+        ]
+      },
+      {
+        "question": "Which of the following options belong to 'People Competencies' according to IPMA ICB?",
+        "correct": [
+          "Negotiation, Self-reflection and Self-management, Teamwork",
+          "Personal communication, Conflict and Crisis, Resourcefulness",
+          "Leadership, Relations and Engagement, Results Orientation"
+        ],
+        "wrong": [
+          "Proactivity, Time Management, Responsibility"
+        ]
+      },
+      {
+        "question": "What can be read from Burndown chart?",
+        "correct": [
+          "Remaining work until end of sprint",
+          "Team is falling behind a plan"
+        ],
+        "wrong": [
+          "Remaining project days",
+          "Remaining to-do items for today"
+        ]
+      },
+      {
+        "question": "Which of the following techniques/tools are using man-day or man-month units?",
+        "correct": [
+          "PERT"
+        ],
+        "wrong": [
+          "Gantt chart",
+          "Planning poker",
+          "Burndown chart"
+        ]
+      },
+      {
+        "question": "Which of the following concepts contains set of projects?",
+        "correct": [
+          "Portfolio",
+          "Program"
+        ],
+        "wrong": [
+          "Process",
+          "Project"
+        ]
+      },
+      {
+        "question": "Which of the following are Scrum Artifacts (as per Scrum)?",
+        "correct": [
+          "Product Increment",
+          "Product Backlog",
+          "Sprint Backlog"
+        ],
+        "wrong": [
+          "Story Point"
+        ]
+      },
+      {
+        "question": "Which of the following statements are true (according to UP)?",
+        "correct": [
+          "An iteration should not be longer than 3 months",
+          "A difference between two consecutive iterations is called increment",
+          "An iteration is like a mini project"
+        ],
+        "wrong": [
+          "A sum of two consecutive iterations is called increment"
+        ]
+      }
+    ]
+  },
+  {
     "name": "PA017",
     "questions": [
       {

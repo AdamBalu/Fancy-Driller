@@ -33,9 +33,11 @@ export const DrillButton = ({ drill }: { drill: Drill }) => {
   return (
     <Button
       onClick={onDrillClick}
-      className="group h-40 w-40 border-none bg-primaryCard shadow-none shadow-secondary hover:-translate-y-1 hover:shadow-xl dark:bg-primaryCardDark dark:shadow-selectedCard dark:hover:text-secondaryDark dark:hover:shadow-md"
+      className="group h-52 max-w-64 border-none bg-primaryCard shadow-none shadow-secondary hover:-translate-y-1 hover:shadow-xl dark:bg-primaryCardDark dark:shadow-selectedCard dark:hover:text-secondaryDark dark:hover:shadow-md"
     >
-      <h2 className="my-4 text-3xl font-bold">{drill.name}</h2>
+      <h2 className="my-4 text-center text-base font-bold sm:text-xl">
+        {drill.name}
+      </h2>
       {theme === "light" && (
         <Image
           src="/static/enter.svg"
