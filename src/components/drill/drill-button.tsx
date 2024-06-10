@@ -1,20 +1,30 @@
 import { type Drill } from "~/schema";
-import { QuestionContext } from "~/hooks/question-context";
-import { useContext } from "react";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 import Button from "~/components/common/button";
 import { useRouter } from "next/navigation";
 import { type QuestionExtendedInfo } from "~/schema";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useContextSelector } from "use-context-selector";
 
 export const DrillButton = ({ drill }: { drill: Drill }) => {
-  const questionsContext = useContext(QuestionContext);
+  const contextSelectors = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      setSelectedQuestions: context?.setSelectedQuestions,
+      setInitialQuestions: context?.setInitialQuestions,
+      setCurrentDrillName: context?.setCurrentDrillName,
+    }),
+  );
+
+  const { setSelectedQuestions, setInitialQuestions, setCurrentDrillName } =
+    contextSelectors;
+
   const router = useRouter();
   const { theme } = useTheme();
-
-  if (questionsContext === null) {
-    return null;
-  }
 
   const onDrillClick = () => {
     const questionsExtendedInfo: QuestionExtendedInfo[] = drill.questions.map(
@@ -24,9 +34,11 @@ export const DrillButton = ({ drill }: { drill: Drill }) => {
         order: 0,
       }),
     );
-    questionsContext.setInitialQuestions(questionsExtendedInfo);
-    questionsContext.setSelectedQuestions(questionsExtendedInfo);
-    questionsContext.setCurrentDrillName(drill.name);
+    if (setSelectedQuestions && setInitialQuestions && setCurrentDrillName) {
+      setInitialQuestions(questionsExtendedInfo);
+      setSelectedQuestions(questionsExtendedInfo);
+      setCurrentDrillName(drill.name);
+    }
     router.push(`/drills/${drill.name}`);
   };
 

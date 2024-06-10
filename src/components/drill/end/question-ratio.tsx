@@ -1,11 +1,20 @@
 "use client";
-import { QuestionContext } from "~/hooks/question-context";
-import { useContext } from "react";
 import { getCorrectlyAnsweredNum } from "~/lib/questions";
+import { useContextSelector } from "use-context-selector";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 
 export const QuestionRatio = () => {
-  const questionsContext = useContext(QuestionContext);
-  if (!questionsContext) return null;
+  const questionsContext = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      selectedQuestions: context?.selectedQuestions,
+    }),
+  );
+  if (!questionsContext?.selectedQuestions) return null;
+
   const { selectedQuestions } = questionsContext;
 
   return (

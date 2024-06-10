@@ -1,9 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnswerButton } from "./answer-button";
 import Button from "../common/button";
 import { type QuestionExtendedInfo } from "~/schema";
-import { QuestionContext } from "~/hooks/question-context";
 import { toastError, toastSuccess } from "~/components/common/toast-custom";
+import { useContextSelector } from "use-context-selector";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 
 type QuestionProps = {
   currentQuestion: QuestionExtendedInfo;
@@ -14,9 +18,16 @@ export const Question = ({
   currentQuestion,
   onNextQuestionClick,
 }: QuestionProps) => {
-  const questionContext = useContext(QuestionContext);
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
   const [shuffledAnswers, setShuffledAnswers] = useState<string[] | null>(null);
+
+  const questionsContext = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      setQuestion: context?.setQuestion,
+      fastMode: context?.fastMode,
+    }),
+  );
 
   useEffect(() => {
     if (!shuffledAnswers) {
@@ -36,9 +47,10 @@ export const Question = ({
     }
   }, [currentQuestion, shuffledAnswers]);
 
-  if (questionContext === null) {
-    return null;
-  }
+  if (!questionsContext) return;
+  const { setQuestion, fastMode } = questionsContext;
+  if (!setQuestion) return;
+
   const checkCorrectAnswers = () => {
     const wasAnsweredCorrectly =
       currentQuestion.correct.every((correctAnswer) =>
@@ -47,10 +59,7 @@ export const Question = ({
       currentQuestion.wrong.every(
         (wrongAnswer) => !selectedAnswers.includes(wrongAnswer),
       );
-    questionContext.setQuestion(
-      currentQuestion,
-      wasAnsweredCorrectly ? "correct" : "wrong",
-    );
+    setQuestion(currentQuestion, wasAnsweredCorrectly ? "correct" : "wrong");
 
     wasAnsweredCorrectly && toastSuccess("Correct!");
     !wasAnsweredCorrectly && toastError("Wrong");
@@ -71,13 +80,13 @@ export const Question = ({
         />
       ))}
 
-      {currentQuestion.answer === "none" && !questionContext.fastMode && (
+      {currentQuestion.answer === "none" && !fastMode && (
         <Button onClick={checkCorrectAnswers} className="mt-10 w-full">
           Check
         </Button>
       )}
 
-      {currentQuestion.answer !== "none" && !questionContext.fastMode && (
+      {currentQuestion.answer !== "none" && !fastMode && (
         <Button onClick={onNextQuestionClick} className="mt-10 w-full">
           Next Question
         </Button>

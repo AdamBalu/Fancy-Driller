@@ -3,9 +3,7 @@
     "name": "PA179",
     "questions": [
       {
-        "correct": [
-          "Temporary, Change driving, Uncertain, Unique"
-        ],
+        "correct": ["Temporary, Change driving, Uncertain, Unique"],
         "wrong": [
           "Repetitive, Stable, Linear, Event driven",
           "Permanent, Simple, Flexible, Task driven"
@@ -13,63 +11,33 @@
         "question": "1. What are the main characteristics of a project?"
       },
       {
-        "correct": [
-          "Time, Cost, Scope"
-        ],
-        "wrong": [
-          "Risk, Quality, Procurement",
-          "Plan, Change, Progress"
-        ],
+        "correct": ["Time, Cost, Scope"],
+        "wrong": ["Risk, Quality, Procurement", "Plan, Change, Progress"],
         "question": "2. What are the usual dimensions of project manager’s triple constraint?"
       },
       {
-        "correct": [
-          "To add value to business",
-          "To fulfil strategic goals"
-        ],
-        "wrong": [
-          "To create a unique product"
-        ],
+        "correct": ["To add value to business", "To fulfil strategic goals"],
+        "wrong": ["To create a unique product"],
         "question": "3. What is the aim of Project Portfolio?"
       },
       {
-        "correct": [
-          "Flow chart."
-        ],
-        "wrong": [
-          "Gantt chart.",
-          "Use case diagram."
-        ],
+        "correct": ["Flow chart."],
+        "wrong": ["Gantt chart.", "Use case diagram."],
         "question": "4. A process is best visualized with:"
       },
       {
-        "correct": [
-          "Manage by exceptions"
-        ],
-        "wrong": [
-          "Continued business justification",
-          "Manage by stages"
-        ],
+        "correct": ["Manage by exceptions"],
+        "wrong": ["Continued business justification", "Manage by stages"],
         "question": "5. Which PRINCE2 principle implies referring exceeded tolerances up next management level ?"
       },
       {
-        "correct": [
-          "Organization"
-        ],
-        "wrong": [
-          "Business Case",
-          "Progress"
-        ],
+        "correct": ["Organization"],
+        "wrong": ["Business Case", "Progress"],
         "question": "6. Which PRINCE2 theme addresses the need to identify stakeholders?"
       },
       {
-        "correct": [
-          "Initiating a project"
-        ],
-        "wrong": [
-          "Starting up a project",
-          "Controlling a stage"
-        ],
+        "correct": ["Initiating a project"],
+        "wrong": ["Starting up a project", "Controlling a stage"],
         "question": "7. Which PRINCE2 process is dedicated to creating a Project Plan?"
       },
       {
@@ -86,9 +54,7 @@
           "Integration, Scope, Schedule, Cost",
           "Quality, Communications, Risk, Procurement"
         ],
-        "wrong": [
-          "Business Case, Process, Progress, Talent"
-        ],
+        "wrong": ["Business Case, Process, Progress, Talent"],
         "question": "9. PMBOK’s Knowledge areas include:"
       },
       {
@@ -101,19 +67,12 @@
         "question": "10. In PMBOK, every process definition includes:"
       },
       {
-        "correct": [
-          "Procurement"
-        ],
-        "wrong": [
-          "Scope",
-          "Communications"
-        ],
+        "correct": ["Procurement"],
+        "wrong": ["Scope", "Communications"],
         "question": "11. In PMBOK, which Knowledge area is dedicated to selecting and contracting outsourced products?"
       },
       {
-        "correct": [
-          "A handbook on different knowledge areas"
-        ],
+        "correct": ["A handbook on different knowledge areas"],
         "wrong": [
           "A step-by-step method to follow",
           "A guide to project manager’s competencies"
@@ -121,9 +80,7 @@
         "question": "12. PMBOK is best used as:"
       },
       {
-        "correct": [
-          "Knowledge, skills and abilities"
-        ],
+        "correct": ["Knowledge, skills and abilities"],
         "wrong": [
           "Wisdom, creativity and understanding",
           "Intelligence, information and experience"
@@ -135,9 +92,7 @@
           "Governance structures and processes, Compliance standards and regulations, Strategy",
           "Strategy, Power and interest, Culture and Values"
         ],
-        "wrong": [
-          "Quality, Change and transformation, Time"
-        ],
+        "wrong": ["Quality, Change and transformation, Time"],
         "question": "14. ICB’s perspective competencies include:"
       },
       {
@@ -150,9 +105,7 @@
         "question": "15. ICB’s people competencies include:"
       },
       {
-        "correct": [
-          "Individual Competence Baseline"
-        ],
+        "correct": ["Individual Competence Baseline"],
         "wrong": [
           "International Competence Baseline",
           "International Confidence Baseline"
@@ -160,9 +113,7 @@
         "question": "16. What does ICB stand for?"
       },
       {
-        "correct": [
-          "Increased need for risk management"
-        ],
+        "correct": ["Increased need for risk management"],
         "wrong": [
           "Stability of resources",
           "Frequent unplanned requirements changes"
@@ -190,23 +141,13 @@
         "question": "19. Why is spiral lifecycle model more suitable for SW development?"
       },
       {
-        "correct": [
-          "Focus on people"
-        ],
-        "wrong": [
-          "Thorough upfront planning",
-          "Focus on processes"
-        ],
+        "correct": ["Focus on people"],
+        "wrong": ["Thorough upfront planning", "Focus on processes"],
         "question": "20. What is typical in agile development?"
       },
       {
-        "correct": [
-          "Risk driven",
-          "Iterative and incremental"
-        ],
-        "wrong": [
-          "Linear"
-        ],
+        "correct": ["Risk driven", "Iterative and incremental"],
+        "wrong": ["Linear"],
         "question": "21. What are the characteristics of UP?"
       },
       {
@@ -220,43 +161,23 @@
         "question": "22. What are the possible workflows of each iteration?"
       },
       {
-        "correct": [
-          "Collect requirements",
-          "Create baseline architecture"
-        ],
-        "wrong": [
-          "Test operational capability"
-        ],
+        "correct": ["Collect requirements", "Create baseline architecture"],
+        "wrong": ["Test operational capability"],
         "question": "23. The Elaboration phase’s goals are:"
       },
       {
-        "correct": [
-          "Use case diagram"
-        ],
-        "wrong": [
-          "Class diagram",
-          "Activity diagram"
-        ],
+        "correct": ["Use case diagram"],
+        "wrong": ["Class diagram", "Activity diagram"],
         "question": "24. Which type of UML diagram is most suitable for modelling requirements?"
       },
       {
-        "correct": [
-          "Managing the SCRUM process"
-        ],
-        "wrong": [
-          "Communication",
-          "Delivering the product"
-        ],
+        "correct": ["Managing the SCRUM process"],
+        "wrong": ["Communication", "Delivering the product"],
         "question": "25. What is the core responsibility of Scrum Master?"
       },
       {
-        "correct": [
-          "Product Owner"
-        ],
-        "wrong": [
-          "Scrum Master",
-          "Team of Developers"
-        ],
+        "correct": ["Product Owner"],
+        "wrong": ["Scrum Master", "Team of Developers"],
         "question": "26. Who is responsible for items in Product Backlog?"
       },
       {
@@ -264,9 +185,7 @@
           "It should not be longer than one month",
           "It ends with the release of usable increment"
         ],
-        "wrong": [
-          "It includes development of all Product Backlog items"
-        ],
+        "wrong": ["It includes development of all Product Backlog items"],
         "question": "27. What are the characteristics of SPRINT?"
       },
       {
@@ -274,9 +193,7 @@
           "Process that allows early delivery of a usable product",
           "Iterative and incremental SW development framework."
         ],
-        "wrong": [
-          "Predictive SW development framework"
-        ],
+        "wrong": ["Predictive SW development framework"],
         "question": "28. What is a SCRUM?"
       },
       {
@@ -284,9 +201,7 @@
           "Project manager needs comprehensive method to follow",
           "The company’s culture requires comprehensive reporting"
         ],
-        "wrong": [
-          "Bureaucratic overload is not welcome"
-        ],
+        "wrong": ["Bureaucratic overload is not welcome"],
         "question": "29. PRINCE2 is the right choice of standard when:"
       },
       {
@@ -294,9 +209,7 @@
           "Exact requirements are not known upfront",
           "Time to market is key factor"
         ],
-        "wrong": [
-          "The managed team is distributed across various locations"
-        ],
+        "wrong": ["The managed team is distributed across various locations"],
         "question": "30. SCRUM is the right choice of standard when:"
       },
       {
@@ -323,78 +236,42 @@
           "Welcome changing requirements, even late in delivery",
           "Build projects around motivated individuals"
         ],
-        "wrong": [
-          "Always stick to the plan."
-        ],
+        "wrong": ["Always stick to the plan."],
         "question": "33. Which of these are principles of agile SW development?"
       },
       {
-        "correct": [
-          "Coaching"
-        ],
-        "wrong": [
-          "Directive",
-          "Bureaucratic"
-        ],
+        "correct": ["Coaching"],
+        "wrong": ["Directive", "Bureaucratic"],
         "question": "34. Which approach is typical for agile project manager?"
       },
       {
-        "correct": [
-          "Product description",
-          "Business case"
-        ],
-        "wrong": [
-          "Detailed quality management plan"
-        ],
+        "correct": ["Product description", "Business case"],
+        "wrong": ["Detailed quality management plan"],
         "question": "35. Which of these are usually included in Project charter?"
       },
       {
-        "correct": [
-          "Finish-to-start (FS)"
-        ],
-        "wrong": [
-          "Start-to-start (SS)",
-          "Finish-to-finish (FF)"
-        ],
+        "correct": ["Finish-to-start (FS)"],
+        "wrong": ["Start-to-start (SS)", "Finish-to-finish (FF)"],
         "question": "36. Choose correct PDM relationship for this sequence of activities: „Testing of Component 1 cannot start until build of Component 1 has finished.“"
       },
       {
-        "correct": [
-          "New technologies",
-          "Dependencies",
-          "New suppliers"
-        ],
+        "correct": ["New technologies", "Dependencies", "New suppliers"],
         "wrong": [],
         "question": "37. What are common sources of risks?"
       },
       {
-        "correct": [
-          "Probability and Impact"
-        ],
-        "wrong": [
-          "Duration and Quality",
-          "Responsibility and participation"
-        ],
+        "correct": ["Probability and Impact"],
+        "wrong": ["Duration and Quality", "Responsibility and participation"],
         "question": "38. Which two dimensions are estimated when assessing risks?"
       },
       {
-        "correct": [
-          "Reduce",
-          "Transfer"
-        ],
-        "wrong": [
-          "Run"
-        ],
+        "correct": ["Reduce", "Transfer"],
+        "wrong": ["Run"],
         "question": "39. Which of these are risk responses?"
       },
       {
-        "correct": [
-          "Shift possible impact to a third party"
-        ],
-        "wrong": [
-          "Avoid risk completely",
-          "Nothing"
-        ],
+        "correct": ["Shift possible impact to a third party"],
+        "wrong": ["Avoid risk completely", "Nothing"],
         "question": "40. What do we do when transferring risks?"
       },
       {
@@ -408,13 +285,8 @@
         "question": "41. What is Definition of Done?"
       },
       {
-        "correct": [
-          "Remaining work."
-        ],
-        "wrong": [
-          "Remaining days of project.",
-          "Top 10 to-do for today."
-        ],
+        "correct": ["Remaining work."],
+        "wrong": ["Remaining days of project.", "Top 10 to-do for today."],
         "question": "42. What does a Burndown chart display?"
       },
       {
@@ -422,9 +294,7 @@
           "To forecast how long it will take to deliver items from Sprint or Product backlog.",
           "To better understand quality of the process."
         ],
-        "wrong": [
-          "To predict customer’s satisfaction."
-        ],
+        "wrong": ["To predict customer’s satisfaction."],
         "question": "43. Why do we count Team velocity?"
       },
       {
@@ -437,9 +307,7 @@
         "question": "44. Which of these are built-in SCRUM measures for managing quality?"
       },
       {
-        "correct": [
-          "Description of a system feature."
-        ],
+        "correct": ["Description of a system feature."],
         "wrong": [
           "List of tasks to be done during the Sprint.",
           "A product-related report from the user."
@@ -451,9 +319,7 @@
           "They help define User story implementation boundaries.",
           "They serve as a baseline for functional testing."
         ],
-        "wrong": [
-          "They specify risks related to user story."
-        ],
+        "wrong": ["They specify risks related to user story."],
         "question": "46. What are the advantages of adding acceptance criteria to User stories?"
       },
       {
@@ -467,23 +333,13 @@
         "question": "47. What are story points?"
       },
       {
-        "correct": [
-          "The amount of risk removed.",
-          "Value to customer."
-        ],
-        "wrong": [
-          "What developers had for breakfast."
-        ],
+        "correct": ["The amount of risk removed.", "Value to customer."],
+        "wrong": ["What developers had for breakfast."],
         "question": "48. What should be considered when prioritizing the Product backlog?"
       },
       {
-        "correct": [
-          "Sprint Backlog"
-        ],
-        "wrong": [
-          "Sprint Goal",
-          "One process improvement"
-        ],
+        "correct": ["Sprint Backlog"],
+        "wrong": ["Sprint Goal", "One process improvement"],
         "question": "49. What are the main outcomes of Sprint review meeting?"
       },
       {
@@ -501,29 +357,17 @@
           "What did I do yesterday?",
           "Did I see any obstructions/ blocking issues?"
         ],
-        "wrong": [
-          "What did I have for breakfast?"
-        ],
+        "wrong": ["What did I have for breakfast?"],
         "question": "51. Which of these questions are answered at Daily SCRUM meeting?"
       },
       {
-        "correct": [
-          "To review Product Backlog",
-          "To inspect Increment"
-        ],
-        "wrong": [
-          "To inspect current Sprint’s relationships"
-        ],
+        "correct": ["To review Product Backlog", "To inspect Increment"],
+        "wrong": ["To inspect current Sprint’s relationships"],
         "question": "52. Why does the team hold a Sprint Review?"
       },
       {
-        "correct": [
-          "Act calm",
-          "Listen actively"
-        ],
-        "wrong": [
-          "Make tasteless jokes"
-        ],
+        "correct": ["Act calm", "Listen actively"],
+        "wrong": ["Make tasteless jokes"],
         "question": "53. Which of these are conflict deescalation techniques?"
       },
       {
@@ -531,15 +375,11 @@
           "Other feature will not get developed",
           "Risk register will change"
         ],
-        "wrong": [
-          "Contract will have to be changed"
-        ],
+        "wrong": ["Contract will have to be changed"],
         "question": "54. Which of these could be a consequence of adding an item to Product Backlog?"
       },
       {
-        "correct": [
-          "At the end of last Sprint"
-        ],
+        "correct": ["At the end of last Sprint"],
         "wrong": [
           "When all user stories from the Product Backlog have been implemented",
           "With the release of last increment"
@@ -551,9 +391,7 @@
           "To learn from successes and failures",
           "To review a completed project"
         ],
-        "wrong": [
-          "To plan for next project"
-        ],
+        "wrong": ["To plan for next project"],
         "question": "56. Why is Project Retrospective meeting being held?"
       },
       {
@@ -567,13 +405,8 @@
         "question": "57. In PRINCE2, what is a Project Brief?"
       },
       {
-        "correct": [
-          "Senior user",
-          "Executive"
-        ],
-        "wrong": [
-          "QA Engineer"
-        ],
+        "correct": ["Senior user", "Executive"],
+        "wrong": ["QA Engineer"],
         "question": "58. Which of these roles are a part of the Project Board?"
       },
       {
@@ -595,19 +428,12 @@
         "question": "60. What needs to be defined in the Next stage plan?"
       },
       {
-        "correct": [
-          "Work Package"
-        ],
-        "wrong": [
-          "Unimportant deliverable",
-          "User story"
-        ],
+        "correct": ["Work Package"],
+        "wrong": ["Unimportant deliverable", "User story"],
         "question": "61. What do we call the lowest level of Work Breakdown Structure?"
       },
       {
-        "correct": [
-          "Technique for evaluating time effort"
-        ],
+        "correct": ["Technique for evaluating time effort"],
         "wrong": [
           "Technique for calculating critical path",
           "Product description"
@@ -615,13 +441,8 @@
         "question": "62. What is PERT?"
       },
       {
-        "correct": [
-          "Start and end points",
-          "Dependencies"
-        ],
-        "wrong": [
-          "Responsibility"
-        ],
+        "correct": ["Start and end points", "Dependencies"],
+        "wrong": ["Responsibility"],
         "question": "63. What do we need to know about an activity in order to calculate Critical path?"
       },
       {
@@ -629,9 +450,7 @@
           "Review of team performance",
           "Summary of current issues and risks"
         ],
-        "wrong": [
-          "Detailed plan for next stage"
-        ],
+        "wrong": ["Detailed plan for next stage"],
         "question": "64. Which of these do we include in End stage report?"
       },
       {
@@ -639,9 +458,7 @@
           "All major technical risks get resolved early",
           "Organizing teams around architecture minimizes communication overload"
         ],
-        "wrong": [
-          "There are no advantages to this approach"
-        ],
+        "wrong": ["There are no advantages to this approach"],
         "question": "65. What are the advantages of planning a project around robust architecture?"
       },
       {
@@ -649,27 +466,16 @@
           "A plan that usually follows an Exception report",
           "A plan of recovery from exceeded project’s tolerances"
         ],
-        "wrong": [
-          "A report of current progress"
-        ],
+        "wrong": ["A report of current progress"],
         "question": "66. What is an exception plan?"
       },
       {
-        "correct": [
-          "Team manager"
-        ],
-        "wrong": [
-          "Executive",
-          "Configurations manager"
-        ],
+        "correct": ["Team manager"],
+        "wrong": ["Executive", "Configurations manager"],
         "question": "67. According to PRINCE2, who manages the product delivery?"
       },
       {
-        "correct": [
-          "Time",
-          "Scope",
-          "Cost"
-        ],
+        "correct": ["Time", "Scope", "Cost"],
         "wrong": [],
         "question": "68. Which of these project’s variables can be affected by a request for change?"
       },
@@ -696,9 +502,7 @@
           "To embed positive lessons in the organization’s way of working",
           "To avoid negative experience in future projects"
         ],
-        "wrong": [
-          "To test product features"
-        ],
+        "wrong": ["To test product features"],
         "question": "71. What is the purpose of lessons report?"
       },
       {
@@ -706,9 +510,7 @@
           "Creating End project report",
           "Requesting and obtaining Acceptance records"
         ],
-        "wrong": [
-          "Planning the next project"
-        ],
+        "wrong": ["Planning the next project"],
         "question": "72. Which of these activities are a part of a PRINCE2 Closing phase?"
       }
     ]
@@ -729,9 +531,7 @@
       },
       {
         "question": "Which of the following characteristics discourage from using PRINCE2 standard?",
-        "correct": [
-          "Research type of project, unclear scope"
-        ],
+        "correct": ["Research type of project, unclear scope"],
         "wrong": [
           "Junior project manager",
           "Critical infrastructure delivery",
@@ -740,14 +540,8 @@
       },
       {
         "question": "Which of the following combinations is suitable for large projects (one year or more)?",
-        "correct": [
-          "UP and PRINCE2"
-        ],
-        "wrong": [
-          "UP and IPMA ICB",
-          "UP and PM BOK",
-          "UP and Scrum"
-        ]
+        "correct": ["UP and IPMA ICB", "UP and PM BOK", "UP and PRINCE2"],
+        "wrong": ["UP and Scrum"]
       },
       {
         "question": "Which consequences may result from adding an item to Product Backlog (in a project according to Scrum)?",
@@ -755,16 +549,11 @@
           "Other item may not be developed",
           "Risk register may change"
         ],
-        "wrong": [
-          "Contract has to be changed",
-          "Current Sprint may be stopped"
-        ]
+        "wrong": ["Contract has to be changed", "Current Sprint may be stopped"]
       },
       {
         "question": "What is the outcome of Sprint Retrospective?",
-        "correct": [
-          "Identification of one process improvement"
-        ],
+        "correct": ["Identification of one process improvement"],
         "wrong": [
           "Next stage plan",
           "Updating Sprint Backlog",
@@ -773,47 +562,23 @@
       },
       {
         "question": "Which of the following knowledge areas in PMBOK is focusing on definition of sequence of project activities?",
-        "correct": [
-          "Schedule"
-        ],
-        "wrong": [
-          "Plan",
-          "Integration",
-          "Scope"
-        ]
+        "correct": ["Schedule"],
+        "wrong": ["Plan", "Integration", "Scope"]
       },
       {
         "question": "Which of the following UML diagrams is suitable for capturing requirements?",
-        "correct": [
-          "Use Case Diagram"
-        ],
-        "wrong": [
-          "Requirements Diagram",
-          "Sequence Diagram",
-          "User Story"
-        ]
+        "correct": ["Use Case Diagram"],
+        "wrong": ["Requirements Diagram", "Sequence Diagram", "User Story"]
       },
       {
         "question": "Who is responsible for Product Backlog?",
-        "correct": [
-          "Product Owner"
-        ],
-        "wrong": [
-          "Scrum Master",
-          "Product Master",
-          "Team of developers"
-        ]
+        "correct": ["Product Owner"],
+        "wrong": ["Scrum Master", "Product Master", "Team of developers"]
       },
       {
         "question": "Which of the following combinations is suitable for projects with complex and unpredictable scope?",
-        "correct": [
-          "Scrum and IPMA ICB"
-        ],
-        "wrong": [
-          "Scrum and PRINCE2",
-          "UP and IPMA ICB",
-          "UP and PRINCE2"
-        ]
+        "correct": ["Scrum and IPMA ICB"],
+        "wrong": ["Scrum and PRINCE2", "UP and IPMA ICB", "UP and PRINCE2"]
       },
       {
         "question": "Which of the following options belong to 'People Competencies' according to IPMA ICB?",
@@ -822,9 +587,7 @@
           "Personal communication, Conflict and Crisis, Resourcefulness",
           "Leadership, Relations and Engagement, Results Orientation"
         ],
-        "wrong": [
-          "Proactivity, Time Management, Responsibility"
-        ]
+        "wrong": ["Proactivity, Time Management, Responsibility"]
       },
       {
         "question": "What can be read from Burndown chart?",
@@ -832,43 +595,22 @@
           "Remaining work until end of sprint",
           "Team is falling behind a plan"
         ],
-        "wrong": [
-          "Remaining project days",
-          "Remaining to-do items for today"
-        ]
+        "wrong": ["Remaining project days", "Remaining to-do items for today"]
       },
       {
         "question": "Which of the following techniques/tools are using man-day or man-month units?",
-        "correct": [
-          "PERT"
-        ],
-        "wrong": [
-          "Gantt chart",
-          "Planning poker",
-          "Burndown chart"
-        ]
+        "correct": ["PERT"],
+        "wrong": ["Gantt chart", "Planning poker", "Burndown chart"]
       },
       {
         "question": "Which of the following concepts contains set of projects?",
-        "correct": [
-          "Portfolio",
-          "Program"
-        ],
-        "wrong": [
-          "Process",
-          "Project"
-        ]
+        "correct": ["Portfolio", "Program"],
+        "wrong": ["Process", "Project"]
       },
       {
         "question": "Which of the following are Scrum Artifacts (as per Scrum)?",
-        "correct": [
-          "Product Increment",
-          "Product Backlog",
-          "Sprint Backlog"
-        ],
-        "wrong": [
-          "Story Point"
-        ]
+        "correct": ["Product Increment", "Product Backlog", "Sprint Backlog"],
+        "wrong": ["Story Point"]
       },
       {
         "question": "Which of the following statements are true (according to UP)?",
@@ -877,9 +619,7 @@
           "A difference between two consecutive iterations is called increment",
           "An iteration is like a mini project"
         ],
-        "wrong": [
-          "A sum of two consecutive iterations is called increment"
-        ]
+        "wrong": ["A sum of two consecutive iterations is called increment"]
       }
     ]
   },
@@ -887,20 +627,12 @@
     "name": "PA017",
     "questions": [
       {
-        "correct": [
-          "programů.",
-          "průvodní dokumentace.",
-          "dat."
-        ],
-        "wrong": [
-          "testovacích případů."
-        ],
+        "correct": ["programů.", "průvodní dokumentace.", "dat."],
+        "wrong": ["testovacích případů."],
         "question": "SW se skládá z:"
       },
       {
-        "correct": [
-          "prodávané na volném trhu libovolnému ze zákazníků."
-        ],
+        "correct": ["prodávané na volném trhu libovolnému ze zákazníků."],
         "wrong": [
           "objednané konkrétním zákazníkem.",
           "zpravidla vyvíjeny agilními postupy.",
@@ -921,47 +653,23 @@
         "note": "Implementace probíhá až nějakou dobu po analýze. Záleží jak to myslí. Jestli to myslí jako že probíhá hned po analýze, tak to neplatí."
       },
       {
-        "correct": [
-          "udržovatelnost."
-        ],
-        "wrong": [
-          "spolehlivost.",
-          "efektivita.",
-          "použitelnost."
-        ],
+        "correct": ["udržovatelnost."],
+        "wrong": ["spolehlivost.", "efektivita.", "použitelnost."],
         "question": "Vlastnost SW, která umožňuje změny na základě měnících se potřeb zákazníka, se nazývá"
       },
       {
-        "correct": [
-          "efektivita."
-        ],
-        "wrong": [
-          "udržovatelnost.",
-          "spolehlivost.",
-          "použitelnost."
-        ],
+        "correct": ["efektivita."],
+        "wrong": ["udržovatelnost.", "spolehlivost.", "použitelnost."],
         "question": "Vlastnost, že SW neplýtvá prostředky (paměť, procesor apod.), se nazývá"
       },
       {
-        "correct": [
-          "použitelnost."
-        ],
-        "wrong": [
-          "udržovatelnost.",
-          "spolehlivost.",
-          "efektivita."
-        ],
+        "correct": ["použitelnost."],
+        "wrong": ["udržovatelnost.", "spolehlivost.", "efektivita."],
         "question": "Vlastnost, že SW má přiměřené uživatelské rozhraní odpovídající dokumentaci, se nazývá"
       },
       {
-        "correct": [
-          "funkcionalitu",
-          "operační omezení"
-        ],
-        "wrong": [
-          "velikost kódu",
-          "cenu."
-        ],
+        "correct": ["funkcionalitu", "operační omezení"],
+        "wrong": ["velikost kódu", "cenu."],
         "question": "Specifikace SW definuje jeho"
       },
       {
@@ -975,14 +683,8 @@
         "question": "Viditelné znaky výroby SW jsou"
       },
       {
-        "correct": [
-          "viditelnost."
-        ],
-        "wrong": [
-          "rychlost.",
-          "udržovatelnost.",
-          "použitelnost."
-        ],
+        "correct": ["viditelnost."],
+        "wrong": ["rychlost.", "udržovatelnost.", "použitelnost."],
         "question": "Mezi charakteristiky výrobního procesu SW patří"
       },
       {
@@ -997,25 +699,13 @@
         "question": "Mezi nevýhody vodopádového životního cyklu patří, že"
       },
       {
-        "correct": [
-          "specifikace rozhraní.",
-          "plán integračních testů."
-        ],
-        "wrong": [
-          "specifikace architektury.",
-          "plán testování jednotek."
-        ],
+        "correct": ["specifikace rozhraní.", "plán integračních testů."],
+        "wrong": ["specifikace architektury.", "plán testování jednotek."],
         "question": "Výstupem návrhu rozhraní je"
       },
       {
-        "correct": [
-          "specifikace návrhu.",
-          "plán testování jednotek."
-        ],
-        "wrong": [
-          "obrysová specifikace.",
-          "protokol o testování jednotek."
-        ],
+        "correct": ["specifikace návrhu.", "plán testování jednotek."],
+        "wrong": ["obrysová specifikace.", "protokol o testování jednotek."],
         "question": "Výstupem podrobného návrhu je"
       },
       {
@@ -1063,53 +753,28 @@
         "question": "Životní cyklus Výzkumník"
       },
       {
-        "correct": [
-          "MS Word.",
-          "MS Windows."
-        ],
-        "wrong": [
-          "IS.MUNI."
-        ],
+        "correct": ["MS Word.", "MS Windows."],
+        "wrong": ["IS.MUNI."],
         "question": "Který SW patří mezi generické produkty:"
       },
       {
-        "correct": [
-          "Přírůstkový."
-        ],
-        "wrong": [
-          "Vodopád.",
-          "Prototypování."
-        ],
+        "correct": ["Přírůstkový."],
+        "wrong": ["Vodopád.", "Prototypování."],
         "question": "Který životní cyklus je vhodný pro rozsáhlé IS:"
       },
       {
-        "correct": [
-          "Návrh."
-        ],
-        "wrong": [
-          "Analýza.",
-          "Psaní kódu."
-        ],
+        "correct": ["Návrh."],
+        "wrong": ["Analýza.", "Psaní kódu."],
         "question": "Plán testování by měl vznikat ve fázi:"
       },
       {
-        "correct": [
-          "Přírůstkový."
-        ],
-        "wrong": [
-          "Vodopád.",
-          "Výzkumník."
-        ],
+        "correct": ["Přírůstkový."],
+        "wrong": ["Vodopád.", "Výzkumník."],
         "question": "Mezi životní cykly vývoje dle obrysové specifikace patří:"
       },
       {
-        "correct": [
-          "Iterativní.",
-          "Inkrementální."
-        ],
-        "wrong": [
-          "Lineární."
-        ],
+        "correct": ["Iterativní.", "Inkrementální."],
+        "wrong": ["Lineární."],
         "question": "Spirálový životní cyklus je:"
       },
       {
@@ -1123,9 +788,7 @@
         "question": "Z pohledu složení aplikace obvykle platí, že:"
       },
       {
-        "correct": [
-          "Dodatečné úpravy vyžádané uživateli."
-        ],
+        "correct": ["Dodatečné úpravy vyžádané uživateli."],
         "wrong": [
           "Havarijní zásahy a opravy.",
           "Pravidelné kontroly a rutinní opravy chyb."
@@ -1137,9 +800,7 @@
           "může být vyšší, než je cena za pořízení SW.",
           "závisí na délce doby provozu SW."
         ],
-        "wrong": [
-          "je řádově nižší, než je cena za pořízení SW."
-        ],
+        "wrong": ["je řádově nižší, než je cena za pořízení SW."],
         "question": "Cena údržby SW v součtu za celé období jeho provozu: "
       },
       {
@@ -1177,25 +838,16 @@
           "Rychlost změn globálních atributů systému lze statisticky sledovat.",
           "Rychlost změn globálních atributů systému lze předvídat."
         ],
-        "wrong": [
-          "Rychlost změn globálních atributů systému je náhodná."
-        ],
+        "wrong": ["Rychlost změn globálních atributů systému je náhodná."],
         "question": "Lehmanův Zákon vývoje programu říká, že:"
       },
       {
-        "correct": [
-          "klesá."
-        ],
-        "wrong": [
-          "roste.",
-          "zůstává stejná."
-        ],
+        "correct": ["klesá."],
+        "wrong": ["roste.", "zůstává stejná."],
         "question": "Programátorská produktivita s množstvím přibývajícího kódu:"
       },
       {
-        "correct": [
-          "Předpokládá se agilní přístup"
-        ],
+        "correct": ["Předpokládá se agilní přístup"],
         "wrong": [
           "Jsou na začátku projektu jasně stanovené požadavky na SW",
           "Předpokládá se minimální zapojení zákazníka v průběhu realizace projektu"
@@ -1203,29 +855,18 @@
         "question": "Metodika Scrum je vhodná v situaci, kdy:"
       },
       {
-        "correct": [
-          "Inkrementální",
-          "Iterativní",
-          "Agilní"
-        ],
+        "correct": ["Inkrementální", "Iterativní", "Agilní"],
         "wrong": [],
         "question": "Metodika SCRUM je:"
       },
       {
-        "correct": [
-          "user stories "
-        ],
-        "wrong": [
-          "případů užití",
-          "byznys procesů"
-        ],
+        "correct": ["user stories "],
+        "wrong": ["případů užití", "byznys procesů"],
         "question": "Funkční požadavky na systém jsou (ve SCRUMu) v zachyceny formou:",
         "note": "V originál otázce nebyla zmínka o SCRUMu, ale bylo to v jeho bloku, odhaduji že se bavil o něm a jen zapomněl zmínit to výslovně v otázce, proto jsem si dovolila upravit zadání otázky."
       },
       {
-        "correct": [
-          "jedna iterace"
-        ],
+        "correct": ["jedna iterace"],
         "wrong": [
           "krátká schůzka týmu pořádaná jedenkrát denně ",
           "balíček požadavků, které mají být implementovány"
@@ -1233,9 +874,7 @@
         "question": "Sprintem se metodice SCRUM rozumí:"
       },
       {
-        "correct": [
-          "Požadavky na celý systém"
-        ],
+        "correct": ["Požadavky na celý systém"],
         "wrong": [
           "Požadavky pro jedenu konkrétní iteraci",
           "Již realizované požadavky"
@@ -1243,33 +882,18 @@
         "question": "Product backlog obsahuje:"
       },
       {
-        "correct": [
-          "tzv. hra "
-        ],
-        "wrong": [
-          "tzv. předehra",
-          "tzv. dohra"
-        ],
+        "correct": ["tzv. hra "],
+        "wrong": ["tzv. předehra", "tzv. dohra"],
         "question": "Fáze SCRUM, ve které dochází k psaní kódu je:"
       },
       {
-        "correct": [
-          "Priority požadavků",
-          "Odhady pracnosti"
-        ],
-        "wrong": [
-          "Požadavky v podobě případů užití"
-        ],
+        "correct": ["Priority požadavků", "Odhady pracnosti"],
+        "wrong": ["Požadavky v podobě případů užití"],
         "question": "Product backlog obsahuje mimo jiné:"
       },
       {
-        "correct": [
-          "SCRUM",
-          "Feature-Driven Development"
-        ],
-        "wrong": [
-          "Unified Process"
-        ],
+        "correct": ["SCRUM", "Feature-Driven Development"],
+        "wrong": ["Unified Process"],
         "question": "Které z následujících metodik jsou agilní:",
         "note": "Všetky sú iteratívne aj inkrementálne"
       },
@@ -1278,9 +902,7 @@
           "Iterativní a inkrementální vývoj s krátkými iteracemi",
           "Komunikace mezi zákazníkem a vývojovým týmem"
         ],
-        "wrong": [
-          "Důkladná dokumentace všech pracovních postupů"
-        ],
+        "wrong": ["Důkladná dokumentace všech pracovních postupů"],
         "question": "Společnými rysy všech agilních metodik jsou"
       },
       {
@@ -1293,13 +915,8 @@
         "question": "Při agilním vývoji by mělo platit, že:"
       },
       {
-        "correct": [
-          "Čas",
-          "Zdroje"
-        ],
-        "wrong": [
-          "Funkcionalita"
-        ],
+        "correct": ["Čas", "Zdroje"],
+        "wrong": ["Funkcionalita"],
         "question": "Co je při agilním přístupu fixní:"
       },
       {
@@ -1307,35 +924,21 @@
           "Jsou na začátku projektu jasně stanovené požadavky na SW",
           "Je požadováno, aby byl po celou dobu jasně stanovený plán prací"
         ],
-        "wrong": [
-          "Předpokládá se agilní přístup"
-        ],
+        "wrong": ["Předpokládá se agilní přístup"],
         "question": "Metodika Unified Process je vhodná v situaci, kdy:"
       },
       {
-        "correct": [
-          "Inkrementální",
-          "Iterativní"
-        ],
-        "wrong": [
-          "Agilní"
-        ],
+        "correct": ["Inkrementální", "Iterativní"],
+        "wrong": ["Agilní"],
         "question": "Metodika Unified Process je:"
       },
       {
-        "correct": [
-          "tzv. use case driven"
-        ],
-        "wrong": [
-          "tzv. user story driven",
-          "tzv. business process driven"
-        ],
+        "correct": ["tzv. use case driven"],
+        "wrong": ["tzv. user story driven", "tzv. business process driven"],
         "question": "Metodika Unified Process je:"
       },
       {
-        "correct": [
-          "Požadavky, analýza, návrh, implementace, testování"
-        ],
+        "correct": ["Požadavky, analýza, návrh, implementace, testování"],
         "wrong": [
           "Požadavky, návrh, analýza, implementace, testování",
           "Analýza, návrh, implementace, nasazení, testování"
@@ -1343,9 +946,7 @@
         "question": "Pořadí workflow v metodice UP je:"
       },
       {
-        "correct": [
-          "Inception, Elaboration, Construction, Transition"
-        ],
+        "correct": ["Inception, Elaboration, Construction, Transition"],
         "wrong": [
           "Inception, Elaboration, Implementation, Transition",
           "Elaboration, Inception, Implementation, Transition"
@@ -1353,51 +954,29 @@
         "question": "Pořadí fází metodiky UP je:"
       },
       {
-        "correct": [
-          "Construction"
-        ],
-        "wrong": [
-          "Elaboration ",
-          "Transition"
-        ],
+        "correct": ["Construction"],
+        "wrong": ["Elaboration ", "Transition"],
         "question": "Ve které fázi metodiky UP probíhá největší část testování:",
         "note": "Tato otázka nemusí být správně. V grafu ze slidů je testování dost i ve fázi Transition, nejen ve fázi Construction."
       },
       {
-        "correct": [
-          "Elaboration "
-        ],
-        "wrong": [
-          "Inception",
-          "Construction"
-        ],
+        "correct": ["Elaboration "],
+        "wrong": ["Inception", "Construction"],
         "question": "Ve které fázi metodiky UP probíhá největší část analýzy:"
       },
       {
-        "correct": [
-          "Elaboration "
-        ],
-        "wrong": [
-          "Inception",
-          "Construction"
-        ],
+        "correct": ["Elaboration "],
+        "wrong": ["Inception", "Construction"],
         "question": "Ve které fázi metodiky UP probíhá největší část návrhu:",
         "note": " V jedné prezentaci to z grafu vypadá spíš na Construction, v druhé spíš na Elaboration. Shodli jsme se že větší smysl dává Elaboration, ale toto není ověřené, mějte to na paměti prosím."
       },
       {
-        "correct": [
-          "Construction"
-        ],
-        "wrong": [
-          "Elaboration ",
-          "Transition"
-        ],
+        "correct": ["Construction"],
+        "wrong": ["Elaboration ", "Transition"],
         "question": "Ve které fázi metodiky UP probíhá největší část psaní kódu:"
       },
       {
-        "correct": [
-          "Diagram posloupností (Sequence diagram)"
-        ],
+        "correct": ["Diagram posloupností (Sequence diagram)"],
         "wrong": [
           "Diagram případů užití (Use case diagram)",
           "Entitně-relační diagram (ERD)"
@@ -1406,9 +985,7 @@
         "note": " ERD není UML! Use case diagram se používá asi v requirements a ne v analýze."
       },
       {
-        "correct": [
-          "Diagram případů užití (Use case diagram)"
-        ],
+        "correct": ["Diagram případů užití (Use case diagram)"],
         "wrong": [
           "Diagram tříd (Class diagram)",
           "Diagram posloupností (Sequence diagram)"
@@ -1416,9 +993,7 @@
         "question": "Které z následujících diagramů se používají v metodice UP pro zachycení požadavků:"
       },
       {
-        "correct": [
-          "3 modely výpočtu a velikost kódu"
-        ],
+        "correct": ["3 modely výpočtu a velikost kódu"],
         "wrong": [
           "3 modely výpočtu a 2 vývojové módy",
           "2 vývojové módy a velikost kódu"
@@ -1430,9 +1005,7 @@
           "na základě velikosti kódu",
           "na základě vztahů, které lze odvodit z Putnamovy rovnice"
         ],
-        "wrong": [
-          "na základě počtu funkčních bodů"
-        ],
+        "wrong": ["na základě počtu funkčních bodů"],
         "question": "Původní COCOMO (tj. v základní verzi) odhaduje pracnost:"
       },
       {
@@ -1440,60 +1013,33 @@
           "úsilí a doba potřebná na vývoj SW",
           "doba potřebná na vývoj SW a pracnost "
         ],
-        "wrong": [
-          "velikost kódu v KSLOC"
-        ],
+        "wrong": ["velikost kódu v KSLOC"],
         "question": "Pomocí COCOMO se odhaduje:"
       },
       {
-        "correct": [
-          "člověkoměsíců nebo člověkodnů"
-        ],
-        "wrong": [
-          "měsíců nebo dnů",
-          "řádků zdrojového kódu nebo KSLOC"
-        ],
+        "correct": ["člověkoměsíců nebo člověkodnů"],
+        "wrong": ["měsíců nebo dnů", "řádků zdrojového kódu nebo KSLOC"],
         "question": "Pracnost vývoje SW se uvádí jako počet:"
       },
       {
-        "correct": [
-          "měsíců"
-        ],
-        "wrong": [
-          "člověkoměsíců ",
-          "člověkodnů"
-        ],
+        "correct": ["měsíců"],
+        "wrong": ["člověkoměsíců ", "člověkodnů"],
         "question": "Doba vývoje SW se uvádí jako počet:"
       },
       {
-        "correct": [
-          "pracnosti vývoje",
-          "době vývoje"
-        ],
-        "wrong": [
-          "velikosti kódu"
-        ],
+        "correct": ["pracnosti vývoje", "době vývoje"],
+        "wrong": ["velikosti kódu"],
         "question": "Složitost je úměrná:",
         "note": "Tato otázka nemusí být správně, odpověď afaik není ověřená."
       },
       {
-        "correct": [
-          "vázanému"
-        ],
-        "wrong": [
-          "organickému",
-          "bezprostřednímu"
-        ],
+        "correct": ["vázanému"],
+        "wrong": ["organickému", "bezprostřednímu"],
         "question": "Kterému vývojovému módu v COCOMO  odpovídají nejsložitější projekty:"
       },
       {
-        "correct": [
-          "střední",
-          "pokročilý"
-        ],
-        "wrong": [
-          "základní"
-        ],
+        "correct": ["střední", "pokročilý"],
+        "wrong": ["základní"],
         "question": "Který výpočetní model COCOMO používá korekční faktor:"
       },
       {
@@ -1506,13 +1052,8 @@
         "question": "Které atributy mají vliv na korekční faktor COCOMO:"
       },
       {
-        "correct": [
-          "1"
-        ],
-        "wrong": [
-          "0",
-          "1/2"
-        ],
+        "correct": ["1"],
+        "wrong": ["0", "1/2"],
         "question": "Pokud korekční faktor nemá vliv na výpočet COCOMO, je jeho hodnota:"
       },
       {
@@ -1526,24 +1067,14 @@
         "question": "Korekční faktor v základním COCOMO:"
       },
       {
-        "correct": [
-          "Aplication Composition Model"
-        ],
-        "wrong": [
-          "Post Design Model",
-          "Early Architecture Model"
-        ],
+        "correct": ["Aplication Composition Model"],
+        "wrong": ["Post Design Model", "Early Architecture Model"],
         "question": "Které modely používá COCOMO2:",
         "note": " Toto je chyták. Modely Post Design a Early Architecture v COCOMU neexistují! Existují modely Post Architecture a Early Design (a ty by byly rovněž správnou odpovědí)."
       },
       {
-        "correct": [
-          "Post Architecture Model"
-        ],
-        "wrong": [
-          "Aplication Composition Model",
-          "Early Design Model"
-        ],
+        "correct": ["Post Architecture Model"],
+        "wrong": ["Aplication Composition Model", "Early Design Model"],
         "question": "Nejvíce parametrů má výpočet pomocí COCOMO 2, když se použije:"
       },
       {
@@ -1557,29 +1088,17 @@
         "question": "Výčty COCOMO 2 během vývoje SW se používají v průběhu životního cyklu v pořadí:"
       },
       {
-        "correct": [
-          "Putnamova rovnice",
-          "COCOMO 2"
-        ],
-        "wrong": [
-          "Brooksův zákon"
-        ],
+        "correct": ["Putnamova rovnice", "COCOMO 2"],
+        "wrong": ["Brooksův zákon"],
         "question": "Vztah mezi velikostí SW, dobou vývoje a pracností udává:"
       },
       {
-        "correct": [
-          "aplikační funkce",
-          "aplikační data"
-        ],
-        "wrong": [
-          "aplikační kód"
-        ],
+        "correct": ["aplikační funkce", "aplikační data"],
+        "wrong": ["aplikační kód"],
         "question": "Funkční body měří:"
       },
       {
-        "correct": [
-          "Externí výstupy (EO - External Outputs)"
-        ],
+        "correct": ["Externí výstupy (EO - External Outputs)"],
         "wrong": [
           "Vnitřní logické soubory (ILF - Internal Logical Files)",
           "Soubory vnějšího rozhraní (EIF - External Interface Files)"
@@ -1591,15 +1110,11 @@
           "Vnitřní logické soubory (ILF - Internal Logical Files)",
           "Soubory vnějšího rozhraní (EIF - External Interface Files)"
         ],
-        "wrong": [
-          "Externí výstupy (EO - External Outputs)"
-        ],
+        "wrong": ["Externí výstupy (EO - External Outputs)"],
         "question": "Funkční body vztažené k datovým funkcím jsou:"
       },
       {
-        "correct": [
-          "Vnitřní logický soubor (ILF - Internal Logical Files)"
-        ],
+        "correct": ["Vnitřní logický soubor (ILF - Internal Logical Files)"],
         "wrong": [
           "Externí vstup (EI - External Inputs)",
           "Soubor vnějšího rozhraní (EIF - External Interface Files)"
@@ -1617,9 +1132,7 @@
         "question": "Databáze čtená pomocí jiné aplikace je z pohledu FP:"
       },
       {
-        "correct": [
-          "Externí vstupy (EI - External Inputs)"
-        ],
+        "correct": ["Externí vstupy (EI - External Inputs)"],
         "wrong": [
           "Externí výstupy (EO - External Outputs)",
           "Externí dotazy (EQ - External Enquiry)"
@@ -1627,9 +1140,7 @@
         "question": "Datová obrazovka s přidáním, změnou a rušením se z pohledu FP považuje za:"
       },
       {
-        "correct": [
-          "3 Externí vstupy (EI - External Inputs)"
-        ],
+        "correct": ["3 Externí vstupy (EI - External Inputs)"],
         "wrong": [
           "1 Externí vstup (EI - External Inputs)",
           "1 Externí dotaz (EQ - External Enquiry)"
@@ -1637,9 +1148,7 @@
         "question": "Datová obrazovka s přidáním, změnou a rušením se započítá jako:"
       },
       {
-        "correct": [
-          "Externí výstup (EO - External Outputs)"
-        ],
+        "correct": ["Externí výstup (EO - External Outputs)"],
         "wrong": [
           "Vnitřní logický soubor (ILF - Internal Logical Files)",
           "Soubor vnějšího rozhraní (EIF - External Interface Files)"
@@ -1647,10 +1156,7 @@
         "question": "Automatická data nebo transakce směrem k jiným aplikacím se započítá jako:"
       },
       {
-        "correct": [
-          "matice složitosti vstupů",
-          "matice složitosti souborů"
-        ],
+        "correct": ["matice složitosti vstupů", "matice složitosti souborů"],
         "wrong": [
           "14 charakteristik hodnocených podle stupně vlivu na aplikaci"
         ],
@@ -1660,87 +1166,47 @@
         "correct": [
           "14 charakteristik hodnocených podle stupně vlivu na aplikaci"
         ],
-        "wrong": [
-          "matice složitosti vstupů",
-          "matice složitosti souborů"
-        ],
+        "wrong": ["matice složitosti vstupů", "matice složitosti souborů"],
         "question": "Při výpočtu upravených funkčních bodů z neupravených funkčních bodů se používá:"
       },
       {
-        "correct": [
-          "Velikost SW"
-        ],
-        "wrong": [
-          "Délku zdrojového kódu",
-          "Složitost"
-        ],
+        "correct": ["Velikost SW"],
+        "wrong": ["Délku zdrojového kódu", "Složitost"],
         "question": "Funkční body měří:"
       },
       {
-        "correct": [
-          "Velikost SW",
-          "Délku zdrojového kódu"
-        ],
-        "wrong": [
-          "Složitost kódu"
-        ],
+        "correct": ["Velikost SW", "Délku zdrojového kódu"],
+        "wrong": ["Složitost kódu"],
         "question": "Hodnota LOC (resp. SLOC) udává:",
         "note": "Nejsem si jistá, jestli jsem ho dobře pochopila s tím, že Velikost SW je také správná odpověď."
       },
       {
-        "correct": [
-          "Produktu"
-        ],
-        "wrong": [
-          "Procesu",
-          "Zdrojů"
-        ],
+        "correct": ["Produktu"],
+        "wrong": ["Procesu", "Zdrojů"],
         "question": "Poměr velikosti zdrojového kódu a dokumentace je metrika:"
       },
       {
-        "correct": [
-          "Procesu"
-        ],
-        "wrong": [
-          "Produktu",
-          "Zdrojů"
-        ],
+        "correct": ["Procesu"],
+        "wrong": ["Produktu", "Zdrojů"],
         "question": "Úsilí vynaložené na jeden funkční bod při vývoji aplikace je metrika:"
       },
       {
-        "correct": [
-          "Zdrojů"
-        ],
-        "wrong": [
-          "Produktu",
-          "Procesu"
-        ],
+        "correct": ["Zdrojů"],
+        "wrong": ["Produktu", "Procesu"],
         "question": "Počet vysokoškolsky vzdělaných členů vývojového týmu je metrika:"
       },
       {
-        "correct": [
-          "Závislé na programátorovi"
-        ],
-        "wrong": [
-          "Nezávislé na použitých technologiích",
-          "Náročné na výpočet"
-        ],
+        "correct": ["Závislé na programátorovi"],
+        "wrong": ["Nezávislé na použitých technologiích", "Náročné na výpočet"],
         "question": "Metrika LOC (Line of Code) je:"
       },
       {
-        "correct": [
-          "Nezávislá na programovacím jazyku"
-        ],
-        "wrong": [
-          "Závislá na programátorovi",
-          "Závislá na velikosti týmu"
-        ],
+        "correct": ["Nezávislá na programovacím jazyku"],
+        "wrong": ["Závislá na programátorovi", "Závislá na velikosti týmu"],
         "question": "Metrika FP (Function points) je:"
       },
       {
-        "correct": [
-          "Oba programy mají stejný počet FP"
-        ],
+        "correct": ["Oba programy mají stejný počet FP"],
         "wrong": [
           "Program napsaný v Javě má více FP",
           "Program napsaný v asembleru má méně FP"
@@ -1752,9 +1218,7 @@
           "Program napsaný v Javě má méně LOC",
           "Program napsaný v asembleru má více LOC"
         ],
-        "wrong": [
-          "Oba programy mají stejný počet LOC"
-        ],
+        "wrong": ["Oba programy mají stejný počet LOC"],
         "question": "Pro dva programy, které dělají totéž, přičemž jeden je napsaný v asembleru a druhý v Javě, bude platit:"
       },
       {
@@ -1769,21 +1233,12 @@
         "note": "Cyklomatická složitost udává KOLIK jednotlivých nezávislých cest je, ne jak jsou dlouhé."
       },
       {
-        "correct": [
-          "Funkční body"
-        ],
-        "wrong": [
-          "Počet řádků zdrojového kódu",
-          "Cyklomatická složitost"
-        ],
+        "correct": ["Funkční body"],
+        "wrong": ["Počet řádků zdrojového kódu", "Cyklomatická složitost"],
         "question": "Která z následujících metrik velikosti SW je nejnáročnější na výpočet:"
       },
       {
-        "correct": [
-          "požadavků",
-          "standardů",
-          "běžných zvyklostí"
-        ],
+        "correct": ["požadavků", "standardů", "běžných zvyklostí"],
         "wrong": [],
         "question": "Mezi aspekty kvality SW patří odchylky od:"
       },
@@ -1798,33 +1253,18 @@
         "note": "aka co to dělá, jak je to udržovatelné, jak je to přenositelné"
       },
       {
-        "correct": [
-          "Efektivita"
-        ],
-        "wrong": [
-          "Spolehlivost",
-          "Použitelnost"
-        ],
+        "correct": ["Efektivita"],
+        "wrong": ["Spolehlivost", "Použitelnost"],
         "question": "Množství výpočetních prostředků a kódu, které program potřebuje na splnění svých funkcí, se označuje jako:"
       },
       {
-        "correct": [
-          "Udržovatelnost"
-        ],
-        "wrong": [
-          "Testovatelnost",
-          "Efektivita"
-        ],
+        "correct": ["Udržovatelnost"],
+        "wrong": ["Testovatelnost", "Efektivita"],
         "question": "Úsilí vyžadované na vyhledání a opravu chyby v programu, se označuje jako:"
       },
       {
-        "correct": [
-          "Korektnost"
-        ],
-        "wrong": [
-          "Použitelnost",
-          "Spolehlivost"
-        ],
+        "correct": ["Korektnost"],
+        "wrong": ["Použitelnost", "Spolehlivost"],
         "question": "Rozsah toho, jak program splňuje specifikaci a uživatelovy záměry, se označuje jako:"
       },
       {
@@ -1859,19 +1299,12 @@
         "note": "Produkt je neúspěšný, pokud se nepoužívá. (Pokud se nevyvinul, pokud ho nikdo ani nepoužil nebo pokud se po instalaci zjistilo, že je nepoužitelný. Neřešíme kdo to zaplatil.)"
       },
       {
-        "correct": [
-          "Provozu"
-        ],
-        "wrong": [
-          "Analýzy",
-          "Testování"
-        ],
+        "correct": ["Provozu"],
+        "wrong": ["Analýzy", "Testování"],
         "question": "Cena odstranění závady je zpravidla nejvyšší ve fázi:"
       },
       {
-        "correct": [
-          "Určit etapu projektu, kdy defekt vznikl"
-        ],
+        "correct": ["Určit etapu projektu, kdy defekt vznikl"],
         "wrong": [
           "Opravit defekt rychleji a efektivněji",
           "Kvantifikovat počty defektů, které způsobily jednotlivé osoby v týmu"
@@ -1880,29 +1313,17 @@
         "note": "OCD – IBM zavedlo Ortogonal Defect Classification, která kategarizuje defekty podle příčiny, kvůli které vznikly, používali 8 typů defektů; Zmínil to tu aby bylo jasné, že jde o klasifikaci podle věcné příčiny defektů (a ne třeba podle závažnosti)."
       },
       {
-        "correct": [
-          "časování/serializace"
-        ],
-        "wrong": [
-          "sestavení/spojování",
-          "přiřazení/ověřování"
-        ],
+        "correct": ["časování/serializace"],
+        "wrong": ["sestavení/spojování", "přiřazení/ověřování"],
         "question": "Chyby, které lze opravit zlepšeným řízením sdílených a RT prostředků, se označují jako chyby:"
       },
       {
-        "correct": [
-          "Návrhu"
-        ],
-        "wrong": [
-          "Analýzy",
-          "Psaní kódu"
-        ],
+        "correct": ["Návrhu"],
+        "wrong": ["Analýzy", "Psaní kódu"],
         "question": "Defekty typu „rozhraní“ mají své příčiny obvykle ve fázi:"
       },
       {
-        "correct": [
-          "unit testy, integrační testy, systémové testy"
-        ],
+        "correct": ["unit testy, integrační testy, systémové testy"],
         "wrong": [
           "integrační testy, unit testy, systémové testy,",
           "systémové testy, integrační testy, unit testy"
@@ -1910,94 +1331,49 @@
         "question": "Obvyklé (správné) pořadí testů je:"
       },
       {
-        "correct": [
-          "výkon",
-          "chyby"
-        ],
-        "wrong": [
-          "nepřítomnost defektů"
-        ],
+        "correct": ["výkon", "chyby"],
+        "wrong": ["nepřítomnost defektů"],
         "question": "Co ukazuje testování"
       },
       {
-        "correct": [
-          "Verifikace",
-          "Test typu „bílá skříňka“"
-        ],
-        "wrong": [
-          "Validace"
-        ],
+        "correct": ["Verifikace", "Test typu „bílá skříňka“"],
+        "wrong": ["Validace"],
         "question": "Test proti vnitřní činnosti SW se označuje jako:"
       },
       {
-        "correct": [
-          "Validace",
-          "Test typu „černá skříňka“"
-        ],
-        "wrong": [
-          "Test typu „bílá skříňka“"
-        ],
+        "correct": ["Validace", "Test typu „černá skříňka“"],
+        "wrong": ["Test typu „bílá skříňka“"],
         "question": "Test proti specifikovaným funkcím SW se označuje jako:"
       },
       {
-        "correct": [
-          "Unit testech",
-          "Integračních testech zdola – nahoru"
-        ],
-        "wrong": [
-          "Integračních testech shora – dolů"
-        ],
+        "correct": ["Unit testech", "Integračních testech zdola – nahoru"],
+        "wrong": ["Integračních testech shora – dolů"],
         "question": "Drivery se používají při:"
       },
       {
-        "correct": [
-          "Integračních testech shora – dolů"
-        ],
-        "wrong": [
-          "Unit testech",
-          "Integračních testech zdola – nahoru"
-        ],
+        "correct": ["Integračních testech shora – dolů"],
+        "wrong": ["Unit testech", "Integračních testech zdola – nahoru"],
         "question": "Tzv. „stubs“ se používají při:"
       },
       {
-        "correct": [
-          "Testování typu „bílá skříňka“"
-        ],
-        "wrong": [
-          "Testování typu „černá skříňka“",
-          "Integračních testů"
-        ],
+        "correct": ["Testování typu „bílá skříňka“"],
+        "wrong": ["Testování typu „černá skříňka“", "Integračních testů"],
         "question": "Cyklomatická složitost ukazuje náročnost:"
       },
       {
-        "correct": [
-          "Inspektor",
-          "Autor"
-        ],
-        "wrong": [
-          "Tester"
-        ],
+        "correct": ["Inspektor", "Autor"],
+        "wrong": ["Tester"],
         "question": "Do týmu, který se účastní inspekce SW, patří:",
         "note": "Tým inspekce SW tvoří: vedoucí týmu (neboli moderátor), zapisovatel, inspektor a autor."
       },
       {
-        "correct": [
-          "Zajištění jednotného vývoje",
-          "Odhalení chyb"
-        ],
-        "wrong": [
-          "Zefektivnění vývojového procesu"
-        ],
+        "correct": ["Zajištění jednotného vývoje", "Odhalení chyb"],
+        "wrong": ["Zefektivnění vývojového procesu"],
         "question": "Mezi cíle formálního přezkoušení SW patří:"
       },
       {
-        "correct": [
-          "Kritické"
-        ],
-        "wrong": [
-          "Středně závažné",
-          "Kosmetické"
-        ],
+        "correct": ["Kritické"],
+        "wrong": ["Středně závažné", "Kosmetické"],
         "question": "Defekty, které způsobují pád systému a zabraňují tak v jeho používání, se označují jako:"
       },
       {
@@ -2005,28 +1381,17 @@
           "Cca ve 40% doby trvání projektu",
           "Před fází nasazení na produkční prostředí zákazníka"
         ],
-        "wrong": [
-          "Ihned na samém začátku projektu"
-        ],
+        "wrong": ["Ihned na samém začátku projektu"],
         "question": "Vrchol počtu pracovníků v průběhu SW projektu je:"
       },
       {
-        "correct": [
-          "Odhady pracnosti",
-          "Rizika",
-          "Subdodávky"
-        ],
+        "correct": ["Odhady pracnosti", "Rizika", "Subdodávky"],
         "wrong": [],
         "question": "Projektová kalkulace SW projektu by měla zahrnovat:"
       },
       {
-        "correct": [
-          "HW náklady",
-          "Náklady na licence"
-        ],
-        "wrong": [
-          "Odhady času"
-        ],
+        "correct": ["HW náklady", "Náklady na licence"],
+        "wrong": ["Odhady času"],
         "question": "Projektová kalkulace SW projektu by měla zahrnovat:"
       }
     ]

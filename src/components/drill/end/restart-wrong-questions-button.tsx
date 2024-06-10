@@ -2,20 +2,31 @@
 import Button from "~/components/common/button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useContext } from "react";
-import { QuestionContext } from "~/hooks/question-context";
+import { useContextSelector } from "use-context-selector";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 import { type QuestionExtendedInfo } from "~/schema";
 import { toastSuccess } from "~/components/common/toast-custom";
 
 export const RestartWrongQuestionsButton = () => {
   const router = useRouter();
-  const questionContext = useContext(QuestionContext);
-  if (!questionContext) {
-    return null;
-  }
+
+  const questionContext = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      selectedQuestions: context?.selectedQuestions,
+      setSelectedQuestions: context?.setSelectedQuestions,
+    }),
+  );
+
+  const { selectedQuestions, setSelectedQuestions } = questionContext;
+
+  if (!selectedQuestions || !setSelectedQuestions) return;
 
   const onClick = () => {
-    const wrongQuestions = questionContext.selectedQuestions.filter(
+    const wrongQuestions = selectedQuestions.filter(
       (q) => q.answer === "wrong",
     );
     const wrongQuestionsReset: QuestionExtendedInfo[] = wrongQuestions.map(
@@ -30,7 +41,7 @@ export const RestartWrongQuestionsButton = () => {
     if (wrongQuestionsReset.length === 0) {
       toastSuccess("All questions answered correctly!", 2500);
     } else {
-      questionContext.setSelectedQuestions(wrongQuestionsReset);
+      setSelectedQuestions(wrongQuestionsReset);
       router.push(`/drills/current-drill/${wrongQuestionsReset[0]?.order}`);
     }
   };

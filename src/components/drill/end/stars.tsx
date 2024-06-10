@@ -1,22 +1,33 @@
 "use client";
-import React, { useContext } from "react";
+import React from "react";
 import Image from "next/image";
-import { QuestionContext } from "~/hooks/question-context";
 import Transition from "~/components/common/transition";
 import { getCorrectlyAnsweredNum } from "~/lib/questions";
+import { useContextSelector } from "use-context-selector";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 import { Great_Vibes } from "next/font/google";
 import TransitionOpacity from "~/components/common/transition-opacity";
 
 const GreatVibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
 
 export const Stars = () => {
-  const questionContext = useContext(QuestionContext);
+  const questionContext = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      selectedQuestions: context?.selectedQuestions,
+    }),
+  );
+
   const oneStarPercentage = 0.3;
   const twoStarPercentage = 0.6;
   const threeStarPercentage = 0.9;
 
   if (!questionContext) return null;
   const { selectedQuestions } = questionContext;
+  if (!selectedQuestions) return null;
 
   const allQuestions =
     selectedQuestions.length === 0 ? 1 : selectedQuestions.length;

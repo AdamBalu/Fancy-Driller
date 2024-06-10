@@ -2,19 +2,33 @@
 import Button from "~/components/common/button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useContext } from "react";
-import { QuestionContext } from "~/hooks/question-context";
+import { useContextSelector } from "use-context-selector";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 
 export const RestartDrillButton = () => {
   const router = useRouter();
-  const questionContext = useContext(QuestionContext);
-  if (!questionContext) {
-    return null;
-  }
+
+  const questionContext = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      setSelectedQuestions: context?.setSelectedQuestions,
+      initialQuestions: context?.initialQuestions,
+      currentDrillName: context?.currentDrillName,
+    }),
+  );
+
+  if (!questionContext) return;
+
+  const { setSelectedQuestions, initialQuestions, currentDrillName } =
+    questionContext;
+  if (!setSelectedQuestions || !initialQuestions || !currentDrillName) return;
 
   const onClick = () => {
-    questionContext.setSelectedQuestions(questionContext.initialQuestions);
-    router.push(`/drills/${questionContext.currentDrillName}`);
+    setSelectedQuestions(initialQuestions);
+    router.push(`/drills/${currentDrillName}`);
   };
 
   return (

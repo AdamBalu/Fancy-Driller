@@ -1,20 +1,31 @@
 "use client";
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import Button from "~/components/common/button";
-import { QuestionContext } from "~/hooks/question-context";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 import { useRouter } from "next/navigation";
 import { isValidJsonQuestions } from "~/common/check-json-correctness";
 import { toastError } from "../common/toast-custom";
 import { type Question, type QuestionExtendedInfo } from "~/schema";
+import { useContextSelector } from "use-context-selector";
 
 export const UploadButton = () => {
-  const questionsContext = useContext(QuestionContext);
+  const contextSelectors = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      setSelectedQuestions: context?.setSelectedQuestions,
+      setInitialQuestions: context?.setInitialQuestions,
+      setCurrentDrillName: context?.setCurrentDrillName,
+    }),
+  );
+
+  const { setSelectedQuestions, setInitialQuestions, setCurrentDrillName } =
+    contextSelectors;
+
   const fileInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
-
-  if (questionsContext === null) {
-    return null;
-  }
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -36,9 +47,16 @@ export const UploadButton = () => {
               }),
             );
 
-            questionsContext.setSelectedQuestions(questionsBaseState);
-            questionsContext.setInitialQuestions(questionsBaseState);
-            questionsContext.setCurrentDrillName("custom-drill");
+            if (
+              setSelectedQuestions &&
+              setInitialQuestions &&
+              setCurrentDrillName
+            ) {
+              setSelectedQuestions(questionsBaseState);
+              setInitialQuestions(questionsBaseState);
+              setCurrentDrillName("custom-drill");
+            }
+
             router.push("/drills/custom-drill");
           } catch (error) {
             let errorMessage = "Invalid JSON";

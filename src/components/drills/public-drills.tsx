@@ -1,14 +1,10 @@
 "use client";
 
-import { useContext } from "react";
-import { QuestionContext } from "~/hooks/question-context";
 import { useDrillsQuery } from "~/app/api/fetch-data";
 import { DrillButton } from "~/components/drill/drill-button";
 import Transition from "~/components/common/transition";
 
 export const PublicDrills = () => {
-  const questionsContext = useContext(QuestionContext);
-
   const { data, isLoading, isError, error } = useDrillsQuery();
 
   if (isLoading) {
@@ -21,10 +17,6 @@ export const PublicDrills = () => {
 
   if (isError) {
     return <div>Error loading JSON files: {error.message}</div>;
-  }
-
-  if (questionsContext === null) {
-    return null;
   }
 
   return (

@@ -1,8 +1,9 @@
 "use client";
-import { type PropsWithChildren, createContext, useState } from "react";
+import { type PropsWithChildren, useState } from "react";
 import { type Answer, type QuestionExtendedInfo } from "~/schema";
+import { createContext } from "use-context-selector";
 
-type QuestionContextProps = {
+export type QuestionContextProps = {
   selectedQuestions: QuestionExtendedInfo[];
   initialQuestions: QuestionExtendedInfo[];
   setSelectedQuestions: (q: QuestionExtendedInfo[]) => void;

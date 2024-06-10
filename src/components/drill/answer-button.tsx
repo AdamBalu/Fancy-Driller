@@ -1,8 +1,12 @@
 import Button from "~/components/common/button";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { type QuestionExtendedInfo } from "~/schema";
-import { QuestionContext } from "~/hooks/question-context";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 import { toastError, toastSuccess } from "../common/toast-custom";
+import { useContextSelector } from "use-context-selector";
 
 type AnswerButtonProps = {
   answer: string;
@@ -17,12 +21,21 @@ export const AnswerButton = ({
   currentQuestion,
   onNextQuestionClick,
 }: AnswerButtonProps) => {
-  const questionContext = useContext(QuestionContext);
+  const questionContext = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      selectedQuestions: context?.selectedQuestions,
+      setQuestion: context?.setQuestion,
+      fastMode: context?.fastMode,
+    }),
+  );
+
+  const { setQuestion, fastMode } = questionContext;
+
   const [selectedAnswers, setSelectedAnswers] = selectedAnswersState;
   const [selected, setSelected] = useState(false);
-  if (questionContext === null) {
-    return;
-  }
+  if (!questionContext) return;
+
   const onClick = () => {
     const newSelectedAnswers = [...selectedAnswers, answer];
     if (!selected) {
@@ -32,7 +45,7 @@ export const AnswerButton = ({
     }
     setSelected(!selected);
 
-    if (questionContext.fastMode) {
+    if (fastMode) {
       const isAnswerWrong = newSelectedAnswers.some((answer) =>
         currentQuestion.wrong.includes(answer),
       );
@@ -42,12 +55,12 @@ export const AnswerButton = ({
           newSelectedAnswers.includes(correctAnswer),
         );
 
-      if (isAnswerCorrect) {
-        questionContext.setQuestion(currentQuestion, "correct");
+      if (isAnswerCorrect && setQuestion) {
+        setQuestion(currentQuestion, "correct");
         onNextQuestionClick(true);
         toastSuccess("Correct!");
-      } else if (isAnswerWrong) {
-        questionContext.setQuestion(currentQuestion, "wrong");
+      } else if (isAnswerWrong && setQuestion) {
+        setQuestion(currentQuestion, "wrong");
         onNextQuestionClick(true);
         toastError("Wrong");
       }

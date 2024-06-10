@@ -1,9 +1,12 @@
 "use client";
 import Button from "~/components/common/button";
 import { useRouter } from "next/navigation";
-import { QuestionContext } from "~/hooks/question-context";
-import { useContext } from "react";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 import { type QuestionExtendedInfo } from "~/schema";
+import { useContextSelector } from "use-context-selector";
 
 type StartDrillButtonProps = {
   sequential: boolean;
@@ -15,11 +18,19 @@ export const StartDrillButton = ({
   providedQuestions,
 }: StartDrillButtonProps) => {
   const router = useRouter();
-  const questionsContext = useContext(QuestionContext);
+  const questionsContext = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      selectedQuestions: context?.selectedQuestions,
+      setSelectedQuestions: context?.setSelectedQuestions,
+    }),
+  );
 
-  if (questionsContext === null) {
-    return null;
-  }
+  if (!questionsContext) return null;
+
+  const { selectedQuestions, setSelectedQuestions } = questionsContext;
+
+  if (!selectedQuestions || !setSelectedQuestions) return null;
 
   const shuffle = (array: QuestionExtendedInfo[]) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -29,13 +40,12 @@ export const StartDrillButton = ({
     return array;
   };
 
-  const finalQuestions =
-    providedQuestions ?? questionsContext.selectedQuestions;
+  const finalQuestions = providedQuestions ?? selectedQuestions;
 
   return (
     <Button
       onClick={() => {
-        questionsContext.setSelectedQuestions(
+        setSelectedQuestions(
           sequential ? finalQuestions : shuffle(finalQuestions),
         );
         router.push(`/drills/current-drill/${finalQuestions[0]?.order}`);

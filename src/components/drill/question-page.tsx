@@ -1,6 +1,5 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
-import { QuestionContext } from "~/hooks/question-context";
+import React, { useEffect, useState } from "react";
 import { Question } from "./question";
 import { type QuestionExtendedInfo } from "~/schema";
 import { useRouter } from "next/navigation";
@@ -9,13 +8,22 @@ import {
   getFirstUnansweredAfterIndex,
   getFirstUnansweredWithCurrentQuestionCheck,
 } from "~/lib/questions";
+import { useContextSelector } from "use-context-selector";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 
 type QuestionPageProps = {
   id: string;
 };
 
 export const QuestionPage = ({ id }: QuestionPageProps) => {
-  const questionsContext = useContext(QuestionContext);
+  const selectedQuestions = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => context?.selectedQuestions,
+  );
+
   const [currentQuestion, setCurrentQuestion] = useState<
     QuestionExtendedInfo | undefined
   >(undefined);
@@ -23,23 +31,23 @@ export const QuestionPage = ({ id }: QuestionPageProps) => {
   const router = useRouter();
 
   useEffect(() => {
-    setCurrentQuestion(
-      questionsContext?.selectedQuestions.find(
-        (item) => item.order.toString() === id,
-      ),
-    );
-  }, [id, questionsContext?.selectedQuestions]);
-
-  if (questionsContext === null) {
-    return null;
-  }
+    if (selectedQuestions) {
+      const questionToSet = selectedQuestions.find(
+        (q) => q.order.toString() === id,
+      );
+      console.log("questionToSet", questionToSet);
+      setCurrentQuestion(questionToSet);
+    }
+  }, [id, selectedQuestions]);
 
   if (currentQuestion === undefined) {
     return null;
   }
 
   const onNextQuestionClick = (isCurrentQuestionBeingAnswered = false) => {
-    const { selectedQuestions } = questionsContext;
+    if (!selectedQuestions) {
+      return;
+    }
     const currentIndex = selectedQuestions.indexOf(currentQuestion);
 
     let firstUnansweredQuestion = getFirstUnansweredAfterIndex(

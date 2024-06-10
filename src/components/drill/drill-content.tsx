@@ -1,12 +1,16 @@
 "use client";
-import React, { useContext, useState } from "react";
+import React, { useState, useMemo } from "react";
 import { SelectOrderButton } from "~/components/upload/select-order-button";
 import { StartDrillButton } from "~/components/upload/start-drill-button";
-import { QuestionContext } from "~/hooks/question-context";
 import Checkbox from "~/components/common/checkbox";
 import { useDrillsQuery } from "~/app/api/fetch-data";
 import Transition from "~/components/common/transition";
 import { type Question, type QuestionExtendedInfo } from "~/schema";
+import { useContextSelector } from "use-context-selector";
+import {
+  QuestionContext,
+  type QuestionContextProps,
+} from "~/hooks/question-context";
 
 const mapQuestionsToExtendedQuestions = (
   questions: Question[],
@@ -26,20 +30,38 @@ export const DrillContent = ({
   calledFromCustomDrill: boolean;
 }) => {
   const drill = useDrillsQuery();
-  const questionsContext = useContext(QuestionContext);
   const [sequential, setSequential] = useState(false);
+
+  const questionsContext = useContextSelector(
+    QuestionContext,
+    (context: QuestionContextProps | null) => ({
+      selectedQuestions: context?.selectedQuestions,
+      setSelectedQuestions: context?.setSelectedQuestions,
+      setFastMode: context?.setFastMode,
+      fastMode: context?.fastMode,
+    }),
+  );
 
   const currentDrill = drill?.data?.find(
     (d) => d.name === decodeURI(drillName),
   );
 
-  if (questionsContext === null) {
-    return null;
-  }
+  const { selectedQuestions, setSelectedQuestions, setFastMode, fastMode } =
+    questionsContext;
 
-  const currQuestions: QuestionExtendedInfo[] = calledFromCustomDrill
-    ? questionsContext.selectedQuestions
-    : mapQuestionsToExtendedQuestions(currentDrill?.questions ?? []);
+  const currQuestions: QuestionExtendedInfo[] = useMemo(
+    () =>
+      calledFromCustomDrill
+        ? selectedQuestions ?? []
+        : mapQuestionsToExtendedQuestions(currentDrill?.questions ?? []),
+    [calledFromCustomDrill, currentDrill?.questions, selectedQuestions],
+  );
+
+  if (!questionsContext) return;
+
+  if (!selectedQuestions || !setSelectedQuestions || !setFastMode) {
+    return;
+  }
 
   return (
     <Transition>
@@ -55,10 +77,8 @@ export const DrillContent = ({
           <SelectOrderButton isSequentialState={[sequential, setSequential]} />
           <Checkbox
             id="fast-mode"
-            onChange={() =>
-              questionsContext.setFastMode(!questionsContext.fastMode)
-            }
-            checked={questionsContext.fastMode}
+            onChange={() => setFastMode(!fastMode)}
+            checked={fastMode ?? false}
           >
             Fast mode
           </Checkbox>
