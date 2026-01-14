@@ -1,5 +1,6 @@
 {
   "name": "PV157",
+  "note": "Záverečná zkouška z PV157 - Autentizace a řízení přístupu",
   "questions": [
     {
       "question": "Generátory passcode slouží pro",
@@ -2054,11 +2055,11 @@
       "question": "Pro *-vlastnost modelu Bell-LaPadula platí:",
       "correct": [
         "účelem je ochránit duvěrnost citlivých dat",
-        "procesy nesmějí zapisovat data do nižší úrovně",
-        "procesy nesmějí číst data na vyšší úrovni"
+        "procesy nesmějí zapisovat data do nižší úrovně"
       ],
       "wrong": [
         "je považována za nebezpečnou a není doporučeno ji používat",
+        "procesy nesmějí číst data na vyšší úrovni",
         "zachovává integritu dat",
         "není komplementární k ss-vlastnosti modelu Bell-LaPadula"
       ]
@@ -2101,6 +2102,18 @@
       ]
     },
     {
+      "question": "Certifikát veřejného klíče dle X.509:",
+      "correct": [
+        "pevně stanovuje dobu platnosti certifikátu",
+        "identifikuje vydavatele certifikátu"
+      ],
+      "wrong": [
+        "vytváří certifikační autorita svým veřejným klíčem",
+        "obvykle bývá cílem botnetů typu Chuck Norris",
+        "je obtížně replikovatelný"
+      ]
+    },
+    {
       "question": "K souboru MHDticket na čipové kartě s nastavením ALW přistupuje uživatel 1, který ale zná jen PIN pro soubor MHDticket2 s nastavením CHV2.",
       "correct": ["Uživatel 1 získá přístup k souboru MHDticket."],
       "wrong": [
@@ -2121,7 +2134,7 @@
       ]
     },
     {
-      "question": "Mezi vlastnosti (axiomy) modelu Biba patří",
+      "question": "Mezi vlastnosti (axiomy) integritního modelu Biba patří",
       "correct": [
         "procesy mohou číst jen data na stejné nebo vyšší úrovni",
         "procesy mohou zapisovat data do nižší úrovně"
@@ -2129,18 +2142,6 @@
       "wrong": [
         "procesy mohou číst data na stejné nebo nižší úrovně",
         "procesy mohou zapisovat data jen do vyšší úrovně"
-      ]
-    },
-    {
-      "question": "Certifikát veřejného klíče dle X.509:",
-      "correct": [
-        "pevně stanovuje dobu platnosti certifikátu",
-        "identifikuje vydavatele certifikátu"
-      ],
-      "wrong": [
-        "vytváří certifikační autorita svým věřejným klíčem",
-        "obvykle bývá cílem botnetů typu Chuck Norris",
-        "je obtížně replikovatelný"
       ]
     }
   ]

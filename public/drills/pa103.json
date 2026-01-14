@@ -1,0 +1,518 @@
+{
+  "name": "PA103",
+  "note": "Záverečná zkouška z PA103 - Object-oriented Methods for Design of Information Systems",
+  "questions": [
+    {
+      "question": "Choose correct declarations about the Organization Hierarchies analysis pattern (choose two):",
+      "correct": [
+        "Can be used for modeling simple but dynamic organization structures.",
+        "The model is often supplemented with constraints put on the hierarchy (e.g., OCL constraints)."
+      ],
+      "wrong": [
+        "Solves dynamic memory allocation.",
+        "Is part of so called Planning pattern family."
+      ]
+    },
+    {
+      "question": "Consider the following postcondition defined for foo method: context MyClass::foo() post: result >= 0. Choose correct postconditions for the sub-class SubClass satisfying Liskov substitution principle (choose two):",
+      "correct": [
+        "context SubClass::foo() post: result > 0",
+        "context SubClass::foo() post: result > 10"
+      ],
+      "wrong": [
+        "context SubClass::foo() post: result < 0",
+        "context SubClass::foo() post: result > -10"
+      ]
+    },
+    {
+      "question": "Choose correct declarations about deployment in software architectures (choose two):",
+      "correct": [
+        "It maps modules and connectors to hardware sources, e.g., hardware hosts.",
+        "It maps modules and connectors to software sources, e.g., middleware or frameworks."
+      ],
+      "wrong": [
+        "It can affect the efficiency of the whole architecture but not its reliability.",
+        "It represents an optional part/step of architecture modeling.",
+        "It maps user requirements to modules."
+      ]
+    },
+    {
+      "question": "Which of the following design patterns are used to change an object's behavior at runtime (choose two)?",
+      "correct": ["Strategy", "State"],
+      "wrong": ["Algorithm", "Builder"]
+    },
+    {
+      "question": "Select approach, which is related to layered architectures (choose one):",
+      "correct": [
+        "Repository architecture pattern because it solves the problem of storing rational data in NoSQL databases."
+      ],
+      "wrong": [
+        "IDesign method because it splits the business logic in order to solve the mapping between user requirements and the problem domain model.",
+        "Pipes and Filters architecture because individual pipelines can be arranged in parallel layers (tiers).",
+        "Model-View-Presenter architecture where Model, View, and Presenter can be considered as components of different layers."
+      ]
+    },
+    {
+      "question": "Choose all return types of the getPatient method that can be used in the Specialized Health Care sub-class without violating the Liskov substitution principle. (Parent class: Patient getPatient())\nXXXXX getPatient()",
+      "correct": ["Person", "Animal", "Patient"],
+      "wrong": []
+    },
+    {
+      "question": "Suppose that we want to design a control system for cars. Putting emphasis on the extensibility of the control system, e.g., extending the functionality by different sensors, we'd prefer (choose one)",
+      "correct": ["a Microkernel architecture."],
+      "wrong": [
+        "a Model-View-Controller architecture.",
+        "a Blackboard architecture.",
+        "a Pipes and Filters architecture.",
+        "a Peer-to-Peer architecture."
+      ]
+    },
+    {
+      "question": "Which SOLID principle does the following pseudocode violate? (Class TurnamentRegistration with methods: createNewTurnament, registerSportsman, printResults)",
+      "correct": ["The Single responsibility principle."],
+      "wrong": [
+        "None of them.",
+        "The Dependency inversion principle.",
+        "The Open closed principle.",
+        "The Liskov substitution principle.",
+        "The Interface segregation principle."
+      ]
+    },
+    {
+      "question": "When considering usage and realization contracts of software components, the realization contracts (choose three):",
+      "correct": [
+        "are influenced by used component standards",
+        "are related to component interfaces",
+        "are design-time contracts intended for component developers"
+      ],
+      "wrong": [
+        "define the price for software development",
+        "define the relationship between a component's interface and its clients"
+      ]
+    },
+    {
+      "question": "For a web application, I'd prefer (choose one)",
+      "correct": [
+        "the Model-View-Controller architecture or its derivative (e.g., MVP) because it distributes responsibilities between a remote server and the presentation."
+      ],
+      "wrong": [
+        "the Blackboard architecture because multiple users can concurrently access the knowledge base stored in the web server.",
+        "the Microkernel architecture in order to deal with scalability with respect to the number of users."
+      ]
+    },
+    {
+      "question": "Consider the following user requirements:\nFire brigade units and volunteer organizations, strict hierarchy but multiple volunteer firemen that are independent and have their own org. hierarchy.\nWhich analysis patterns (choose two) would you use to capture the situation by a problem domain model?",
+      "correct": [
+        "Accountability from the Accountability collection.",
+        "Organization structure from the Accountability collection."
+      ],
+      "wrong": [
+        "Party from the Accountability collection.",
+        "Identification Scheme from the Referring to Objects collection.",
+        "Organization hierarchy from the Accountability collection.",
+        "Account from the Inventory and Accounting collection."
+      ]
+    },
+    {
+      "question": "Software architectures prescribe inter-module relationships (dependencies). Therefore, using SW architecture helps to improve (choose one)",
+      "correct": [
+        "maintainability because they reduce unnecessary dependencies."
+      ],
+      "wrong": [
+        "scalability because they always replace direct dependencies with indirect ones.",
+        "performance because they minimize the number of adapters and wrappers.",
+        "maintainability because they are always hierarchical.",
+        "scalability because they always separate data from the computation."
+      ]
+    },
+    {
+      "question": "Consider a class Meeting with attributes start and end. Which of the following expressions are syntactically correct definitions of OCL invariants (choose two)?",
+      "correct": [
+        "context Meeting inv: self.end > self.start",
+        "context Meeting inv: end > start"
+      ],
+      "wrong": [
+        "context Meeting inv: end->start",
+        "context Meeting inv: Meeting.end > Meeting.start"
+      ]
+    },
+    {
+      "question": "Choose correct declarations about the Bridges in the Broker software architecture (choose two):",
+      "correct": [
+        "They are optional.",
+        "They are responsible for the communication between brokers."
+      ],
+      "wrong": [
+        "They are responsible for the communication between clients/servers and their brokers.",
+        "They implement the Bridge design pattern."
+      ]
+    },
+    {
+      "question": "Consider the following class HealthCare with the precondition 'the patient must have health insurance.' Which preconditions of the PediatricHealthCare sub-class violate the Liskov substitution principle? (choose two)",
+      "correct": [
+        "The patient is a child, not an adult.",
+        "The patient is insured with VZP."
+      ],
+      "wrong": ["The patient may or may not have health insurance."]
+    },
+    {
+      "question": "Consider a class Room that associates N instances of Meeting. Choose an OCL invariant that is syntactically correct and corresponds to 'there is at least one meeting in the room.'",
+      "correct": ["context Room inv: meeting->size() > 0"],
+      "wrong": [
+        "context Room inv: meeting.select(room) > 0",
+        "context Room inv: $self->forAll(meeting)>0$",
+        "context Room inv: count() > 0"
+      ]
+    },
+    {
+      "question": "What are the advantages of using software architectures (SA)? (choose two)",
+      "correct": [
+        "Maintainability, because SAs are able to react to changes by modifying coherent modules.",
+        "The possibility of predicting and analyzing software quality (QoS)."
+      ],
+      "wrong": [
+        "Reliability, because SAs were invented with safety aspects in mind.",
+        "Performance, because data re encapsulated with the code in modules.",
+        "Scalability, because the communication is driven by the enterprise system bus."
+      ]
+    },
+    {
+      "question": "For approximate computing (i.e., no deterministic algorithm is known), I'd prefer (choose one)",
+      "correct": ["the Blackboard architecture."],
+      "wrong": [
+        "the Model-View-Controller architecture.",
+        "the Broker architecture."
+      ]
+    },
+    {
+      "question": "Choose correct declarations about using inheritance vs. associations to vary responsibilities of objects (choose two):",
+      "correct": [
+        "Use associated attributes to adapt the responsibility or abstraction of an object during its lifetime.",
+        "Both inheritance and associated attributes can be used to alter the abstraction of an object."
+      ],
+      "wrong": [
+        "The use of inheritance guarantees that the single-responsibility principle is met.",
+        "Inheritance is more flexible than using associated attributes.",
+        "An object can change its affiliated class (i.e., its type) only if its implementation satisfies the SOLID principles."
+      ]
+    },
+    {
+      "question": "Choose correct declarations about interfaces of a component (choose three):",
+      "correct": [
+        "A provided interface can be used by some inner class(es) of another component.",
+        "A required interface is implemented by some inner class(es) of another component.",
+        "A provided interface is implemented by some inner class(es) of this component."
+      ],
+      "wrong": [
+        "A required interface is implemented by some inner class(es) of this component."
+      ]
+    },
+    {
+      "question": "Consider the following user requirements (Air traffic control, distinguishing flights and locations). Which analysis patterns (choose three) would you use?",
+      "correct": [
+        "Observation from the Observations and Measurements collection.",
+        "Identification Scheme from the Referring to Objects collection.",
+        "Enterprise Segment from the Observations for Corporate Finance collection."
+      ],
+      "wrong": [
+        "Unit from the Observations and Measurements collection.",
+        "Accountability from the Accountability collection."
+      ]
+    },
+    {
+      "question": "Choose correct declarations about the assume-guarantee type of the specification of software quality (choose two):",
+      "correct": [
+        "Results are sensitive to the precision of assumptions.",
+        "Is related to the prediction from the model."
+      ],
+      "wrong": [
+        "Is better than sensitivity analysis.",
+        "Is based on free parameters."
+      ]
+    },
+    {
+      "question": "The 'keep modules small and compact' tuning tactic is used to improve (choose one):",
+      "correct": [
+        "maintainability because you can modify the functionality of the system by replacing selected (small) modules."
+      ],
+      "wrong": [
+        "reliability because if the computational fails, other modules remain unaffected.",
+        "efficiency because small modules can be better optimized in the system memory.",
+        "scalability because small modules provide more options for their extension.",
+        "security because if the computation part is compromised, the data remains safe."
+      ]
+    },
+    {
+      "question": "Consider the following precondition defined for the foo method: context MyClass::foo(i: Integer) pre: i > 0. Choose correct preconditions for subclass SubClass satisfying the Liskov substitution principle (choose two):",
+      "correct": [
+        "context SubClass::foo(i: Integer) pre: i >= 0",
+        "context SubClass::foo(i: Integer) pre: i > -10"
+      ],
+      "wrong": [
+        "context SubClass::foo(i: Integer) pre: i < 0",
+        "context SubClass::foo(i: Integer) pre: i <= 0"
+      ]
+    },
+    {
+      "question": "Which of the following design patterns can be used to convert an existing interface to the interface required by our system? (choose one)",
+      "correct": ["Adapter"],
+      "wrong": ["Converter", "Bridge", "Proxy"]
+    },
+    {
+      "question": "Consider the following class HealthCare and its sub-class AnimalHealthCare. Choose all types of the function argument that can be used in the sub-class without violating the Liskov substitution principle.\nParent: getPatient(Patient pat)\n getPatient(XXXXX pat)\nPerson and Animal are sub-classes of Patient",
+      "correct": ["Patient"],
+      "wrong": ["Animal", "Person"]
+    },
+    {
+      "question": "For a file-sharing system, we'd prefer (choose one)",
+      "correct": ["a Peer-to-peer architecture to support decentralization."],
+      "wrong": [
+        "a Microkernel architecture in order to support extensibility.",
+        "a Blackboard architecture."
+      ]
+    },
+    {
+      "question": "Which SOLID principle does the following pseudocode violate? (Class RecourceAllocator with if/else checking resource types)\nclass RecourceAllocator\npublic void allocate(int resourceType)\nif (recourceType == 'TIME_SLOT')\n\rdo something\nelse if (recourceType == 'SPACE_SLOT')\n\rdo something\nelse\n\rdo something",
+      "correct": [
+        "The Open closed principle because adding a new resource type involves class modification."
+      ],
+      "wrong": [
+        "The Single responsibility principle because the class handles two resource types.",
+        "The Dependency inversion principle because the code depends on the values of the resource Type.",
+        "The Interface segregation principle because the class provides no interface.",
+        "The Liskov substitution principle because there is no parent class of RecourceAllocator."
+      ]
+    },
+    {
+      "question": "Layered architecture improves (choose one)",
+      "correct": ["maintainability because they are hierarchical."],
+      "wrong": [
+        "maintainability because they keep modules small and compact.",
+        "scalability because they help to identify data suitable for replication.",
+        "performance because they always use asynchronous communication.",
+        "scalability because they employ a suitable error-reporting mechanism."
+      ]
+    },
+    {
+      "question": "Choose correct declarations about modules in software architectures. (choose three)",
+      "correct": [
+        "They can represent software components.",
+        "They can represent processes.",
+        "They decompose the functionality of the system."
+      ],
+      "wrong": [
+        "They have to run on the same hardware to ensure collaboration via connectors.",
+        "They have to be implemented in the same programming language to ensure compatibility."
+      ]
+    },
+    {
+      "question": "Consider the following user requirements (President designates prime minister, PM nominates ministers...). Which analysis pattern would you use to capture them by a problem domain model?",
+      "correct": ["Accountability from the Accountability collection."],
+      "wrong": [
+        "Identification Scheme from the Referring to Objects collection.",
+        "Protocol from the Observations and Measurements collection.",
+        "Account from the Inventory and Accounting collection.",
+        "Organization structure from the Accountability collection."
+      ]
+    },
+    {
+      "question": "Suppose that we want to design a control system for autonomous cars... problem is not algorithmic but rather probabilistic... we'd prefer. (choose one)",
+      "correct": ["a Blackboard architecture"],
+      "wrong": [
+        "a Microkernel architecture",
+        "a Peer-to-Peer architecture",
+        "a Pipes and Filters architecture",
+        "a Model-View-Controller architecture"
+      ]
+    },
+    {
+      "question": "Consider a class Meeting with attributes start and end and a method shiftStart(t:Time): Time. Choose OCL expressions that are syntactically correct and correspond to the comment. (choose two)",
+      "correct": [
+        "context Meeting::shiftStart (shift: Time) post: end = end@pre + shift -- end of the meeting is also shifted accordingly",
+        "context Meeting::shiftStart (shift: Time) pre: shift > 0 -- the meeting cannot start sooner"
+      ],
+      "wrong": [
+        "context Meeting::shiftStart (shift: Time) post: end = start@post + shift",
+        "context Meeting::shiftStart (shift: Time) post: end = start@pre + shift"
+      ]
+    },
+    {
+      "question": "When would you use the Unit analysis pattern? (choose two)",
+      "correct": [
+        "If the system copes with values in composed units, e.g., km/h.",
+        "If the system copes with values in variable units."
+      ],
+      "wrong": [
+        "If the system copes with organization units.",
+        "If the system is component-based."
+      ]
+    },
+    {
+      "question": "When considering usage and realization contracts of software components, usage contracts (choose three):",
+      "correct": [
+        "reflect requirements of other components",
+        "are specified by component interfaces",
+        "reflect user requirements (use cases)"
+      ],
+      "wrong": [
+        "are affected by deployment",
+        "are design-time contracts capturing implementation constrains for component developers"
+      ]
+    },
+    {
+      "question": "Choose the correct declaration about architecture patterns and styles. (choose one)",
+      "correct": [
+        "The IDesign method splits the business logic layer in order to connect better the abstraction of the presentation layer with the data layer."
+      ],
+      "wrong": [
+        "The Repository architecture pattern elaborates on mapping user requirements (use cases) to a weakly typed domain model.",
+        "The Blackboard architecture fitts the layered style because the blackboard, knowledge resources, and control parts can be considered tiers.",
+        "Clients, servers, bridges, brokers, and proxies of the Broker architecture can be considered as components of different layers."
+      ]
+    },
+    {
+      "question": "Using components helps to improve (choose one)",
+      "correct": [
+        "scalability because component systems replace direct dependencies between components with indirect ones."
+      ],
+      "wrong": [
+        "reliability because components integrate auto-backup and recovery mechanisms.",
+        "performance because component systems always use asynchronous communication between components.",
+        "scalability because component systems always separate data from the computation.",
+        "reliability because component systems inherently avoid the existence of critical parts (single points of failure)."
+      ]
+    },
+    {
+      "question": "Choose correct declarations about the Party analysis pattern:",
+      "correct": [
+        "Can be used if we don't need to distinguish between people and organizations in a sense (in some cases).",
+        "Is part of so called Accountability pattern family."
+      ],
+      "wrong": [
+        "Is related to observations and measurements.",
+        "Helps with the configuration of objects in the memory."
+      ]
+    },
+    {
+      "question": "Assume the following communication scenario between objects: Object A is instantiated in the memory. Object B is instantiated in the memory, holding reference to object A. Object C calls a service provided by object B. Object A is utilized in the background. This communication scheme corresponds to (choose two)",
+      "correct": ["Object Adapter", "Strategy"],
+      "wrong": ["Class Adapter", "Builder", "Visitor"]
+    },
+    {
+      "question": "Consider the following class HealthCare and its sub-class AnimalHealthCare. Which implementations of the treat method in the AnimalHealthCare violate the Liskov substitution principle?\n\nclass HealthCare {\n public void treat(patient) {\n // The patient is treated\n }\n}\n\nclass AnimalHealthCare extends HealthCare {\n public void treat(patient) {\n // ???\n }\n}",
+      "correct": [
+        "The patient (e.g., animal) is treated only if it's not heavier than 20 kg. Otherwise, the method fails with an exception."
+      ],
+      "wrong": [
+        "The patient (e.g., animal) is treated in the same way as in the HealthCare.",
+        "The patient (e.g., animal) is treated. In addition to the HealthCare super-class implementation, a certificate is printed out."
+      ]
+    },
+    {
+      "question": "Which SOLID principle does the following pseudo-code violate?\n\nclass Elections {\n public void createElections(...) { ... }\n public void registerParties(...) { ... }\n public void registerPartyCandidates(...) { ... }\n public void addVotes(...) { ... }\n public void printResults(...) { ... }\n}",
+      "correct": [
+        "The Interface segregation principle because independent phases, e.g., election creation and registration of parties/candidates vs. voting and results, should be split into separate interfaces."
+      ],
+      "wrong": [
+        "The Open closed principle because adding a sub-class ParliamentElections is difficult.",
+        "The Dependency inversion principle because the class has no association attribute.",
+        "The Liskov substitution principle because the class has no sub-class."
+      ]
+    },
+    {
+      "question": "Which of the following design patterns are used to represent hierarchical structures?",
+      "correct": ["Composite"],
+      "wrong": ["Visitor", "Strategy", "Observer"]
+    },
+    {
+      "question": "For the run-time processing of data streams, I'd prefer. (choose one)",
+      "correct": ["the Pipes and Filters architecture."],
+      "wrong": [
+        "the Model-View-Controller architecture where Controllers filter data represented by the Model, Views present results.",
+        "the Broker architecture."
+      ]
+    },
+    {
+      "question": "Choose correct declarations about connectors in software architectures. (choose three)",
+      "correct": [
+        "In the case of component systems, they are often implemented by a corresponding component framework, e.g., using the dependency injection principle.",
+        "Their implementation follows contracts of interfaces.",
+        "They implement communication between required and provided interfaces of modules."
+      ],
+      "wrong": [
+        "Only one connector between two modules is allowed.",
+        "They implement local communication channels between modules. Remote channels have to be implemented by specialized modules."
+      ]
+    },
+    {
+      "question": "Suppose that we want to design a control system for a spaceship. Putting emphasis on the ability to operate even if some parts of the spaceship are damaged, we'd prefer (choose one)",
+      "correct": ["a Peer-to-Peer architecture."],
+      "wrong": [
+        "a Pipes and Filters architecture.",
+        "a Model-View-Controller architecture.",
+        "a Blackboard architecture.",
+        "a Microkernel architecture."
+      ]
+    },
+    {
+      "question": "Consider the following user requirements. Which analysis patterns (choose two) would you use to capture the situation on the problem domain model?\n\n- A traffic monitoring system gathers data from many sensors located in the town.\n- The monitored data include traffic density (number of cars per minute), part of the day (day or night), weather conditions, and many more.",
+      "correct": [
+        "Observation from the Observations and Measurements collection.",
+        "Measurement from the Compound Unit collection."
+      ],
+      "wrong": [
+        "Identification Scheme from the Referring to Objects collection.",
+        "Accountability from the Accountability collection.",
+        "Unit from the Observations and Measurements collection."
+      ]
+    },
+    {
+      "question": "Consider a class Meeting associated with multiple Participants. Which of the following expressions are syntactically correct definitions of OCL expressions?",
+      "correct": [
+        "context Meeting inv: participant -> size() > 0",
+        "context Meeting inv: participant -> notEmpty()"
+      ],
+      "wrong": [
+        "context Meeting inv: participant .count() -> notEmpty()",
+        "context Meeting inv: participant -> size()"
+      ]
+    },
+    {
+      "question": "Assume the following communication scenario between objects:\n\n- Object A instantiates an object B.\n- Object A asks object B to inspect objects C, D, and E.\n- Object A asks object B for results.\n\nThis communication scheme corresponds to",
+      "correct": ["Visitor"],
+      "wrong": ["Builder", "Strategy", "Bridge", "Abstract Factory"]
+    },
+    {
+      "question": "Consider the following precondition defined for foo method:\ncontext MyClass::foo() post: result >= 0\nChoose correct preconditions for the sub-class SubClass satisfying Liskov substitution principle (choose two):",
+      "correct": [
+        "context SubClass::foo() post: result > 0",
+        "context SubClass::foo() post: result > 10"
+      ],
+      "wrong": [
+        "context SubClass::foo() post: result > -10",
+        "context SubClass::foo() post: result < 0"
+      ]
+    },
+    {
+      "question": "Suppose we want to design a control system that runs in cars. Emphasizing the extensibility of the control system, e.g., extending the functionality by different sensors, the most suitable SW architectures are",
+      "correct": ["a Microkernel architecture."],
+      "wrong": [
+        "a Blackboard architecture.",
+        "a Pipes and Filters architecture.",
+        "a Peer-to-Peer architecture.",
+        "a Model-View-Controller architecture."
+      ]
+    },
+    {
+      "question": "Consequences of using Composite",
+      "correct": [
+        "Simplifies the client by providing a uniform traversal interface.",
+        "Simplifies the client by providing auto-propagating methods.",
+        "Simplifies the client by providing a uniform interface for creating mutually compatible trees."
+      ],
+      "wrong": [
+        "Simplifies the client by providing a single method for the construction of the whole (sub-)tree."
+      ]
+    }
+  ]
+}

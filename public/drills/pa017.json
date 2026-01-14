@@ -1,5 +1,6 @@
 {
   "name": "PA017",
+  "note": "Záverečná zkouška z PA017 - Information Systems Management",
   "questions": [
     {
       "correct": ["programů.", "průvodní dokumentace.", "dat."],
@@ -58,8 +59,8 @@
       "question": "Viditelné znaky výroby SW jsou"
     },
     {
-      "correct": ["viditelnost."],
-      "wrong": ["rychlost.", "udržovatelnost.", "použitelnost."],
+      "correct": ["viditelnost.", "rychlost.", "udržovatelnost."],
+      "wrong": ["použitelnost."],
       "question": "Mezi charakteristiky výrobního procesu SW patří"
     },
     {
@@ -118,7 +119,8 @@
     },
     {
       "correct": [
-        "je ve srovnání s ostatními životními cykly obtížně manažersky řiditelný."
+        "je ve srovnání s ostatními životními cykly obtížně manažersky řiditelný.",
+        "je nevhodný pro smluvní vývoj zákaznického SW."
       ],
       "wrong": [
         "je vhodný pro smluvní vývoj zákaznického SW.",
@@ -154,7 +156,8 @@
     },
     {
       "correct": [
-        "Část kódu řešící uživatelské vstupy je větší než část řešící výstupy."
+        "Část kódu řešící uživatelské vstupy je větší než část řešící výstupy.",
+        "Část kódu řešící uživatelské výstupy NENÍ větší než část řešící vstupy."
       ],
       "wrong": [
         "Část kódu řešící uživatelské výstupy je větší než část řešící vstupy.",
@@ -577,7 +580,10 @@
       "question": "Metrika FP (Function points) je:"
     },
     {
-      "correct": ["Oba programy mají stejný počet FP"],
+      "correct": [
+        "Oba programy mají stejný počet FP",
+        "program napsaný v Javě bude mít méně příkazů."
+      ],
       "wrong": [
         "Program napsaný v Javě má více FP",
         "Program napsaný v asembleru má méně FP"
@@ -749,7 +755,8 @@
         "Před fází nasazení na produkční prostředí zákazníka"
       ],
       "wrong": ["Ihned na samém začátku projektu"],
-      "question": "Vrchol počtu pracovníků v průběhu SW projektu je:"
+      "question": "Vrchol počtu pracovníků v průběhu SW projektu je:",
+      "note": "V prednaske sa spomina len Cca ve 40% doby trvání projektu, not sure about Před fází nasazení na produkční prostředí zákazníka"
     },
     {
       "correct": ["Odhady pracnosti", "Rizika", "Subdodávky"],
@@ -760,6 +767,50 @@
       "correct": ["HW náklady", "Náklady na licence"],
       "wrong": ["Odhady času"],
       "question": "Projektová kalkulace SW projektu by měla zahrnovat:"
+    },
+    {
+      "correct": ["SCRUM", "Unified Process"],
+      "wrong": ["Vodopád"],
+      "question": "Které z následujících metodik jsou iterativní:"
+    },
+    {
+      "correct": ["popsány formou user stories."],
+      "wrong": ["uvedeny v product backlogu.", "popsány formou případu užití."],
+      "question": "Pči vývoji podle SCRUM jsou funkční požadavky na systém"
+    },
+    {
+      "correct": ["čas"],
+      "wrong": ["požadavky", "finance"],
+      "question": "Co je při agilním přístupu fixní:"
+    },
+    {
+      "correct": ["přírůstkový"],
+      "wrong": ["vodopád", "výzkumník"],
+      "question": "Který životní cyklus je vhodný pro rozsáhlé IS:"
+    },
+    {
+      "correct": [
+        "Early Design Model",
+        "Post Architecture Model.",
+        "Aplication Composition Model"
+      ],
+      "wrong": [],
+      "question": "Které modely používá COCOMO2:"
+    },
+    {
+      "correct": ["nedodržení standardů", "odchylky od požadavků"],
+      "wrong": ["odchylky od běžných zvyklostí"],
+      "question": "Mezi aspekty kvality SW patří"
+    },
+    {
+      "correct": ["nezávislá na programovacím jazyku"],
+      "wrong": ["nezávislá na velikosti týmu", "nezávislá na programátorovi"],
+      "question": "Metrika FP (Function pounts) je"
+    },
+    {
+      "correct": ["schopnost akceptovat změny", "operační charakteristiky"],
+      "wrong": ["adaptibilita na nové požadavky"],
+      "question": "Mezi kategorie faktorů kvality SW patří:"
     }
   ]
 }
