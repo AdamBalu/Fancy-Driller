@@ -1,0 +1,1518 @@
+{
+  "name": "PV157",
+  "chips": ["midterm"],
+  "questions": [
+    {
+      "question": "Digitální podpis ověříme pomocí",
+      "correct": [
+        "Veřejného klíče podepisující osoby",
+        "Certifikátu veřejného klíče podepisující osoby"
+      ],
+      "wrong": [
+        "Soukromého klíče podepisující osoby",
+        "Privátního klíče podepisující osoby",
+        "Klíče sdíleného s podepisující osobou"
+      ]
+    },
+    {
+      "question": "Digitální podpis může vytvořit",
+      "correct": ["Pouze osoba vlastnící soukromý klíč"],
+      "wrong": [
+        "Pouze osoba vlastnící sdílený klíč",
+        "Pouze osoba vlastnící veřejný klíč",
+        "Pouze osoba vlastnící certifikovaný klíč"
+      ]
+    },
+    {
+      "question": "Co je to zaručený elektronický podpis",
+      "correct": [
+        "Jednoznačně ověřitelný podpis",
+        "Podpis vytvořený pomocí kryptografických prostředků"
+      ],
+      "wrong": [
+        "Podpis, který má záruky srovnatelné jako elektronický podpis",
+        "Elektronický podpis, za který se dokážeme nějak důvěryhodně zaručit"
+      ]
+    },
+    {
+      "question": "V dobrých autentizačních protokolech se typicky",
+      "correct": ["Heslo neposílá vůbec"],
+      "wrong": [
+        "Heslo posílá v hašované podobě",
+        "Heslo posílá v otevřené podobě"
+      ]
+    },
+    {
+      "question": "Pro bezpečné používání digitálního podpisu",
+      "correct": [
+        "Je nutné zajistit integritu veřejného klíče",
+        "Je nutné udržet privátní klíč v tajnosti"
+      ],
+      "wrong": [
+        "Je nutné zajistit integritu privátního klíče",
+        "Je nutné udržet veřejný klíč v tajnosti"
+      ]
+    },
+    {
+      "question": "Při kombinaci šifrování veřejným klíčem a podpisu dokumentu se doporučuje operace provést v následujícím pořadí:",
+      "correct": ["Podpis, šifrování"],
+      "wrong": [
+        "Podpis, šifrování, podpis",
+        "Šifrování, podpis, šifrování",
+        "Šifrování, podpis",
+        "Na pořadí operací nezáleží"
+      ]
+    },
+    {
+      "question": "Integrita dat znamená",
+      "correct": ["Data nebyla neautorizovaně změněna"],
+      "wrong": [
+        "Data v původní podobě lze obnovit i přesto, že byla modifikována",
+        "Data nebyla neautorizovaně změněna pouze v průběhu přenosu nezabezpečeným kanálem",
+        "Data nebyla autorizovaně předána"
+      ]
+    },
+    {
+      "question": "Digitálně podepisujeme",
+      "correct": ["Pouze haš podepisovaného dokumentu"],
+      "wrong": [
+        "V případě malých dokumentů celou zprávu, v případě velkých dokumentů jejich haš",
+        "Vždy přímo celý dokument"
+      ]
+    },
+    {
+      "question": "Při používání digitálního podpisu používáme",
+      "correct": ["Privátní a veřejný klíč"],
+      "wrong": [
+        "Digitální klíč",
+        "Sdílené symetrické klíče mezi všemi komunikujícími partnery",
+        "Digitální pečetě"
+      ]
+    },
+    {
+      "question": "Digitální podpis je založen",
+      "correct": [
+        "obvykle na využití asymetrické kryptografie",
+        "oddělení veřejné a soukromé komponenty páru klíčů"
+      ],
+      "wrong": [
+        "asymetrické bázi CRC",
+        "autorizaci standardu X.509",
+        "na neprokazatelnosti Heisenbergrova principu neurčitelnosti"
+      ]
+    },
+    {
+      "question": "Jak zajistíme integritu veřejného klíče",
+      "correct": ["Pomocí certifikátu veřejného klíče"],
+      "wrong": [
+        "Utajením soukromé části veřejného klíče",
+        "Pomocí klíčované hašovací funkce",
+        "Částečným utajením veřejného klíče",
+        "Pomocí párového privátního klíče"
+      ]
+    },
+    {
+      "question": "Zaručený elektronický podpis",
+      "correct": [
+        "Umožňuje identifikaci podepisující osoby ve vztahu k datové zprávě",
+        "Umožňuje detekci změn ve zprávě, ke které je připojen",
+        "Je jednoznačně spojen s podepisující osobou",
+        "Je jednoznačně ověřitelný"
+      ],
+      "wrong": [
+        "Autorizuje podepisující osobu ve vztahu k datové zprávě",
+        "Je spojen s dostatečnou finanční zárukou"
+      ]
+    },
+    {
+      "question": "Které z následujících nejsou hašovací funkce",
+      "correct": ["RSA", "AES", "RC4"],
+      "wrong": ["MD5", "SHA-1", "MD4"]
+    },
+    {
+      "question": "Jaká je nevýhoda digitálního podepisování prováděného až po zašifrování dat",
+      "correct": ["Možnost snadného odstranění digitálního podpisu"],
+      "wrong": [
+        "Žádná, naopak výhodou je možnost snadné verifikace podpisu ještě před dešifrováním",
+        "Výrazné urychlení kryptoanalýzy",
+        "Žádná, naopak, výhodou je možnost několikanásobného podepsání zašifrovaných dat"
+      ]
+    },
+    {
+      "question": "Silná bezkoliznost u hašovacích funkcí znamená",
+      "correct": [
+        "V rozumném čase nejsme schopni nalézt x, y (x!=y) tak, že h(x)=h(y)"
+      ],
+      "wrong": [
+        "V rozumném čase nejsme schopni nalézt x, y (x=y) tak, že h(x)!=h(y)",
+        "V rozumném čase nejsme schopni nalézt x, y (x=y) tak, že h(x)=h(y)",
+        "V rozumném čase nejsme schopni nalézt x, y (x!=y) tak, že h(x)!=h(y)"
+      ]
+    },
+    {
+      "question": "Jednosměrnost u kryptografických hašovacích funkcí znamená",
+      "correct": ["Pro dané y nelze v rozumném čase najít x tak, aby h(x)=y"],
+      "wrong": [
+        "V rozumném čase nejsme schopni najít x, y tak, aby h(x)=h(y)",
+        "Pro dané h(y) nelze v rozumném čase najít x tak, aby h(x)=h(y)",
+        "Pro dané y lze v rozumném čase najít x tak, aby h(x)=y"
+      ]
+    },
+    {
+      "question": "Co je to hašovací funkce?",
+      "correct": [
+        "Funkce, která mapuje libovolně velký vstup na výstup fixní délky a není prostá"
+      ],
+      "wrong": [
+        "Funkce, která mapuje libovolně velký vstup na výstup s délkou 128, 192, 256 nebo 512 bitů",
+        "Funkce, která mapuje libovolně velký vstup na výstup fixní délky a je prostá",
+        "Funkce, která mapuje vstup fixní délky na výstup variabilní délky (podle entropie vstupu)",
+        "Šifrovací funkce se schopností deprese vstupních dat"
+      ]
+    },
+    {
+      "question": "Protokoly výzva-odpověď mohou být založeny na:",
+      "correct": [
+        "klíčované hašovací funkci",
+        "symetrickém šifrování",
+        "digitálním podpisu",
+        "MAC kódu, resp. funkci"
+      ],
+      "wrong": []
+    },
+    {
+      "question": "Co znamená pojem elektronický podpis ve smyslu zákona o elektronickém podpisu?",
+      "correct": ["Libovolná identifikující informace připojená ke zprávě"],
+      "wrong": [
+        "Takový pojem zákon neobsahuje",
+        "To stejné, co digitální podpis",
+        "Ručně psaný podpis"
+      ]
+    },
+    {
+      "question": "Pro autentizaci obrazovou informací platí",
+      "correct": ["Uživatel musí vybrat správný obrázek nebo jeho část"],
+      "wrong": [
+        "Uživatel musí správně vybarvit předložený obrázek",
+        "Uživatel musí do systému nahrát správný obrázek",
+        "Uživatel musí systému slovně popsat obrázek sloužící k autentizaci"
+      ]
+    },
+    {
+      "question": "\"Solení\" hesel",
+      "correct": [
+        "Pomůže vyřešit situaci, kdy mají uživatelé stejná hesla",
+        "Zajistí delší efektivní heslo"
+      ],
+      "wrong": [
+        "Je dodatečná technika při ukládání hesel pro určitou formu identifikace",
+        "Je dnes již jen velmi zřídka používaná technika"
+      ]
+    },
+    {
+      "question": "Pokud ukládáme hesla šifrovaně",
+      "correct": [
+        "Musíme věřit administrátorovi",
+        "Šifrovací klíč musí být přístupný autentizační službě"
+      ],
+      "wrong": [
+        "Musíme znát (jako uživatelé) šifrovací klíč",
+        "Nesmí být použit šifrovací algoritmus DSA"
+      ]
+    },
+    {
+      "question": "Jak eliminujeme útoky hrubou silou na PINy?:",
+      "correct": ["Omezením počtu pokusů o zadání PINu"],
+      "wrong": ["Pravidelnou změnou hodnoty PINu", "školením uživatelů"]
+    },
+    {
+      "question": "U autentizace pomocí hesel",
+      "correct": ["Musíme řešit aspekt zapamatovatelnosti vs. bezpečnosti"],
+      "wrong": [
+        "Musíme řešit aspekt bezpečnosti bez ohledu na zapamatovatelnost",
+        "Musí uživatel prokázat, že si dokáže zapamatovat alespoň 10 náhodně zvolených symbolů"
+      ]
+    },
+    {
+      "question": "Jaké jsou nevýhody autentizace hašovaným heslem?",
+      "correct": [
+        "Útok přehráním",
+        "Náchylnost ke slovníkovému útoku",
+        "Možnost impersonace"
+      ],
+      "wrong": [
+        "Příliš snadná transformace na zero-knowledge protokoly (protokoly s nulovým rozšířením znalostí)"
+      ]
+    },
+    {
+      "question": "PIN je",
+      "correct": ["Kombinace čísel pro potřeby autentizace"],
+      "wrong": [
+        "Osobně sdílená informace",
+        "Kombinace čísel a písmen (A-F) pro potřeby autentizace",
+        "Veřejně známá informace"
+      ]
+    },
+    {
+      "question": "PIN je",
+      "correct": [
+        "doplňkovým bezpečnostním mechanismem pro operace s bankomatem",
+        "nejčastěji volen v hodnotách 1234, 0000, 0007 nebo 1111"
+      ],
+      "wrong": [
+        "s obvodním bankéřem sdílená informace",
+        "nastaven bankou jako hesla internetového bankovnictví"
+      ]
+    },
+    {
+      "question": "Úspěšnost útoku hrubou silou se dá odhadnout podle vzorce",
+      "correct": [
+        "(čas platnosti * počet odhadů za jednotku času)/(velikost abecedy)^(délka hesla)"
+      ],
+      "wrong": [
+        "(velikost abecedy * délka hesla)/(počet odhadů za jednotku času)^(čas platnosti)",
+        "(délka hesla * počet odhadů za jednotku času)/(velikost abecedy)^(čas platnosti)",
+        "(počet odhadů za jednotku času * délka hesla)/(čas platnosti)^(velikost abecedy)"
+      ]
+    },
+    {
+      "question": "Jaká technologie PINmailerů je bezpečnější při útocích prosvícením?",
+      "correct": ["Průklepový tisk"],
+      "wrong": ["Laserový tisk"]
+    },
+    {
+      "question": "Při hašování hesel pro autentizaci uživatelů pomocí hesel:",
+      "correct": [
+        "Ukládáme pouze haš hesla a rekonstrukce otevřené podoby není možná",
+        "Při ukládání můžeme využít techniky \"solení\""
+      ],
+      "wrong": [
+        "Ukládáme pouze haš hesla s možností rekonstrukce hesla v otevřené podobě"
+      ]
+    },
+    {
+      "question": "Útok na hesla může být",
+      "correct": [
+        "Slovníkový",
+        "Pomocí sociálního inženýrství",
+        "Hrubou silou",
+        "Na základě určitých znalostí o uživateli"
+      ],
+      "wrong": ["Matrixovou metodou"]
+    },
+    {
+      "question": "Vhodná tajná informace pro autentizaci je",
+      "correct": ["Heslo", "PIN", "Fráze (passphrase)"],
+      "wrong": [
+        "Rodné příjmení matky",
+        "Tel. číslo, pokud není uvedeno ve Zlatých stránkách"
+      ]
+    },
+    {
+      "question": "Přístupová hesla můžeme rozlišit na",
+      "correct": ["Jednorázová", "Skupinová", "Unikátní pro danou osobu"],
+      "wrong": ["Veřejná", "Původně neveřejná", "Jednocestná"]
+    },
+    {
+      "question": "Co je to heslo založené na frázi?",
+      "correct": ["Pomůcka pro zapamatování složitého hesla"],
+      "wrong": [
+        "Heslo, které obsahuje pouze malá písmena",
+        "Heslo založené na veřejně známé frázi, aby si jej všichni snadno zapamatovali",
+        "Heslo, které lze jednoduše přečíst"
+      ]
+    },
+    {
+      "question": "Ukládání hesel lze realizovat",
+      "correct": ["Hašovaně", "V otevřené podobě", "Šifrovaně"],
+      "wrong": ["Impulzně", "Hlasovaně"]
+    },
+    {
+      "question": "Při autentizaci tajnou informací je nutné dodržet",
+      "correct": [
+        "Tajnou informaci musí vědět jen oprávněný uživatel",
+        "Prostor, ze kterého vybíráme hodnotu tajné informace musí být rozsáhlý"
+      ],
+      "wrong": [
+        "Tajnou informaci musíme sdělit administrátorovi pro případně admin. zásahy v našem systému",
+        "Z tajné informace se musí nejprve vytvořit inicializační vektor"
+      ]
+    },
+    {
+      "question": "Z hlediska lidské paměti je vhodné volit",
+      "correct": [
+        "Složitá, ale snadno zapamatovatelná hesla",
+        "Jednoduchá a jednoduše zapamatovatelná hesla",
+        "Hesla založená na frázích"
+      ],
+      "wrong": [
+        "Obtížně zapamatovatelná hesla a každý měsíc nutit uživatele ke změně"
+      ]
+    },
+    {
+      "question": "Co je vyžadováno pro autentizaci transakce při offline verifikaci se šifrováním PINu?",
+      "correct": [
+        "Originální PIN nutný pro verifikaci, který musí být bezpečně uložen v čipu",
+        "Fyzicky i prostředím dobře zabezpečený PINpad",
+        "Nový RSA pár klíčů pro šifrování PINů"
+      ],
+      "wrong": ["Úspěšné proběhnutí automatické správy rizik"]
+    },
+    {
+      "question": "Soubor /etc/passwd může obsahovat",
+      "correct": [
+        "Haše hesel uživatelů",
+        "Informaci o tom, že haše hesel jsou v souboru /etc/shadow"
+      ],
+      "wrong": [
+        "Datum a čas posledního úspěšného přihlášení do systému",
+        "Počet zbývajících neúspěšných pokusů o zadání hesla",
+        "Informaci o délce hesla"
+      ]
+    },
+    {
+      "question": "Soubor /etc/shadow obsahuje",
+      "correct": ["Haše hesel uživatelů"],
+      "wrong": [
+        "Informaci o délce hesla",
+        "Datum a čas posledního úspěšného přihlášení do systému",
+        "Počet neúspěšných pokusů o zadání hesla",
+        "Informaci o tom, že haše hesel jsou v souboru /etc/passwd"
+      ]
+    },
+    {
+      "question": "Jaká je správná sekvence operací při ověřování PINu odolná proti přerušení napájení?",
+      "correct": [
+        "Test čítače pokusů větší než 0, snížení čítače, ověření korektnosti PINu, zvýšení čítače při dobrém PINu."
+      ],
+      "wrong": [
+        "Zvýšení čítače, test čítače pokusů větší než 0, ověření korektnosti PINu, zvýšení čítače při dobrém PINu.",
+        "Test čítače pokusů větší než 0, zvýšení čítače, ověření korektnosti PINu, zvýšení čítače při dobrém PINu.",
+        "Test čítače pokusů větší než 0, ověření korektnosti PINu, snížení čítače při špatném PINu."
+      ]
+    },
+    {
+      "question": "Pro urychlení počítačových systémů využívajících digitální podpis",
+      "correct": [
+        "u čipových karet bývají použity kryptografické koprocesory",
+        "obvykle využíváme hašovací funkce pro reprezentaci podepisovaných dat"
+      ],
+      "wrong": [
+        "používají obě strany identický privátní klíč",
+        "se často používá podchlazování ochranných komponent čipových karet",
+        "lze využít prokazatelnou odpovědnost metodou Monte Carlo"
+      ]
+    },
+    {
+      "question": "Jaký typ pamětí je typicky používán u současných čipových karet?",
+      "correct": ["SRAM", "EEPROM"],
+      "wrong": ["DRAM", "GRAM"]
+    },
+    {
+      "question": "Útok na čipové karty pomocí časové analýzy využívá:",
+      "correct": [
+        "Délka operace v závislosti na vykonané větvi kódu.",
+        "Délka operace v závislosti na zpracovávaných datech."
+      ],
+      "wrong": [
+        "Závislost průběhu odběru proudu na prováděné instrukci.",
+        "Závislost průběhu odběru proudu na zpracovávaných datech."
+      ]
+    },
+    {
+      "question": "Jaká technologie přihlašování do systému e-bankovnictví (a autorizace transakcí) je nejbezpečnější (z nabízených možností)?",
+      "correct": ["Použití autentizačního kalkulátoru s PINem"],
+      "wrong": [
+        "Použití hesla zadaného částečně na klávesnici a částečně na virtuální klávesnici",
+        "Použití šifrované autentizační SMS (tj. s využitím SIM Toolkitu)",
+        "Použití klientského certifikátu, který je uložen na čipové kartě s přístupem chráněným PINem"
+      ]
+    },
+    {
+      "question": "Která z uvedených tvrzení o uživatelově PINu jsou pravdivá (při standardním nastavení karty)?",
+      "correct": [
+        "Při změně nezablokovaného PINu je třeba zadat starý i nový uživatelský PIN.",
+        "Při změně zablokovaného PINu je třeba zadat odblokovací PIN a nový uživatelský PIN."
+      ],
+      "wrong": [
+        "Při změně nezablokovaného PINu stačí zadat nový uživatelský PIN.",
+        "Při změně zablokovaného PINu je třeba zadat starý i nový uživatelský PIN."
+      ]
+    },
+    {
+      "question": "Detekcí narušení se u čipových karet myslí:",
+      "correct": ["Vlastnost části systému umožňující detekovat fyzický útok."],
+      "wrong": [
+        "Po narušení jsou stopy narušení obtížně odstranitelné.",
+        "Odolnost proti pokusům o zjištění robustnosti vůči fyzickým útokům.",
+        "Při zjištění narušení je automaticky provedena chráněnou části obranná akce."
+      ]
+    },
+    {
+      "question": "Odpovědí na narušení se u čipových karet myslí:",
+      "correct": [
+        "Automatická akce provedená chráněnou částí při detekci pokusu o narušení."
+      ],
+      "wrong": [
+        "Po úspěšném provedení narušení jsou stopy narušení odstraněny.",
+        "Vlastnost části systému umožňující detekovat fyzický útok.",
+        "Akce provedená bezpečnostním administrátorem po zjištění pokusu o narušení."
+      ]
+    },
+    {
+      "question": "Které z uvedených kategorií čipových karet podle technologie komunikace rozlišujeme?",
+      "correct": ["Bezkontaktní karty.", "Hybridní karty.", "Kontaktní karty."],
+      "wrong": ["Polymorfní karty."]
+    },
+    {
+      "question": "Hybridní čipová karta",
+      "correct": [
+        "poskytuje možnost komunikace přes kontaktní i bezkontaktní rozhraní",
+        "pracuje se dvěma různými čipy"
+      ],
+      "wrong": [
+        "je nyní výhradní technologií pro bankovní karetní operace",
+        "je založena na využití kombinace asymetrické a symetrické kryptografie"
+      ]
+    },
+    {
+      "question": "Která z následujících tvrzení o čipových kartách jsou pravdivá?",
+      "correct": [
+        "Bezkontaktní čipová karta potřebuje anténu pro komunikaci i získávání energie.",
+        "Komunikaci mezi čtečkou a bezkontaktní čipovou kartou lze odposlechnout."
+      ],
+      "wrong": [
+        "U bezkontaktní čipové karty je zajištěno autorizované smazání dat při výpadku napájecího napětí.",
+        "Kontaktní čipová karta má vlastní zdroj energie a komunikuje se čtečkou přímo."
+      ]
+    },
+    {
+      "question": "Které z uvedených kategorií čipových karet podle technologie uchování a práce s daty rozlišujeme?",
+      "correct": [
+        "Paměťové karty se speciální logikou.",
+        "Paměťové karty.",
+        "Procesorové karty."
+      ],
+      "wrong": ["Karty s magnetickým proužkem."]
+    },
+    {
+      "question": "Jaké jsou možnosti prevence padělání tokenů?",
+      "correct": [
+        "Modifikace dostupného vybavení (modifikace vybraných barev u kopírky, vkládání identifikátoru).",
+        "Utajení některých informací nutných ke konstrukci tokenu.",
+        "Kontrola a licence souvisejících živností.",
+        "Omezení dostupnosti potřebného vybavení."
+      ],
+      "wrong": [
+        "Utajení všech informací nutných ke konstrukci tokenu.",
+        "Čestné prohlášení všech uživatelů systému."
+      ]
+    },
+    {
+      "question": "Které z uvedených útoků na čipové karty nepatří mezi fyzické útoky?",
+      "correct": ["Odběrová analýza", "Časová analýza"],
+      "wrong": ["Preparace čipu", "Ozařování čipu"]
+    },
+    {
+      "question": "K čemu slouží CAPTCHA",
+      "correct": ["K odlišení uživatelů od robotů"],
+      "wrong": [
+        "K odlišení chytrých robotů od robotů první generace",
+        "K testu uživatelů, zda chtějí luštit text v obrázku a opisovat jej",
+        "Je to dynamicky se měnící designový prvek www stránek"
+      ]
+    },
+    {
+      "question": "Jaké typy záznamů lze používat na čipové kartě?",
+      "correct": [
+        "Nestrukturovaná data.",
+        "Lineární záznamy s pevnou nebo variabilní délkou.",
+        "Cyklické záznamy."
+      ],
+      "wrong": ["Exponenciální záznam s pevnou délkou."]
+    },
+    {
+      "question": "Jaké jsou obecné nevýhody tokenů?",
+      "correct": [
+        "Bez tokenu není autorizovaný uživatel rozpoznán.",
+        "Ke kontrole je obvykle třeba speciální čtečka nebo vycvičená osoba."
+      ],
+      "wrong": [
+        "Cena tokenů je příliš vysoká pro komerční využití.",
+        "Ztráta tokenu vede většinou ke kompromitaci celého systému."
+      ]
+    },
+    {
+      "question": "Jaké jsou obecné výhody tokenů?",
+      "correct": [
+        "Rychlé zjištění ztráty.",
+        "Mohou zpracovávat a přenášet další informace.",
+        "Většinou nejsou jednoduše kopírovatelné."
+      ],
+      "wrong": ["Nikdy je nelze zneužít po náhodném nálezu."]
+    },
+    {
+      "question": "Co je to semi-invazivní časová analýza?",
+      "correct": ["Žádná z výše uvedených odpovědí."],
+      "wrong": [
+        "Druh semi-invazivního útoku zneužívající u mnohých čipových karet možnost ovlivnění vstupního hodinového cyklu.",
+        "Speciální semi-invazivní útok na autentizační kalkulátor s hodinami.",
+        "Metrika sloužící k určení a vyhodnocení efektivnosti semi-invazivních útoků."
+      ]
+    },
+    {
+      "question": "Útok na čipové karty pomocí indukce chyb je založen na:",
+      "correct": [
+        "Využití chybného běhu algoritmu po prudkém ovlivnění vnějších podmínek k získání tajných dat.",
+        "Využití indukce chyb po prudkém ovlivnění vnějších podmínek k testování změny chování algoritmu."
+      ],
+      "wrong": [
+        "Jako první krok útoku je provedeno fyzického poškození.",
+        "Využití opravných kódů pro automatické odstranění chyby po prudkém ovlivnění vnějších podmínek."
+      ]
+    },
+    {
+      "question": "Co patří mezi bezpečnostní problémy používání bankovních karet s čipem?",
+      "correct": [
+        "Možnost odpozorování PINu na frekventovaných místech.",
+        "Špatná průkaznost nelegitimní autorizace platby pomocí PINu."
+      ],
+      "wrong": [
+        "Velká obtížnost kopírování karty.",
+        "Výpočetní výkon nepostačuje pro kryptografické zabezpečení transakcí."
+      ]
+    },
+    {
+      "question": "Jaké jsou typické velikosti pamětí u současných čipových karet?",
+      "correct": ["< 10KB RAM, ~100KB ROM, < 100KB EEPROM"],
+      "wrong": [
+        "< 100KB RAM, < 100KB ROM, > 1MB EEPROM",
+        "> 256KB RAM, ~100KB ROM, < 100KB EEPROM",
+        "~128KB RAM, ~512KB ROM, ~512KB EEPROM"
+      ]
+    },
+    {
+      "question": "Která z uvedených tvrzení o autentizačních kalkulátorech jsou pravdivá?",
+      "correct": [
+        "Přístup k využití kalkulátoru může být chráněn PINem.",
+        "Pracují na principu protokolu výzva/odpověď s využitím tajné informace.",
+        "Výzva je zadávána manuálně nebo automaticky načtena z vhodného média."
+      ],
+      "wrong": ["Kalkulátor nelze zneužít i při znalosti PINu."]
+    },
+    {
+      "question": "Odolností vůči narušení se u čipových karet myslí:",
+      "correct": [
+        "Vlastnost části systému chráněné proti neautorizované modifikaci podstatně lépe než zbylá část systému."
+      ],
+      "wrong": [
+        "Automatická akce provedená chráněnou částí při zjištění pokusu o narušení.",
+        "Vlastnost části systému umožňující detekovat fyzický útok.",
+        "Ochrana proti útoku rušením radiového signálu (RFID)."
+      ]
+    },
+    {
+      "question": "Proč je u tokenů založených na hodinách potřeba řešit otázku posuvu hodin?",
+      "correct": [
+        "Nutnost synchronizace drobných odchylek mezi serverem a tokenem."
+      ],
+      "wrong": [
+        "Pravým důvodem je přechod na letní/zimní čas a přestupné roky.",
+        "Žádná z výše uvedených odpovědí."
+      ]
+    },
+    {
+      "question": "Které z uvedených útoků na čipové karty nepatří mezi logické útoky?",
+      "correct": ["Ozařování čipu", "Preparace čipu"],
+      "wrong": ["Časová analýza", "Útok přes aplikační rozhraní"]
+    },
+    {
+      "question": "Útok na čipové karty pomocí odběrové analýzy využívá:",
+      "correct": [
+        "Závislost průběhu odběru proudu na ukládaných datech do paměti EEPROM.",
+        "Závislost průběhu odběru proudu na zpracovávaných datech.",
+        "Závislost průběhu odběru proudu na prováděné instrukci."
+      ],
+      "wrong": ["Data získaná odběrem vzorku paměti EEPROM."]
+    },
+    {
+      "question": "Která z uvedených tvrzení o tokenech založených na hodinách jsou pravdivá:",
+      "correct": [
+        "Autentizační hodnota je vygenerována na základě aktuálního času a tajné informace.",
+        "Je potřeba řešit otázku synchronizace hodin mezi serverem a tokenem."
+      ],
+      "wrong": [
+        "Token s hodinami nelze použít bez přítomnosti klávesnice.",
+        "Přístup k využití tokenu s hodinami musí být vždy chráněn PINem."
+      ]
+    },
+    {
+      "question": "Mezi obecné výhody tokenů nepatří:",
+      "correct": ["Snadná detekce a odpověď na narušení."],
+      "wrong": [
+        "Obtížná kopírovatelnost.",
+        "Snadné zjištění ztráty.",
+        "Možnost zpracovávání informací."
+      ]
+    },
+    {
+      "question": "Které z uvedených typů karet se používají v IT bezpečnosti?",
+      "correct": [
+        "Kontaktní karty s čipem.",
+        "Bezkontaktní karty s čipem.",
+        "SIM karty v mobilních telefonech."
+      ],
+      "wrong": ["Karty s bezkontaktním magnetickým proužkem."]
+    },
+    {
+      "question": "Zjistitelností narušení se u čipových karet myslí:",
+      "correct": ["Po narušení jsou stopy narušení obtížně odstranitelné."],
+      "wrong": [
+        "Při zjištění narušení je automaticky provedena chráněnou částí obranná akce.",
+        "Odolnost proti pokusům o zjištění robustnosti vůči fyzickým útokům.",
+        "Vlastnost části systému umožňující reagovat na fyzický útok."
+      ]
+    },
+    {
+      "question": "Jaký je vztah mezi chybovou analýzou a útoky na a přes API?",
+      "correct": ["Chybová analýza s útoky na a přes API nijak nesouvisí."],
+      "wrong": [
+        "API mnohdy obsahuje četné chyby hodné důkladné analýzy.",
+        "Chybová analýza je nezbytná součást každého útoku na a přes API.",
+        "Každý útok na a přes API je nezbytnou součástí chybové analýzy."
+      ]
+    },
+    {
+      "question": "Co patří mezi bezpečnostní problémy používání bankovních karet pouze s magnetickým proužkem?",
+      "correct": [
+        "Relativně jednoduše se kopírují.",
+        "Přítomný hologram se obtížně automatizovaně kontroluje."
+      ],
+      "wrong": [
+        "Autentizační podpis je součástí karty.",
+        "Malá odolnost proti chybové analýze."
+      ]
+    },
+    {
+      "question": "Které z uvedených odpovědí jsou pravdivé?",
+      "correct": [
+        "Cena výroby jednoho kusu tokenu klesá při výrobě mnohakusové série."
+      ],
+      "wrong": [
+        "Cena padělání typicky nezávisí na počtu padělaných kusů.",
+        "Cena padělání jednoho kusu klesá při uplatnitelnosti mnohakusové série padělku.",
+        "Relativní cena padělání se zvyšuje s každým dalším padělkem."
+      ]
+    },
+    {
+      "question": "Současné čipové karty:",
+      "correct": [
+        "Umožňují provádění kryptografických operací symetrické a asymetrické kryptografie s využitím koprocesoru."
+      ],
+      "wrong": [
+        "Umožňují pouze provádění kryptografických operací asymetrické kryptografie.",
+        "Neumožňují provádění kryptografických operací.",
+        "Umožňují pouze provádění kryptografických operací symetrické kryptografie."
+      ]
+    },
+    {
+      "question": "Fyzickou bezpečností se u čipových karet myslí:",
+      "correct": [
+        "Odolnost proti útokům vyžadujícím fyzický přístup ke kartě.",
+        "Fyzická překážka kolem čipu karty ztěžující neautorizovaný přístup."
+      ],
+      "wrong": [
+        "Ochrana proti hloubkové odběrové analýze na úrovni procesoru.",
+        "Ochrana proti fyzickému zkoušení PINu hrubou silou."
+      ]
+    },
+    {
+      "question": "Útok na čipové karty přes aplikační rozhraní (API) je založen na:",
+      "correct": [
+        "Využití chyby v návrhu rozhraní.",
+        "Nezamýšleném dopadu zpracování útočníkem zaslaných specifických vstupních dat."
+      ],
+      "wrong": [
+        "Nedostupnosti aplikačního rozhraní vnitřnímu prostředí karty.",
+        "Využití indukce chyb do zpracování dat zaslaných přes aplikační rozhraní."
+      ]
+    },
+    {
+      "question": "Která z uvedených tvrzení o řízení přístupu k datům na čipových kartách jsou pravdivá?",
+      "correct": [
+        "Každý soubor má přiřazenu hlavičku s přístupovými právy.",
+        "Založeno především na řízení přístupu k souborům."
+      ],
+      "wrong": [
+        "Data jsou uchována na magnetickém proužku a před použitím v čipu kontrolována.",
+        "Data na kartě nemohou být po zápisu nikdy čtena ani měněna."
+      ]
+    },
+    {
+      "question": "Co je to odpověď na narušení?",
+      "correct": ["Reakce chráněné části systému na probíhající pokus o útok."],
+      "wrong": [
+        "Žádná z výše uvedených odpovědí.",
+        "Služba internetového bankovnictví umožňující automaticky detekovat a upozornit na aktivní nebezpečný software v počítači.",
+        "Reakce nechráněné části systému na potencionální útok."
+      ]
+    },
+    {
+      "question": "Jaké vlastnosti mají magneto-optické čipové karty?",
+      "correct": ["Žádná z výše uvedených odpovědí."],
+      "wrong": [
+        "Umožňují snímání čárových kódů zobrazovaných na monitoru při vstupu do internetového bankovnictví a jejich okamžité zpracování v čipu.",
+        "Poskytují magneto-optické rozhraní pro vysokorychlostní a prokazatelně bezpečný přenos dat.",
+        "Neumožňují provádění kryptografických operací i přesto, že obsahují sofistikovanější magneto-optický proužek. Každá z dvou komunikujících stran má svůj symetrický klíč."
+      ]
+    },
+    {
+      "question": "Které z uvedených typů autentizačních kalkulátorů se používají v IT bezpečnosti?",
+      "correct": [
+        "Kalkulátor s hodinami.",
+        "Kalkulátor s tajnou informací.",
+        "Kalkulátor bez vstupní klávesnice."
+      ],
+      "wrong": ["Kalkulátor s vestavěným budíkem (z angl. embedded alarm)."]
+    },
+    {
+      "question": "Komerční biometrická řešení oproti forenzním nabízí",
+      "correct": [
+        "plně automatizované systémy.",
+        "možnost opakovaného vytvoření nedostatečně kvalitních registračních vzorků."
+      ],
+      "wrong": [
+        "vyšší přesnost.",
+        "uchování zpracovaných charakteristik včetně biometrických vzorků."
+      ]
+    },
+    {
+      "question": "Biometriky jsou",
+      "correct": [
+        "automatizované metody identifikace nebo ověření identity.",
+        "založeny na opakovatelně měřitelných fyziologických nebo behaviorálních vlastnostech člověka."
+      ],
+      "wrong": [
+        "založeny na neopakovatelně měřitelných fyziologických nebo behaviorálních vlastnostech člověka.",
+        "i metody identifikace pomocí čipové karty obsahující vzorky člověka."
+      ]
+    },
+    {
+      "question": "Snímače otisků prstů jsou",
+      "correct": ["kapacitní", "optické"],
+      "wrong": ["inkoustové (tryskové)", "polyadické"]
+    },
+    {
+      "question": "Praktické problémy biometrik jsou",
+      "correct": [
+        "uživatelé s poškozenými či chybějícími orgány.",
+        "legislativa a správa charakteristik."
+      ],
+      "wrong": [
+        "nízké FRR (nespokojení uživatelé z důvodu častého odmítnutí).",
+        "nízké FAR (aplikace s nízkou úrovní bezpečnosti)."
+      ]
+    },
+    {
+      "question": "Běžné komerční biometrické zařízení",
+      "correct": ["se neautentizuje vůči dalším komunikujícím."],
+      "wrong": [
+        "je vybaveno detekcí průniku nebo má zvýšenou odolnost proti průniku.",
+        "typicky dobře šifruje přenášená data pomocí kvalitních algoritmů."
+      ]
+    },
+    {
+      "question": "Který z výroků o autentizaci na základě dynamiky psaní na klávesnici je pravdivý?",
+      "correct": [
+        "Měří se čas stlačení klávesy a čas mezi stisky kláves.",
+        "Uživatele je možno autentizovat kontinuálně.",
+        "K autentizaci stačí běžná klávesnice.",
+        "Algoritmy pracují na principu srovnávání vzorů (pattern matching) nebo neuronových sítí (neural networks)."
+      ],
+      "wrong": []
+    },
+    {
+      "question": "Biometrické charakteristiky se dělí na",
+      "correct": ["genotypické", "fenotypické"],
+      "wrong": ["geotypické", "biomatické"]
+    },
+    {
+      "question": "Oční duhovka je snímána pomocí",
+      "correct": ["černobílé kamery."],
+      "wrong": [
+        "ultrafialového paprsku.",
+        "kvalitní barevné kamery.",
+        "laserového paprsku s třídou bezpečnosti 1."
+      ]
+    },
+    {
+      "question": "Mezi chyby biometrických systémů patří",
+      "correct": ["FAR (False Acceptance Rate)", "FRR (False Rejection Rate)"],
+      "wrong": [
+        "ARR (Acceptance Rejection Rate)",
+        "EDR (Error Disqualification Rate)"
+      ]
+    },
+    {
+      "question": "Které biometrické charakteristiky bývají nazývány také dynamickými?",
+      "correct": ["behaviorální"],
+      "wrong": ["fyziologické", "genotypické", "fenotypické"]
+    },
+    {
+      "question": "Biometrické technologie mohou být založeny na některém z těchto typů charakteristik:",
+      "correct": ["fyziologický", "behaviorální"],
+      "wrong": ["morální", "environmentální", "chemoterapický"]
+    },
+    {
+      "question": "Proces použití biometrik pro autentizaci zahrnuje",
+      "correct": ["registraci", "verifikaci"],
+      "wrong": ["degustaci", "demonstraci"]
+    },
+    {
+      "question": "Jaké jsou hlavní výhody biometrik",
+      "correct": [
+        "rychlé a (relativně) přesné výsledky.",
+        "nemůžeme je ztratit, zapomenout nebo předat jiné osobě."
+      ],
+      "wrong": ["jsou tajné.", "jednoduchá správa vzorků."]
+    },
+    {
+      "question": "Na co není výhodné použít biometriky",
+      "correct": ["na autentizaci dat."],
+      "wrong": [
+        "na ochranu přístupu k tajnému klíči.",
+        "na doplňkovou formu autentizace."
+      ]
+    },
+    {
+      "question": "Forenzní řešení biometrik popisují tyto výroky",
+      "correct": [
+        "pro používání je nutná odborná znalost systému.",
+        "cena je vysoká, ale s tím se počítá."
+      ],
+      "wrong": [
+        "výsledek identifikace je získán obvykle za 1s či rychleji.",
+        "miniaturizace zařízení je jedním z hlavním cílů."
+      ]
+    },
+    {
+      "question": "Biometrická data při opakovaném měření kvalitním zařízením",
+      "correct": ["nejsou nikdy shodná na 100 %."],
+      "wrong": [
+        "jsou vždy shodná na 99 % a víc.",
+        "nejsou nikdy shodná na 100 % až na otisky prstů.",
+        "jsou typicky shodná na 100 %."
+      ]
+    },
+    {
+      "question": "Autentizace pomocí verifikace hlasu probíhá typicky",
+      "correct": ["využitím telefonu."],
+      "wrong": [
+        "pomocí soustavy mikrofonů rozmístěných ve vzdálenosti cca 0,5 m ve 4 směrech.",
+        "v samostatné odhlučněné komoře, pro odstranění okolního šumu."
+      ]
+    },
+    {
+      "question": "Které z příkladů autentizace počítačů jsou možné",
+      "correct": [
+        "Kombinace IP, MAC, GUID (global unique identifier)",
+        "Kombinace IP adresy a tajného klíče symetrické kryptografie",
+        "Tajným klíčem symetrické kryptografie",
+        "Privátním klíčem asymetrické kryptografie"
+      ],
+      "wrong": []
+    },
+    {
+      "question": "Které z výroků o autentizaci na základě rozpoznání obličeje nejsou pravdivé?",
+      "correct": ["Přesnost se v posledních 5 letech příliš nezlepšila."],
+      "wrong": [
+        "Autentizaci komplikuje osvětlení a pozadí.",
+        "Jedná se o velice výpočetně náročnou metodu autentizace.",
+        "Autentizaci komplikuje změna účesu, náušnice a brýle."
+      ]
+    },
+    {
+      "question": "U dynamiky podpisu je důležitý",
+      "correct": [
+        "čas potřebný pro provedení podpisu.",
+        "pořadí jednotlivých tahů pera."
+      ],
+      "wrong": ["aretačně-dynamický tablet.", "výsledný podpis."]
+    },
+    {
+      "question": "Základní fakta o biometrických systémech jsou:",
+      "correct": [
+        "kopírování biometrik nemusí být triviální, ale není obtížné.",
+        "biometrická data mohou být velmi citlivé informace."
+      ],
+      "wrong": ["biometrická data jsou tajná."]
+    },
+    {
+      "question": "Které biometrické charakteristiky bývají nazývány také statickými?",
+      "correct": ["fyziologické"],
+      "wrong": ["fenotypické", "behaviorální", "genotypické"]
+    },
+    {
+      "question": "Mezi nejslibnější technologie v oblasti identifikace v počítačových systémech pomocí biometrik nepatří",
+      "correct": ["tvar ruky.", "DNA."],
+      "wrong": ["otisk prstu.", "ověření mluvčího.", "snímání oční duhovky."]
+    },
+    {
+      "question": "Markanta v oblasti biometrik znamená:",
+      "correct": ["Významný bod v otisku prstu."],
+      "wrong": [
+        "Výrazné poškození dané biometriky u konkrétního uživatele.",
+        "Zpracovaný obraz oční duhovky se zvýrazněnými přechody.",
+        "Biometrická technologie s významně vysokou hodnotou EER."
+      ]
+    },
+    {
+      "question": "Která z následujících tvrzení snímání geometrie ruky jsou pravdivá?",
+      "correct": [
+        "Snímače snímají zjednodušený 3D náhled ruky.",
+        "Tvar ruky není jedinečný (ve skupinách o tisících uživatelů)."
+      ],
+      "wrong": [
+        "Snímače snímají 2D snímky ruky shora, zespodu a ze stran (dohromady 4 snímky, u špičkových zařízení i 5-6).",
+        "Snímače snímají 2D snímky ruky mikrokamerami ve fixačních kolících.",
+        "Tvar ruky je jedinečný (ve skupinách o tisících uživatelů)."
+      ]
+    },
+    {
+      "question": "Proč musíme povolit určitou variabilitu mezi registračním vzorkem a později získanými biometrickými daty?",
+      "correct": ["Protože biometrická data nejsou nikdy 100 % shodná."],
+      "wrong": [
+        "Z důvodu možné transplantace orgánu, aby i po ní bylo snímání možné.",
+        "Protože buňky mají přirozenou tendenci obnovovat se a tudíž mohou vznikat malé odlišnosti.",
+        "Pokud je registrační vzorek nasnímám opravdu kvalitně, tak variabilita nemusí být povolena."
+      ]
+    },
+    {
+      "question": "Chybovost biometrických systémů závisí na:",
+      "correct": [
+        "Schopnosti a motivaci uživatelů.",
+        "Nastavení systému.",
+        "Typu snímače.",
+        "Okolním prostředí."
+      ],
+      "wrong": []
+    },
+    {
+      "question": "Mezi reálně používané biometrické technologie patří",
+      "correct": ["otisk prstu", "srovnání obličeje"],
+      "wrong": [
+        "dynamika pohybu hlavy",
+        "geometrie (tvaru) nohy",
+        "vzor oční panenky"
+      ]
+    },
+    {
+      "question": "Mezi základní nedostatky při snímání obličeje nepatří",
+      "correct": ["nasazené kontaktní čočky."],
+      "wrong": ["pestré a barevné pozadí.", "nasazená čepice.", "zavřené oči."]
+    },
+    {
+      "question": "Testování živosti obvykle nemá následující dopady",
+      "correct": ["nepříjemné pocity brnění v oblasti testovaného vzorku."],
+      "wrong": [
+        "zvýšený počet nesprávných odmítnutí.",
+        "zvýšení ceny zařízení.",
+        "vyšší náklady na vývoj a výrobu."
+      ]
+    },
+    {
+      "question": "V tiketu používaném v systému Kerberos se objevuje:",
+      "correct": ["Identifikátor alespoň jedné ze stran", "Časové razítko"],
+      "wrong": ["Soukromý klíč", "Náhodná výzva"]
+    },
+    {
+      "question": "Protokol Kerberos zajišťuje",
+      "correct": ["Autentizaci"],
+      "wrong": ["Aprobaci", "Autokracii", "Akumulaci"]
+    },
+    {
+      "question": "Čeho lze dosáhnout zopakováním zero-knowledge protokolu (protokol s nulovým rozšíření znalostí)?",
+      "correct": [
+        "Zvýšení bezpečnosti - sníží se pravděpodobnost, že nepoctivý útočník se může úspěšně vydávat za jinou stranu"
+      ],
+      "wrong": [
+        "Zvýšení bezpečnosti - zvýší se záruka, že nedojde k rozšíření žádných znalostí",
+        "Ničeho - ke spolehlivé autentizaci stačí 1 kolo protokolu",
+        "Ničeho - nezvýší se záruka, že nedojde k rozšíření žádných znalostí"
+      ]
+    },
+    {
+      "question": "Které časově proměnné parametry se používají v kryptografických protokolech?",
+      "correct": ["Náhodná čísla", "Časová razítka"],
+      "wrong": [
+        "Monoliticky rostoucí sekvence",
+        "Náhodná komplexní čísla",
+        "Náhodné sekvence",
+        "Náhodná časová razítka"
+      ]
+    },
+    {
+      "question": "Která z následujících tvrzení jsou platná pro protokol SSL/TLS?",
+      "correct": [
+        "SSL/TLS protokol neprovádí elektronické podepisování dat.",
+        "Implicitně je autentizace serveru povinná, autentizace klienta je volitelná."
+      ],
+      "wrong": [
+        "Implicitně je autentizace serveru i klienta vypnuta.",
+        "Implicitně je autentizace serveru a klienta povinná."
+      ]
+    },
+    {
+      "question": "Které z uvedených režimů nepodporuje IPsec:",
+      "correct": ["Dynamický virtuální režim.", "Překladový režim."],
+      "wrong": ["Transportní režim.", "Tunelovací režim."]
+    },
+    {
+      "question": "Na jakém druhu kryptografie je založena základní verze Kerbera?",
+      "correct": ["Symetrická"],
+      "wrong": ["Hybridní", "Asymetrická"]
+    },
+    {
+      "question": "Aktualizace klíče se vzájemnou autentizací protokolem AKEP2 (Authenticated Key Exchange Protocol 2)je založena na:",
+      "correct": ["Algoritmu MAC (Message Authentication Code)"],
+      "wrong": [
+        "Generátorech passcode",
+        "Digitálních podpisech",
+        "Bez klíčových kryptografických hašovacích funkcích"
+      ]
+    },
+    {
+      "question": "Které protokoly umožňují vytvoření sdíleného tajemství?",
+      "correct": [
+        "Protokoly pro ustavení klíče",
+        "Protokoly implementované v Kerberu"
+      ],
+      "wrong": [
+        "Zero-knowledge protokoly (protokoly s nulovým rozšířením znalostí)",
+        "Silné autentizační protokoly"
+      ]
+    },
+    {
+      "question": "Jaký mechanismus je použit pro zajištění bezpečnosti v autentizační hlavičce IPsec?",
+      "correct": ["Message Authentication Code se sekvenčním číslem."],
+      "wrong": [
+        "Diffie-Hellman autentizace bez klíčů.",
+        "Message Authentication Code s náhodným číslem.",
+        "Digitální podpis využívající RSA nebo DSA."
+      ]
+    },
+    {
+      "question": "Na jaké vrstvě funguje protokol SSL/TLS?",
+      "correct": ["mez aplikační a datovou vrstvou"],
+      "wrong": ["na linkové vrstvě", "na síťové vrstvě", "na datové vrstvě"]
+    },
+    {
+      "question": "Která z následujících tvrzení jsou platná pro protokol SSL/TLS? !!!",
+      "correct": [
+        "Po průběhu Handshake protokolu je komunikace šifrována symetrickým klíčem.",
+        "SSL/TLS protokol zajišťuje integritu a autenticitu dat."
+      ],
+      "wrong": [
+        "Autentizace komunikujících stran je založena na symetrické kryptografii.",
+        "Po úvodní Handshake protokolu je komunikace šifrována veřejným klíčem příjemce."
+      ]
+    },
+    {
+      "question": "Které z protokolů se v současnosti v běžných aplikacích využívají více?",
+      "correct": ["Challenge-response protokoly (protokoly výzva-odpověď)"],
+      "wrong": [
+        "Zero-knowledge protokoly (protokoly s nulovým rozšířením znalostí)"
+      ]
+    },
+    {
+      "question": "Zero-knowledge protokoly (protokoly s nulovým rozšířením znalostí) umožňují, poctivým stranám vždy dosáhnout úspěšného výsledku. Tato vlastnost se nazývá:",
+      "correct": ["Úplnost (completeness)"],
+      "wrong": [
+        "Částečné uspokojení (partial satisfaction)",
+        "Korektnost (soundness)",
+        "Úplné uspokojení (complete satisfaction)"
+      ]
+    },
+    {
+      "question": "Které z uvedených možností nezajišťuje protokol IPsec?",
+      "correct": [
+        "Ochranu proti analýze šifrovaného provozu na síťové vrstvě.",
+        "Nepopiratelnost přijetí dat."
+      ],
+      "wrong": [
+        "Integrita a autentizace původu dat.",
+        "Důvěrnost dat, ochrana proti přehrání."
+      ]
+    },
+    {
+      "question": "Pravděpodobnost, že se nepoctivý útočník může úspěšně vydávat za jinou stranu je u zero-knowledge protokolů (protokoly s nulovým rozšířením znalostí) mizivá. Tato vlastnost se nazývá:",
+      "correct": ["Korektnost (soundness)"],
+      "wrong": [
+        "Částečné uspokojení (partial satisfaction)",
+        "Úplné uspokojení (complete satisfaction)",
+        "Úplnost (completeness)"
+      ]
+    },
+    {
+      "question": "Které z níže uvedených typů protokolů existují?",
+      "correct": [
+        "Autentizační protokoly bez ustavení klíče",
+        "Autentizované protokoly pro ustavení klíče",
+        "Protokoly pro ustavení klíče",
+        "Neautentizované protokoly pro ustavení klíče"
+      ],
+      "wrong": [
+        "Zero-knowledge protokoly (protokoly s nulovým rozšířením znalostí) pro ustavení klíče."
+      ]
+    },
+    {
+      "question": "Která z následujících tvrzení jsou platná pro protokol SSL/TLS? !!!",
+      "correct": [
+        "Autentizace komunikujících stran je založena na asymetrické kryptografii.",
+        "SSL/TLS protokol umožňuje vzájemnou autentizaci serveru a klienta."
+      ],
+      "wrong": [
+        "SSL/TLS protokol nezajišťuje důvěrnost dat.",
+        "Implicitně je autentizace serveru a klienta je povinná."
+      ]
+    },
+    {
+      "question": "Které z uvedených režimů podporuje IPsec:",
+      "correct": ["Transportní režim.", "Tunelovací režim."],
+      "wrong": ["Překladový režim.", "Dynamický virtuální režim."]
+    },
+    {
+      "question": "Který z následujících protokolů je součásti SSL/TLS protokolu?",
+      "correct": ["Record Layer protokol.", "Handshake protokol."],
+      "wrong": ["Kerberos protokol.", "IPSec protokol."]
+    },
+    {
+      "question": "Které protokoly zaručují určitou míru jistoty o identitě jiné strany?",
+      "correct": [
+        "Autentizační protokoly",
+        "Zero-knowledge protokoly (protokoly s nulovým rozšířením znalostí)",
+        "Protokoly implementované v Kerberu"
+      ],
+      "wrong": ["Protokoly pro ustavení klíče"]
+    },
+    {
+      "question": "Které časově konstantní parametry se používají v kryptografických protokolech?",
+      "correct": ["Žádné z uvedených"],
+      "wrong": [
+        "V omezeném čase monoliticky rostoucí sekvence (zabraňují tzv. borcení časové osy)",
+        "XOR hodnotou \"-1\" pro modifikaci náhodné výzvy (tzv. keksík)",
+        "Komplexní čísla s fixní imaginární i reálnou složkou",
+        "Sekvenční číslo (jeho hodnota závisí na implementaci)",
+        "Náhodná časová razítka (platná po určitou dobu - typicky několik desítek hodin)"
+      ]
+    },
+    {
+      "question": "Která z uvedených tvrzení pro Encapsulated Security Payload (ESP) nejsou pravdivá?",
+      "correct": [
+        "ESP nemá zajištěnu integritu a autenticitu dat, zajišťuje pouze důvěrnost dat.",
+        "ESP zajišťuje obranu proti analýze šifrovaného provozu na úrovni síťové vrstvy.",
+        "ESP zajišťuje integritu, autenticitu a důvěrnost dat, nezajišťuje však obranu proti útoku přehráním."
+      ],
+      "wrong": ["ESP zajišťuje integritu, autenticitu a důvěrnost dat."]
+    },
+    {
+      "question": "Protokoly výzva-odpověď mohou být založeny na:",
+      "correct": [
+        "klíčované hašovací funkci",
+        "symetrickém šifrování",
+        "digitálním podpisu",
+        "MAC kódu, resp. funkci"
+      ],
+      "wrong": []
+    },
+    {
+      "question": "Jaké vlastnosti má Shamirův protokol bez klíčů (Shamir’s no-key protocol)",
+      "correct": [
+        "Nevyžaduje žádné ustavení sdílených klíčů",
+        "Vyžaduje komutativní šifrovací algoritmus"
+      ],
+      "wrong": [
+        "Funguje obzvláště dobře (a prokazatelně bezpečně) jen při použití One-Time Pad",
+        "Prokazuje, že P!=NP",
+        "Umožňuje vzájemnou autentizaci"
+      ]
+    },
+    {
+      "question": "Kolik zpráv se vymění ve Shamirově protokolu bez klíčů, aby obě strany sdílely stejný klíč?",
+      "correct": ["3"],
+      "wrong": ["2", "4", "žádná z těchto odpovědi není správná"]
+    },
+    {
+      "question": "Které z uvedených možností zajišťuje protokol IPsec?",
+      "correct": [
+        "Důvěrnost dat, ochrana proti útoku přehráním.",
+        "Autentizace a integrita původu dat.",
+        "Podporu správy klíčů."
+      ],
+      "wrong": ["Nepopiratelnost přijetí dat."]
+    },
+    {
+      "question": "Co zajišťujeme použitím náhodných čísel?",
+      "correct": ["Aktuálnost", "Čerstvost", "Jedinečnost"],
+      "wrong": [
+        "Odolnost proti uváznutí a stárnutí",
+        "Nezvratnost",
+        "Stálost a stabilitu"
+      ]
+    },
+    {
+      "question": "K čemu slouží autentizační agent u ssh?",
+      "correct": [
+        "Opakované požadavky vyžadující heslo řeší agent po prvním zadání automaticky."
+      ],
+      "wrong": [
+        "K autentizaci dat přenášených mezi serverem a uživatelem.",
+        "Automaticky autentizuje server vůči uživateli bez nutnosti zadávat opakovaně heslo.",
+        "Autentizační agent se u ssh nepoužívá, neboť je použita asymetrická kryptografie."
+      ]
+    },
+    {
+      "question": "Která z uvedených tvrzení jsou pravdivá:",
+      "correct": [
+        "Autentizace pomocí IP adresy není spolehlivá, protože IP může být změněna."
+      ],
+      "wrong": [
+        "Autentizace pomocí IP adresy může být použita pouze v kombinaci s MAC adresou.",
+        "Autentizace pomocí IP adresy je výrazně bezpečnější než autentizace pomocí MAC adresy.",
+        "Autentizace pomocí IP adresy je výrazně méně bezpečná než autentizace pomocí MAC adresy."
+      ]
+    },
+    {
+      "question": "IP spoofing označuje:",
+      "correct": ["Podvržení IP adresy odesílatele."],
+      "wrong": [
+        "Podvržení IP adresy příjemce.",
+        "Zachycení IP adresy odesílatele i příjemce.",
+        "Zachycení IP odesílatele."
+      ]
+    },
+    {
+      "question": "Co nezajišťuje protokol ssh?",
+      "correct": [
+        "Ochranu proti analýze provozu.",
+        "Ochranu proti distribuovanému odmítnutí služby."
+      ],
+      "wrong": ["Autentizaci uživatele.", "Autentizaci serveru."]
+    },
+    {
+      "question": "Které z uvedených možností autentizace klienta vůči serveru podporuje protokol ssh?",
+      "correct": [
+        "RSA autentizaci klienta.",
+        "Stroje uvedené v souborech .rhosts nebo hosts.equiv."
+      ],
+      "wrong": [
+        "Využitím protokolu pro nulové rozšíření znalosti.",
+        "Heslem uživatele bez autentizace serveru."
+      ]
+    },
+    {
+      "question": "Proti jakým útokům brání protokol ssh?",
+      "correct": [
+        "Odposlech hesla a pozdější přehrání (na síťové vrstvě)",
+        "DNS/IP/Routing spoofing"
+      ],
+      "wrong": [
+        "Odposlech hesla a pozdější přehrání (na uživatelově PC)",
+        "Analýza šifrovaného provozu na síťové vrstvě"
+      ]
+    },
+    {
+      "question": "Chybové hlášení o změně integritního součtu veřejného klíče serveru u SSH může být",
+      "correct": [
+        "Změnou dlouhodobého klíče serveru jeho administrátorem",
+        "Podvržením serveru útočníkovým strojem",
+        "Změnou souboru s veřejným klíčem serveru na uživatelově PC"
+      ],
+      "wrong": ["Chybějícím záznamem veřejného klíče v souboru známých serverů"]
+    },
+    {
+      "question": "K čemu slouží soubor .rhosts?",
+      "correct": [
+        "K nastavení adres počítačů s povoleným přihlášením bez další autentizace ."
+      ],
+      "wrong": [
+        "Uchování informací o adresách autentizovaných počítačů připojených k serveru.",
+        "K uchování uživatelů s právem číst (read).",
+        "K uchování RSA klíče(ů) serveru."
+      ]
+    },
+    {
+      "question": "Které z uvedených možností jsou proveditelnými útoky při provedení autentizace prostřednictvím .rhosts",
+      "correct": [
+        "Vrácení podvržené IP adresy po dotazu na DNS server.",
+        "Uvedení nepředpokládaného loginu uživatele.",
+        "IP spoofing."
+      ],
+      "wrong": ["Útok hrubou silou."]
+    },
+    {
+      "question": "Jaký je u ssh rozdíl mezi Server key a Host key?",
+      "correct": [
+        "Host key je dlouhodobý klíč.",
+        "Server key je krátkodobý klíč použitý pro vlastní autentizaci serveru."
+      ],
+      "wrong": [
+        "Server key je krátkodobý klíč použitý pro odvození Host key.",
+        "Host key je krátkodobý klíč použitý pro vlastní autentizaci serveru."
+      ]
+    },
+    {
+      "question": "Autentizace dat znamená",
+      "correct": [
+        "Potvrzení, že data nebyla neautorizovaně změněna od doby vytvoření",
+        "Potvrzení, že data pochází od určitého subjektu"
+      ],
+      "wrong": [
+        "Totéž co integrita",
+        "Data nemohl odeslat nikdo jiný než jejich původce"
+      ]
+    },
+    {
+      "question": "Jaké bezpečnostní problémy lze identifikovat v soudobém bankovnictví?",
+      "correct": [
+        "Dodatečné autorizační SMS zprávy jen u některých operací e-bankovnictví",
+        "Nedostatečné zabezpečení platebních terminálů",
+        "Social engineering např. při telefonním hovoru",
+        "Zasílání embosované karty poštou a nedostatečně zabezpečené doručování PINu a hesla"
+      ],
+      "wrong": [
+        "Použití pouze asymetrické kryptografie v kombinaci s hašovacími funkcemi (pouze pro podpisy)",
+        "Použití autentizačních kalkulátorů"
+      ]
+    },
+    {
+      "question": "Autentizace v soudobých systémech e-bankovnictví je výhradně",
+      "correct": ["Žádná z dalších odpovědí není správně"],
+      "wrong": ["Třífaktorová", "Dvoufaktorová", "Jednofaktorová"]
+    },
+    {
+      "question": "Co nepatří mezi mechanizmy zabraňující jednodušším útokům na e-bankovnictví s autentizací pouze na základě hesla?",
+      "correct": ["Anonymizovaný login", "SSH certifikáty"],
+      "wrong": [
+        "testy délky a kvality hesla",
+        "Virtuální klávesnice pro zadávání hesla",
+        "Personalizovaný login",
+        "SSL certifikáty"
+      ]
+    },
+    {
+      "question": "Úspěšné odposlechnutí citlivých dat ze sběrnice platebního terminálu může vést:",
+      "correct": [
+        "K modifikaci nepodepsaného seznamu podporovaných verifikačních metod (CVM)",
+        "K získání přesné kopie dat na magnetickém proužku",
+        "K získání PINu"
+      ],
+      "wrong": [
+        "K přečtení citlivých informací banky (sdílené tajné klíče uložené v terminálu)",
+        "K narušení anonymity jednotlivých komunikujících stran",
+        "K modifikaci podepsaného seznamu podporovaných verifikačních metod (CVM)"
+      ]
+    },
+    {
+      "question": "Generátory passcode slouží pro",
+      "correct": [
+        "Bezpečné uložení dlouhodobých klíčů",
+        "Realizaci challenge-response (výzva-odpověď) protokolu"
+      ],
+      "wrong": [
+        "Urychlení generování sekvenčních čísel",
+        "Personalizaci elektronických pasů"
+      ]
+    },
+    {
+      "question": "Pro statickou autentizaci dat (SDA) platí, že:",
+      "correct": [
+        "Potvrzuje pravost pouze statických dat uložených v čipové kartě.",
+        "Je prováděna pouze platebním terminálem (čip pouze zasílá data)"
+      ],
+      "wrong": [
+        "Řeší problém padělání/duplikace karet",
+        "Potvrzuje pravost statických dat uložených v čipové kartě, ale i dynamických dat zaslaných terminálem",
+        "Je prováděna pouze čipovou kartou (terminál pouze zasílá data)",
+        "Potvrzuje pravost statických uložených v čipové kartě, ale i dynamických dat zaslaných čipem"
+      ]
+    },
+    {
+      "question": "Co je to Chaffing and winnowing",
+      "correct": [
+        "Pro každý bit zprávy vytvoříme dvě zprávy (správný, chybný MAC), příjemce si ponechá zprávu se správným MAC",
+        "\"Oddělení zrna od plev\""
+      ],
+      "wrong": [
+        "Zprávu rozdělíme na jednotlivé bity a ty šifrujeme z využitím MAC každý zvlášť",
+        "Každý bit zprávy zkopírujeme několikrát za sebe, aby se předešlo chybám v důsledku chybovosti MAC komunikačního kanálu"
+      ]
+    },
+    {
+      "question": "Slabá bezkoliznost u hašovacích funkcí znamená",
+      "correct": [
+        "Pro dané x nejsme schopni v rozumném čase najít y!=x tak, že h(x)=h(y)"
+      ],
+      "wrong": [
+        "Pro dané x nejsme schopni v rozumném čase najít y!=x tak, že h(x)=y",
+        "Pro dané x nejsme schopni v rozumném čase najít y!=x tak, že x=h(y)",
+        "V rozumném čase nejsme schopni nalézt x, y (x=y) tak, že h(x)!=h(y)"
+      ]
+    },
+    {
+      "question": "Z jakých šifrovacích algoritmů se obvykle tvoří hašovací funkce?",
+      "correct": ["Bloková symetrická šifra"],
+      "wrong": [
+        "Asymetrická šifra",
+        "Hašovací funkci nelze vytvořit z žádného šifrovacího algoritmu",
+        "Proudová symetrická šifra"
+      ]
+    },
+    {
+      "question": "K čemu slouží MAC (Message authentication code)",
+      "correct": ["K zajištění integrity", "K detekci chyb při přenosu dat"],
+      "wrong": [
+        "K zajištění důvěrnosti",
+        "K ověření zprávy síťové karty",
+        "K transformaci hašovací funkce"
+      ]
+    },
+    {
+      "question": "Zajistit autentizaci digitálních dat a zpráv lze",
+      "correct": [
+        "Pomocí zaručeného elektronického podpisu",
+        "Pomocí MAC",
+        "Pomocí klíčované hašovací funkce"
+      ],
+      "wrong": [
+        "Pomocí klasického (ručního) podpisu",
+        "Pomocí parciálně zaručeného elektronického podpisu"
+      ]
+    },
+    {
+      "question": "Pro pojem výpočetní bezpečnost platí následující tvrzení.",
+      "correct": [
+        "Časová náročnost prolomení určitého algoritmu mnohonásobně převyšuje dostupný výpočetní výkon",
+        "Algoritmus jako takový nemusí být považován za neprolomitelný, dosud pouze nebyl nalezen efektivní způsob řešení/výpočtu"
+      ],
+      "wrong": [
+        "Výsledek náročného výstupu je podepsaný, z důvodu zaručení integrity",
+        "Ani jedno z uvedených tvrzení neplatí"
+      ]
+    },
+    {
+      "question": "Jaké jsou používané algoritmy při digitálním podepisování",
+      "correct": ["DSA", "RSA", "El-Gamal"],
+      "wrong": ["CBC", "AES"]
+    },
+    {
+      "question": "Na jakém problému je založena bezpečnost RSA",
+      "correct": ["Faktorizace čísel"],
+      "wrong": [
+        "Obchodní cestující",
+        "Eliptické křivky",
+        "Diskrétní logaritmus"
+      ]
+    }
+  ]
+}

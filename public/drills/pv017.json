@@ -1,0 +1,1411 @@
+{
+  "name": "PV017",
+  "chips": ["final"],
+  "questions": [
+    {
+      "question": "Jaký je mezi pojmy 'Safety' a 'Security' rozdíl?",
+      "correct": [
+        "Safety se zaměřuje na ochranu proti náhodným událostem",
+        "Security se zaměřuje na ochranu proti úmyslným škodám"
+      ],
+      "wrong": [
+        "Safety se týká výhradně IT systémů",
+        "Security znamená úplné odstranění rizik",
+        "Oba pojmy označují totéž"
+      ]
+    },
+    {
+      "question": "Které vlastnosti tvoří základní pilíře informační bezpečnosti (tzv. CIA triádu)?",
+      "correct": [
+        "Důvěrnost (Confidentiality)",
+        "Integrita (Integrity)",
+        "Dostupnost (Availability)"
+      ],
+      "wrong": [
+        "Autenticita (Authenticity)",
+        "Zodpovědnost (Accountability)",
+        "Spolehlivost (Reliability)"
+      ]
+    },
+    {
+      "question": "Které vlastnosti doplňují CIA triádu v širším pojetí informační bezpečnosti?",
+      "correct": [
+        "Autenticita (Authenticity)",
+        "Zodpovědnost a prokazatelnost (Accountability)",
+        "Nepopiratelnost (Non-repudiation)",
+        "Spolehlivost (Reliability)"
+      ],
+      "wrong": ["Ekonomičnost (Economy)", "Efektivita (Effectiveness)"]
+    },
+    {
+      "question": "Co je informační aktivum?",
+      "correct": [
+        "Jakýkoliv zdroj nebo hodnota důležitá pro organizaci",
+        "Může být hmotné i nehmotné povahy"
+      ],
+      "wrong": [
+        "Pouze finanční majetek firmy",
+        "Pouze data uložená na serverech"
+      ]
+    },
+    {
+      "question": "Co označuje pojem zranitelnost (vulnerability)?",
+      "correct": [
+        "Slabinu, kterou může útočník zneužít ke způsobení škody",
+        "Místo v systému, které snižuje úroveň bezpečnosti"
+      ],
+      "wrong": [
+        "Bezpečnostní opatření proti útokům",
+        "Výsledek auditu informační bezpečnosti",
+        "Potenciální příčina bezpečnostního incidentu"
+      ]
+    },
+    {
+      "question": "Jaká je definice hrozby (threat)?",
+      "correct": [
+        "Potenciální příčina bezpečnostního incidentu",
+        "Možnost zneužití zranitelnosti ke způsobení škody"
+      ],
+      "wrong": [
+        "Náhodná událost bez dopadu na bezpečnost",
+        "Součást fyzické bezpečnosti"
+      ]
+    },
+    {
+      "question": "Co je riziko (risk) v kontextu informační bezpečnosti?",
+      "correct": [
+        "Pravděpodobnost, že hrozba využije zranitelnost",
+        "Kombinace pravděpodobnosti a dopadu incidentu"
+      ],
+      "wrong": [
+        "Součet všech nalezených zranitelností",
+        "Výsledek implementace bezpečnostního opatření"
+      ]
+    },
+    {
+      "question": "Které fáze tvoří PDCA cyklus systému řízení informační bezpečnosti (ISMS)?",
+      "correct": [
+        "Plan (Ustanovení)",
+        "Do (Implementace a provoz)",
+        "Check (Monitorování a přezkoumání)",
+        "Act (Udržování a zlepšování)"
+      ],
+      "wrong": [
+        "Control (Monitorování a přezkoumání)",
+        "Test (Zátěžové ověření)",
+        "Run (Provozní fáze)"
+      ]
+    },
+    {
+      "question": "Jaký je účel systému řízení informační bezpečnosti (ISMS)?",
+      "correct": [
+        "Zavést systematický přístup k ochraně informací",
+        "Zajistit procesy pro neustálé zlepšování bezpečnosti"
+      ],
+      "wrong": [
+        "Nahradit technická opatření administrativními",
+        "Omezit odpovědnost vedení organizace"
+      ]
+    },
+    {
+      "question": "Které normy patří do rodiny ISO/IEC 27k?",
+      "correct": [
+        "ISO/IEC 27001 – Požadavky na ISMS",
+        "ISO/IEC 27002 – Soubor postupů pro opatření bezpečnosti",
+        "ISO/IEC 27005 – Řízení rizik bezpečnosti informací"
+      ],
+      "wrong": [
+        "ISO 9001 – Řízení kvality",
+        "ISO 14001 – Ochrana životního prostředí"
+      ]
+    },
+    {
+      "question": "Co je primárním cílem procesu řízení rizik v informační bezpečnosti podle ISO/IEC 27005?",
+      "correct": [
+        "Identifikovat, analyzovat a hodnotit rizika s cílem jejich zvládnutí na akceptovatelnou úroveň"
+      ],
+      "wrong": [
+        "Eliminovat všechna rizika z informačního systému",
+        "Zajistit pouze technickou bezpečnost systémů",
+        "Provádět audit rizik bez vazby na opatření"
+      ]
+    },
+    {
+      "question": "Jak je podle ISO/IEC 27001 definován pojem 'opatření' (control)?",
+      "correct": ["Prostředek, který modifikuje riziko"],
+      "wrong": [
+        "Proces měření rizika",
+        "Výsledek analýzy hrozeb",
+        "Technická zranitelnost systému"
+      ]
+    },
+    {
+      "question": "Jak lze vyjádřit úroveň rizika v rámci hodnocení rizik?",
+      "correct": [
+        "Jako součin pravděpodobnosti výskytu útoku a velikosti jeho dopadu"
+      ],
+      "wrong": [
+        "Jako součet všech identifikovaných hrozeb",
+        "Jako počet opatření implementovaných v systému",
+        "Jako počet detekovaných incidentů v posledním období"
+      ]
+    },
+    {
+      "question": "Které činnosti tvoří podprocesy hodnocení rizik podle ISO/IEC 27005?",
+      "correct": ["Identifikace rizik", "Analýza rizik", "Vyhodnocení rizik"],
+      "wrong": [
+        "Monitorování rizik",
+        "Přenos rizik",
+        "Audit souladu s legislativou"
+      ]
+    },
+    {
+      "question": "Který krok následuje po procesu hodnocení rizik v rámci řízení rizik?",
+      "correct": ["Zvládání rizik"],
+      "wrong": [
+        "Stanovení kontextu",
+        "Akceptace rizik",
+        "Informování o rizicích"
+      ]
+    },
+    {
+      "question": "Které strategie lze využít ke zvládání rizik informační bezpečnosti?",
+      "correct": [
+        "Eliminace rizika",
+        "Snížení rizika na přijatelnou úroveň",
+        "Přenos rizika na třetí stranu",
+        "Akceptace rizika"
+      ],
+      "wrong": ["Ignorování rizika", "Zvýšení rizika v rámci testování"]
+    },
+    {
+      "question": "Jaký je účel stanovení kontextu v rámci řízení rizik?",
+      "correct": [
+        "Vymezení účelu řízení rizik, hranic, zdrojů a odpovědností",
+        "Stanovení kritérií pro vyhodnocení dopadů a akceptovatelnosti rizik"
+      ],
+      "wrong": [
+        "Vyhodnocení účinnosti opatření po auditu",
+        "Definování právních odpovědností manažerů"
+      ]
+    },
+    {
+      "question": "Které faktory určují úroveň rizika v organizaci?",
+      "correct": [
+        "Hrozby",
+        "Zranitelnosti",
+        "Pravděpodobnost útoku",
+        "Možná výše škody"
+      ],
+      "wrong": [
+        "Počet zaměstnanců",
+        "Počet IT systémů",
+        "Objem zpracovávaných dat"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní rozdíl mezi politikou informační bezpečnosti a politikou ISMS?",
+      "correct": [
+        "Politika informační bezpečnosti určuje, co a proti čemu se chrání",
+        "Politika ISMS určuje, jak se tyto procesy navrhují, provozují a hodnotí"
+      ],
+      "wrong": [
+        "Politika ISMS je podřízená právní politice organizace",
+        "Politika informační bezpečnosti se týká pouze IT infrastruktury",
+        "Politika ISMS řeší výhradně fyzickou bezpečnost"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní účel politiky informační bezpečnosti v organizaci?",
+      "correct": [
+        "Stanovit zásady, odpovědnosti a cíle pro dosažení požadované úrovně bezpečnosti informací"
+      ],
+      "wrong": [
+        "Vypracovat detailní technické specifikace všech systémů",
+        "Zajistit marketingovou prezentaci bezpečnosti firmy",
+        "Zastoupit funkci vnitřního auditu"
+      ]
+    },
+    {
+      "question": "Kdo obvykle nese odpovědnost za tvorbu a udržování politik informační bezpečnosti?",
+      "correct": ["Vrcholový management organizace"],
+      "wrong": ["Externí auditor", "Technická podpora", "Koncoví uživatelé"]
+    },
+    {
+      "question": "Jaký je vztah mezi systémovou bezpečnostní politikou a politikou informační bezpečnosti?",
+      "correct": [
+        "Systémová politika konkretizuje opatření definovaná politikou informační bezpečnosti"
+      ],
+      "wrong": [
+        "Politika informační bezpečnosti je součástí systémové politiky",
+        "Obě politiky jsou zaměnitelné",
+        "Systémová politika se vztahuje pouze na fyzické zabezpečení budovy"
+      ]
+    },
+    {
+      "question": "Kdo obvykle vykonává roli Chief Information Security Officer (CISO)?",
+      "correct": [
+        "Osoba odpovědná za řízení a koordinaci informační bezpečnosti v organizaci"
+      ],
+      "wrong": [
+        "Externí konzultant bez rozhodovací pravomoci",
+        "Správce sítí zajišťující běžný provoz",
+        "Manažer kvality výrobních procesů"
+      ]
+    },
+    {
+      "question": "Jaký dokument musí podle ISO/IEC 27001 organizace vypracovat jako první krok při budování ISMS?",
+      "correct": ["Politiku informační bezpečnosti a politiku ISMS"],
+      "wrong": [
+        "Plán kontinuity činnosti (BCP)",
+        "Zprávu o interním auditu",
+        "Technickou specifikaci zabezpečení"
+      ]
+    },
+    {
+      "question": "Co je cílem bezpečnostních procedur v rámci řízení bezpečnosti?",
+      "correct": [
+        "Definovat konkrétní postupy a odpovědnosti pro bezpečný provoz systémů"
+      ],
+      "wrong": [
+        "Zajistit marketingovou prezentaci organizace",
+        "Snížit náklady na provoz IT infrastruktury",
+        "Vypracovat dokumenty pro legislativní audit"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní důvod potřeby regulace v oblasti kybernetické bezpečnosti?",
+      "correct": ["Rychlý rozvoj digitálních technologií"],
+      "wrong": [
+        "Přebytek finančních prostředků určených na bezpečnost",
+        "Povinnost vyplývající z daňových zákonů",
+        "Snížení výdajů na informační technologie"
+      ]
+    },
+    {
+      "question": "Které příklady představují významné kybernetické incidenty v historii?",
+      "correct": [
+        "Stuxnet (2010)",
+        "Únik dat Yahoo (2013–2014)",
+        "Ransomware WannaCry (2017)",
+        "Útok na dodavatelský řetězec SolarWinds (2020)"
+      ],
+      "wrong": ["Kolaps burzy NASDAQ (2008)", "Zavedení GDPR (2018)"]
+    },
+    {
+      "question": "Jaký je rozdíl mezi pojmy 'Cybersecurity', 'Information Security' a 'ICT Security'?",
+      "correct": [
+        "Information Security se zaměřuje na ochranu informací a jejich vlastností",
+        "ICT Security chrání technologie tvořící infrastrukturu",
+        "Cybersecurity zahrnuje všechny oblasti ochrany digitálního prostředí"
+      ],
+      "wrong": [
+        "Cybersecurity se vztahuje pouze na vojenské systémy",
+        "Information Security se týká pouze datových center"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní rozdíl mezi kybernetickou bezpečností, kybernetickou kriminalitou a kybernetickou obranou?",
+      "correct": [
+        "Kybernetická bezpečnost se zabývá ochranou prostředí a infrastruktury",
+        "Kyberkriminalita spadá do působnosti orgánů činných v trestním řízení",
+        "Kybernetická obrana je součástí obrany státu zajišťované armádou"
+      ],
+      "wrong": [
+        "Kybernetická obrana je součástí občanského práva",
+        "Kyberkriminalita se týká pouze ochrany osobních údajů"
+      ]
+    },
+    {
+      "question": "Kdo představuje nejslabší článek v zabezpečení informačních systémů?",
+      "correct": ["Lidský faktor"],
+      "wrong": ["Hardware systému", "Šifrovací algoritmus", "Počítačová síť"]
+    },
+    {
+      "question": "Které instituce mají v České republice hlavní odpovědnost v oblasti kybernetické bezpečnosti?",
+      "correct": ["NÚKIB", "CERT/CSIRT týmy"],
+      "wrong": ["Český telekomunikační úřad", "Ministerstvo kultury"]
+    },
+    {
+      "question": "Které úrovně zabezpečení jsou rozlišovány v systému kybernetické bezpečnosti?",
+      "correct": [
+        "Individuální úroveň",
+        "Organizační úroveň",
+        "Státní úroveň",
+        "Mezinárodní úroveň"
+      ],
+      "wrong": ["Ekonomická úroveň", "Regionální úroveň"]
+    },
+    {
+      "question": "Jaký je hlavní cíl kybernetické bezpečnosti?",
+      "correct": [
+        "Ochrana prostředí umožňujícího realizaci informačních práv člověka"
+      ],
+      "wrong": [
+        "Ochrana hospodářských zájmů poskytovatelů ICT služeb",
+        "Centralizovaná správa a sběr dat pro potřeby státní bezpečnosti",
+        "Minimalizace nákladů organizací na IT provoz prostřednictvím regulace"
+      ]
+    },
+    {
+      "question": "Jaké orgány jsou odpovědné za kybernetickou kriminalitu, bezpečnost a obranu?",
+      "correct": [
+        "Kyberkriminalita – orgány činné v trestním řízení (OČTŘ)",
+        "Kyberkriminalita – státní zastupitelství",
+        "Kyberkriminalita – soudy",
+        "Kybernetická bezpečnost – NÚKIB",
+        "Kybernetická bezpečnost – CERT/CSIRT týmy",
+        "Kybernetická obrana – vojenské zpravodajství",
+        "Kybernetická obrana – armáda"
+      ],
+      "wrong": []
+    },
+    {
+      "question": "Které faktory představují výzvy pro právní úpravu v oblasti kybernetické bezpečnosti?",
+      "correct": [
+        "Rigidita regulatorního aparátu",
+        "Dynamika vývoje technologií a služeb",
+        "Mezinárodní charakter kyberprostoru"
+      ],
+      "wrong": [
+        "Nedostatek technologických inovací",
+        "Přebytek právních předpisů"
+      ]
+    },
+    {
+      "question": "Jaký je vztah mezi právem EU a českou právní úpravou v oblasti kybernetické bezpečnosti?",
+      "correct": [
+        "Právo EU má harmonizační a závazný charakter pro členské státy, včetně ČR"
+      ],
+      "wrong": [
+        "Česká legislativa má v oblasti kybernetické bezpečnosti nadřazené postavení nad právem EU",
+        "Právo EU se nevztahuje na kybernetickou bezpečnost členských států"
+      ]
+    },
+    {
+      "question": "Jaké typy odpovědnosti se uplatňují v rámci práva kybernetické bezpečnosti?",
+      "correct": [
+        "Pracovněprávní odpovědnost",
+        "Správněprávní odpovědnost",
+        "Trestněprávní odpovědnost",
+        "Mezinárodněprávní odpovědnost"
+      ],
+      "wrong": [
+        "Environmentální odpovědnost",
+        "Finanční odpovědnost dle účetnictví"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní cíl právní regulace kybernetické bezpečnosti?",
+      "correct": [
+        "Stanovit závazný rámec pro ochranu informační infrastruktury a digitálních práv subjektů"
+      ],
+      "wrong": [
+        "Zajistit jednotnou technickou implementaci bezpečnostních opatření ve všech organizacích",
+        "Centralizovat dohled nad všemi informačními systémy veřejné i soukromé sféry",
+        "Stanovit pravidla pro poskytování kybernetických služeb na komerční bázi"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní účel zákona o kybernetické bezpečnosti (ZoKB) v České republice?",
+      "correct": [
+        "Zajištění bezpečnosti sítí a informačních systémů významných pro fungování státu"
+      ],
+      "wrong": [
+        "Stanovení povinností pro ochranu osobních údajů fyzických osob",
+        "Úprava pravidel pro poskytování elektronických komunikačních služeb",
+        "Zajištění koordinace obranných kybernetických operací ozbrojených sil"
+      ]
+    },
+    {
+      "question": "Jaký orgán je podle ZoKB odpovědný za výkon působnosti v oblasti kybernetické bezpečnosti v ČR?",
+      "correct": ["NÚKIB"],
+      "wrong": ["Ministerstvo vnitra", "Ministerstvo obrany", "NBÚ"]
+    },
+    {
+      "question": "Které subjekty podléhají povinnostem podle zákona o kybernetické bezpečnosti?",
+      "correct": [
+        "Provozovatelé základních služeb",
+        "Provozovatelé digitálních služeb",
+        "Správci významných informačních systémů"
+      ],
+      "wrong": [
+        "Koncoví uživatelé internetu",
+        "Veřejné knihovny bez přístupu k síti"
+      ]
+    },
+    {
+      "question": "Jaké jsou hlavní povinnosti subjektů podle ZoKB?",
+      "correct": [
+        "Přijímat a udržovat bezpečnostní opatření",
+        "Ohlašovat kybernetické bezpečnostní incidenty",
+        "Spolupracovat s NÚKIB a CSIRT týmy"
+      ],
+      "wrong": [
+        "Zajišťovat neomezený přístup k datům pro veřejnost",
+        "Provádět penetrační testy bez souhlasu uživatelů",
+        "Provádět pravidelné veřejné audity bezpečnosti a zveřejňovat jejich výsledky",
+        "Archivovat všechny provozní záznamy bez časového omezení"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní cíl směrnice NIS 2?",
+      "correct": [
+        "Zvýšení úrovně kybernetické odolnosti členských států EU",
+        "Rozšíření rozsahu regulace na více sektorů a podniků"
+      ],
+      "wrong": [
+        "Zajištění volného pohybu osob v EU",
+        "Zavedení jednotného evropského jazyka kyberbezpečnosti"
+      ]
+    },
+    {
+      "question": "Jaké jsou hlavní rozdíly mezi směrnicí NIS a NIS 2?",
+      "correct": [
+        "NIS 2 rozšiřuje působnost na více odvětví a typů organizací",
+        "Zpřísňuje sankce za porušení povinností",
+        "Zavádí povinnosti managementu v oblasti bezpečnosti"
+      ],
+      "wrong": [
+        "NIS 2 ruší povinnost hlášení incidentů",
+        "NIS 2 se vztahuje pouze na veřejnou správu"
+      ]
+    },
+    {
+      "question": "Jaký je vztah mezi ZoKB a směrnicí NIS 2?",
+      "correct": ["ZoKB implementuje směrnici NIS 2 do českého právního řádu"],
+      "wrong": [
+        "Směrnice NIS 2 nahrazuje ZoKB v plném rozsahu",
+        "ZoKB je nadřazeným předpisem nad směrnicí EU"
+      ]
+    },
+    {
+      "question": "Jaké jsou hlavní cíle Cyber Resilience Act (CRA)?",
+      "correct": [
+        "Zajistit kybernetickou bezpečnost produktů s digitálními prvky",
+        "Stanovit požadavky na bezpečnost během celého životního cyklu výrobku"
+      ],
+      "wrong": [
+        "Upravit ochranu osobních údajů při zpracování dat",
+        "Stanovit odpovědnost uživatelů za kybernetické incidenty"
+      ]
+    },
+    {
+      "question": "Na jaké produkty se vztahuje Cyber Resilience Act (CRA)?",
+      "correct": [
+        "Na hardware a software obsahující digitální prvky",
+        "Na výrobky, které jsou připojeny k síti nebo zpracovávají data"
+      ],
+      "wrong": [
+        "Na čistě mechanické výrobky bez elektronických komponent",
+        "Na služby poskytované výhradně offline"
+      ]
+    },
+    {
+      "question": "Jaký je vztah GDPR a ZoKB?",
+      "correct": [
+        "GDPR chrání osobní údaje",
+        "ZoKB zajišťuje bezpečnost systémů a sítí",
+        "Oba předpisy se částečně překrývají"
+      ],
+      "wrong": [
+        "GDPR je součástí ZoKB",
+        "ZoKB ruší povinnosti podle GDPR",
+        "ZoKB je součástí GDPR"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní cíl GDPR v oblasti kybernetické bezpečnosti?",
+      "correct": [
+        "Zajistit ochranu osobních údajů před neoprávněným zpracováním a ztrátou"
+      ],
+      "wrong": [
+        "Upravit správu informačních systémů veřejné správy",
+        "Stanovit pravidla pro přístup k vojenským informacím"
+      ]
+    },
+    {
+      "question": "Který orgán vykonává dohled nad dodržováním GDPR v ČR?",
+      "correct": ["Úřad pro ochranu osobních údajů"],
+      "wrong": [
+        "NÚKIB",
+        "Ministerstvo spravedlnosti",
+        "Český telekomunikační úřad"
+      ]
+    },
+    {
+      "question": "Jaké principy stanovuje GDPR pro zpracování osobních údajů?",
+      "correct": [
+        "Zákonnost, korektnost a transparentnost",
+        "Omezení účelu",
+        "Minimalizace údajů",
+        "Integrita a důvěrnost"
+      ],
+      "wrong": [
+        "Neomezené sdílení dat pro vědecké účely",
+        "Ukládání údajů bez souhlasu subjektu"
+      ]
+    },
+    {
+      "question": "Jaké povinnosti má správce osobních údajů podle GDPR v oblasti bezpečnosti?",
+      "correct": [
+        "Zavést přiměřená opatření k zajištění bezpečnosti zpracování dat",
+        "Oznamovat porušení bezpečnosti osobních údajů dozorovému orgánu"
+      ],
+      "wrong": [
+        "Zveřejňovat osobní údaje všech uživatelů po incidentu",
+        "Archivovat všechna data neomezeně dlouho"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní cíl právního rámce kybernetické bezpečnosti EU jako celku?",
+      "correct": [
+        "Vytvořit jednotný systém ochrany informačních systémů v členských státech"
+      ],
+      "wrong": [
+        "Stanovit jednotnou architekturu informačních systémů ve všech členských státech",
+        "Omezit technologickou nezávislost členských států",
+        "Zajistit centrální řízení všech dat z Evropské unie"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní účel systému řízení informační bezpečnosti (ISMS) podle ISO/IEC 27001?",
+      "correct": [
+        "Zavést systematický přístup k řízení rizik a ochraně informací v organizaci"
+      ],
+      "wrong": [
+        "Vymezit právní odpovědnost vedení organizace",
+        "Definovat specifikace hardwaru a softwaru",
+        "Vytvořit bezpečnostní politiku bez následné implementace"
+      ]
+    },
+    {
+      "question": "Jaký model tvoří základní rámec fungování ISMS?",
+      "correct": ["PDCA cyklus (Plan – Do – Check – Act)"],
+      "wrong": [
+        "SWOT model",
+        "OODA cyklus (Observe – Orient – Decide – Act)",
+        "CMMI model"
+      ]
+    },
+    {
+      "question": "Co zahrnuje fáze 'Plan' v PDCA cyklu ISMS?",
+      "correct": [
+        "Stanovení cílů a postupů",
+        "Analýzu rizik",
+        "Volbu vhodných opatření"
+      ],
+      "wrong": ["Provádění interního auditu", "Zpracování zprávy o shodě"]
+    },
+    {
+      "question": "Jaký je účel fáze 'Check' v rámci PDCA cyklu?",
+      "correct": [
+        "Monitorování a vyhodnocování účinnosti ISMS",
+        "Ověřování shody procesů s politikou informační bezpečnosti"
+      ],
+      "wrong": [
+        "Definování nové politiky ISMS",
+        "Zavádění technických opatření"
+      ]
+    },
+    {
+      "question": "Jaký je účel fáze 'Act' v rámci PDCA cyklu?",
+      "correct": [
+        "Provádění nápravných opatření",
+        "Zlepšování systému řízení bezpečnosti"
+      ],
+      "wrong": [
+        "Vytváření interní dokumentace ISMS",
+        "Vyhodnocování nových rizik bez implementace"
+      ]
+    },
+    {
+      "question": "Jaké tři oblasti řídí implementace ISMS v organizaci?",
+      "correct": [
+        "Politiku a cíle bezpečnosti informací",
+        "Procesy řízení rizik",
+        "Odpovědnosti a řízení zdrojů"
+      ],
+      "wrong": ["Finanční audit a kontrolu výdajů", "Personalistiku a mzdy"]
+    },
+    {
+      "question": "Jaký dokument stanoví, která opatření byla vybrána a implementována v rámci ISMS?",
+      "correct": ["Prohlášení o aplikovatelnosti"],
+      "wrong": [
+        "Plán obnovy po havárii",
+        "Bezpečnostní incident report",
+        "Interní auditní zpráva"
+      ]
+    },
+    {
+      "question": "Jaký je účel interního auditu ISMS?",
+      "correct": [
+        "Posoudit shodu ISMS s požadavky normy ISO/IEC 27001",
+        "Zhodnotit účinnost zavedených opatření"
+      ],
+      "wrong": [
+        "Vypracovat finanční rozvahu organizace",
+        "Zajistit marketingové hodnocení služeb"
+      ]
+    },
+    {
+      "question": "Jaký je rozdíl mezi interním a externím auditem ISMS?",
+      "correct": [
+        "Interní audit provádí organizace sama",
+        "externí audit provádí nezávislý certifikační orgán"
+      ],
+      "wrong": [
+        "Externí audit se zaměřuje na technické zranitelnosti systému",
+        "Interní audit je právně závazný, externí pouze dobrovolný"
+      ]
+    },
+    {
+      "question": "Jaké jsou základní požadavky normy ISO/IEC 27001?",
+      "correct": [
+        "Zavedení politiky ISMS",
+        "Stanovení odpovědností a pravomocí",
+        "Provádění hodnocení rizik",
+        "Zajištění neustálého zlepšování systému"
+      ],
+      "wrong": [
+        "Definování jednotného software pro správu bezpečnosti",
+        "Omezení přístupu k ISO dokumentům"
+      ]
+    },
+    {
+      "question": "Jaký je účel řízení zdrojů v rámci ISMS?",
+      "correct": [
+        "Zajištění dostatku lidské síly pro realizaci opatření",
+        "Zajištění adekvátních technických prostředků",
+        "Financování realizace opatření"
+      ],
+      "wrong": [
+        "Zajištění finanční podpory pro výzkum mimo oblast ISMS",
+        "Omezení počtu zaměstnanců v IT oddělení"
+      ]
+    },
+    {
+      "question": "Které klíčové role jsou obvykle definovány v rámci ISMS?",
+      "correct": [
+        "Vedení organizace (top management)",
+        "Manažer informační bezpečnosti",
+        "Vlastníci aktiv",
+        "Auditoři ISMS"
+      ],
+      "wrong": ["Oddělení marketingu", "Externí dodavatel bez smlouvy"]
+    },
+    {
+      "question": "Jaký je účel přezkoumání vedením (Management Review) v ISMS?",
+      "correct": [
+        "Zhodnocení efektivity ISMS a rozhodnutí o zlepšení",
+        "Ověření, zda ISMS zůstává vhodný, přiměřený a účinný"
+      ],
+      "wrong": [
+        "Ověření souladu s pracovněprávní legislativou",
+        "Posouzení návratnosti investic"
+      ]
+    },
+    {
+      "question": "Jaký je význam certifikace ISO/IEC 27001 pro organizaci?",
+      "correct": [
+        "Potvrzuje splnění mezinárodních standardů řízení informační bezpečnosti",
+        "Zvyšuje důvěru zákazníků a obchodních partnerů"
+      ],
+      "wrong": [
+        "Zaručuje nulové riziko kybernetického útoku",
+        "Nahrazuje potřebu interního auditu"
+      ]
+    },
+    {
+      "question": "Jaké fáze zahrnuje proces certifikace ISO/IEC 27001?",
+      "correct": [
+        "Příprava a analýza shody",
+        "Interní audit a odstranění neshod",
+        "Certifikační audit nezávislou autoritou",
+        "Pravidelné dozorové audity"
+      ],
+      "wrong": [
+        "Jednorázová kontrola bez následného hodnocení",
+        "Ověření certifikátu po pěti letech bez auditu"
+      ]
+    },
+    {
+      "question": "Jaký je účel dokumentace v rámci ISMS?",
+      "correct": [
+        "Poskytnout důkazy o shodě ISMS s požadavky normy",
+        "Zajistit opakovatelnost procesů",
+        "Zajistit sledovatelnost procesů"
+      ],
+      "wrong": [
+        "Zajistit anonymitu všech zaměstnanců",
+        "Sloužit jako marketingový materiál"
+      ]
+    },
+    {
+      "question": "Který dokument stanovuje rámec a hranice ISMS v organizaci?",
+      "correct": ["Prohlášení o rozsahu ISMS"],
+      "wrong": [
+        "Plán zlepšování kvality",
+        "Protokol o incidentu",
+        "Politika kybernetické obrany"
+      ]
+    },
+    {
+      "question": "Který z následujících přístupů je klíčový pro efektivní ISMS?",
+      "correct": ["Přístup založený na rizicích"],
+      "wrong": ["Reaktivní přístup po incidentech", "Pouze technický přístup"]
+    },
+    {
+      "question": "Jaký je účel opatření podle přílohy A normy ISO/IEC 27001?",
+      "correct": [
+        "Poskytnout přehled kontrol a opatření, která mohou být uplatněna k řízení identifikovaných rizik"
+      ],
+      "wrong": [
+        "Stanovit pevně závazná pravidla bez možnosti přizpůsobení",
+        "Definovat povinné šifrovací algoritmy"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní cíl standardů v oblasti informační a kybernetické bezpečnosti?",
+      "correct": [
+        "Zajistit jednotný a opakovatelný přístup k řízení bezpečnosti"
+      ],
+      "wrong": [
+        "Zajistit anonymitu všech organizací v mezinárodním prostoru",
+        "Určit právní odpovědnost konkrétních osob"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní účel normy ISO/IEC 27000?",
+      "correct": ["Poskytuje přehled pro rodinu standardů ISO/IEC 27k"],
+      "wrong": [
+        "Stanovuje požadavky na fyzickou bezpečnost zařízení",
+        "Nahrazuje certifikační proces ISO/IEC 27001"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní rozdíl mezi ISO/IEC 27001 a ISO/IEC 27002?",
+      "correct": [
+        "ISO/IEC 27001 stanovuje požadavky na ISMS",
+        "ISO/IEC 27002 poskytuje návod pro implementaci opatření"
+      ],
+      "wrong": [
+        "ISO/IEC 27002 má právní závaznost",
+        "ISO/IEC 27001 je pouze doporučující norma",
+        "ISO/IEC 27002 stanovuje požadavky na ISMS",
+        "ISO/IEC 27001 poskytuje návod pro implementaci opatření"
+      ]
+    },
+    {
+      "question": "Která norma specifikuje požadavky na řízení rizik informační bezpečnosti?",
+      "correct": ["ISO/IEC 27005"],
+      "wrong": ["ISO/IEC 27003", "ISO/IEC 27017", "ISO/IEC 27035"]
+    },
+    {
+      "question": "Která norma stanovuje pokyny pro řízení incidentů informační bezpečnosti?",
+      "correct": ["ISO/IEC 27035"],
+      "wrong": ["ISO/IEC 27018", "ISO/IEC 27003", "ISO/IEC 27004"]
+    },
+    {
+      "question": "Jaký je hlavní účel normy ISO/IEC 27004?",
+      "correct": [
+        "Poskytuje metody pro měření účinnosti ISMS a bezpečnostních opatření"
+      ],
+      "wrong": [
+        "Stanovuje postupy auditu účetnictví",
+        "Definuje právní odpovědnosti bezpečnostního manažera"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní účel rámce NIST Cybersecurity Framework (CSF)?",
+      "correct": [
+        "Poskytnout strukturovaný přístup k řízení kybernetické bezpečnosti založený na pěti základních funkcích"
+      ],
+      "wrong": [
+        "Nahradit všechny mezinárodní normy ISO/IEC",
+        "Zajistit vojenskou kyberobranu členských států NATO"
+      ]
+    },
+    {
+      "question": "Jaké jsou základní funkce rámce NIST Cybersecurity Framework (CSF)?",
+      "correct": ["Identify", "Protect", "Detect", "Respond", "Recover"],
+      "wrong": ["Plan", "Check"]
+    },
+    {
+      "question": "Který rámec poskytuje metodiku pro řízení rizik v oblasti kybernetické bezpečnosti?",
+      "correct": ["NIST Risk Management Framework (RMF)"],
+      "wrong": ["COBIT 5", "TOGAF", "ITIL 4"]
+    },
+    {
+      "question": "Jaký je účel rámce COBIT 5?",
+      "correct": ["Poskytuje rámec pro správu a řízení IT"],
+      "wrong": [
+        "Řeší výhradně řízení kybernetických incidentů",
+        "Je zaměřen pouze na finanční kontrolu organizací"
+      ]
+    },
+    {
+      "question": "Jaký je vztah mezi ISO/IEC 27701 a ISO/IEC 27001?",
+      "correct": ["ISO/IEC 27701 rozšiřuje ISO/IEC 27001"],
+      "wrong": [
+        "ISO/IEC 27701 nahrazuje ISO/IEC 27001",
+        "ISO/IEC 27001 je podmnožinou ISO/IEC 27701"
+      ]
+    },
+    {
+      "question": "Jaký je účel rámce ITIL v kontextu bezpečnosti?",
+      "correct": ["Poskytuje osvědčené postupy pro řízení IT služeb"],
+      "wrong": [
+        "Stanovuje právní normy kybernetické obrany",
+        "Definuje standardy šifrovacích metod"
+      ]
+    },
+    {
+      "question": "Jaký je hlavní přínos compliance rámců v oblasti informační bezpečnosti?",
+      "correct": [
+        "Zajišťují dodržování právních požadavků",
+        "Zajišťují dodržování regulačních požadavků",
+        "Zajišťují dodržování smluvních požadavků"
+      ],
+      "wrong": [
+        "Nahrazují interní politiky organizace",
+        "Zajišťují přímý dohled nad činností zaměstnanců"
+      ]
+    },
+    {
+      "question": "Které standardy se často používají pro hodnocení zralosti bezpečnostního řízení?",
+      "correct": ["CMMI", "NIST CSF", "ISO/IEC 27004"],
+      "wrong": ["GDPR", "ISO/IEC 27018"]
+    },
+    {
+      "question": "Mezi de facto standardy nepatří?",
+      "correct": ["ISO 9001", "ISO 27xxx"],
+      "wrong": ["RFC", "COBIT", "OWASP"]
+    },
+    {
+      "question": "Které činosti nepatří do DO fáze PDCA cyklu implementace ISMS?",
+      "correct": [
+        "Identifikace a vyhodnocení možností jak zvládat rizika",
+        "Generování zpráv pro posouzení managementem",
+        "Definice politiky informační bezpečnosti",
+        "Provedení oprav a zmeň na základě výsledků posouzení managementem"
+      ],
+      "wrong": [
+        "Zaškolení relevatních zaměstnanců",
+        "Implementace procedur (opatření) umožňujících promtní detekci bezpečnostních incidentů a reakce na ně"
+      ]
+    },
+    {
+      "question": "Která opatření spadají mezi technologická opatření podle ISO/IEC 27002:2022?",
+      "correct": [
+        "Bezpečná autentizace",
+        "Používání kryptografie",
+        "Bezpečné programování",
+        "Ochrana koncových zařízení uživatele"
+      ],
+      "wrong": [
+        "Fyzická ostraha budov",
+        "Bezpečná likvidace zařízení",
+        "Dohody o mlčenlivosti zaměstnanců"
+      ]
+    },
+    {
+      "question": "Která opatření jsou součástí fyzické bezpečnosti podle ISO/IEC 27002:2022?",
+      "correct": [
+        "Řízení fyzického vstupu",
+        "Zásada prázdného stolu a obrazovky",
+        "Bezpečné nakládání s paměťovými médii",
+        "Bezpečná likvidace zařízení"
+      ],
+      "wrong": [
+        "Používání kryptografie při přenosu dat",
+        "Prověřování zaměstnanců před nástupem",
+        "Řízení přístupových práv v informačních systémech"
+      ]
+    },
+    {
+      "question": "Které oblasti zahrnuje organizační a personální část opatření dle ISO/IEC 27002:2022?",
+      "correct": [
+        "Politiky informační bezpečnosti",
+        "Řízení identit a přístupových práv",
+        "Odezva na incidenty",
+        "Zajištění kontinuity činností",
+        "Prověřování zaměstnanců a dohody o mlčenlivosti"
+      ],
+      "wrong": [
+        "Vývoj šifrovacích standardů",
+        "Implementace síťových protokolů"
+      ]
+    },
+    {
+      "question": "Jaké oblasti zahrnují organizační opatření podle ISO/IEC 27002:2022?",
+      "correct": [
+        "Plán zachování kontinuity činnosti po havárii",
+        "Zmocnění systému k určení a akceptování zbytkového rizika",
+        "Periodické zkoumání efektivnosti bezpečnostních opatření",
+        "Přidělení adresné odpovědnosti za bezpečnost kritických podnikatelských procesů",
+        "Politiky informační bezpečnosti",
+        "Řízení identit a přístupových práv",
+        "Odezva na bezpečnostní incidenty",
+        "Zajištění kontinuity činností a provozu"
+      ],
+      "wrong": [
+        "Prověřování zaměstnanců před nástupem do zaměstnání",
+        "Dohoda o mlčenlivosti",
+        "Bezpečné strukturované vodiče",
+        "Stanovení pravidel fyzického vstupu do objektů",
+        "Implementace šifrovacích algoritmů v softwaru"
+      ]
+    },
+    {
+      "question": "Jaké oblasti zahrnují opatření v oblasti lidských zdrojů podle ISO/IEC 27002:2022?",
+      "correct": [
+        "Prověřování zaměstnanců před nástupem",
+        "Dohody o mlčenlivosti",
+        "Školení a zvyšování povědomí o bezpečnosti",
+        "Řešení disciplinárních opatření a řízení při porušení zásad"
+      ],
+      "wrong": [
+        "Řízení identit a přístupových práv",
+        "Zajištění dostupnosti informačních systémů",
+        "Politiky informační bezpečnosti"
+      ]
+    },
+    {
+      "question": "Které z následujících práv náleží subjektu údajů podle GDPR?",
+      "correct": [
+        "Právo na opravu údajů",
+        "Právo na výmaz údajů",
+        "Právo být informován o zpracování osobních údajů",
+        "Právo na přístup k údajům"
+      ],
+      "wrong": [
+        "Právo určovat technické prostředky zpracování údajů správcem",
+        "Právo na anonymní zpracování všech osobních údajů bez souhlasu",
+        "Právo vyžadovat uchování údajů po neomezenou dobu"
+      ]
+    },
+    {
+      "question": "Rys informační bezpečnosti zvaný důvěrnost:",
+      "correct": [
+        "Reprezentuje ochranu aktiv před neautorizovaným zpřístupněním"
+      ],
+      "wrong": [
+        "Vymezuje kategorie aktiv třídy tajná aktiva",
+        "Vymezuje kategorii aktiv třídy důvěryhodné aktiva",
+        "Reprezentuje ochranu aktiv před neautorizovanou změnou"
+      ]
+    },
+    {
+      "question": "Rys informační bezpečnosti zvaný integrita:",
+      "correct": ["reprezentuje ochranu aktiv před neautorizovanou změnou"],
+      "wrong": [
+        "reprezentuje ochranu aktiv před neautorizovaným zpřístupněním",
+        "vymezuje kategorii aktiv třídy trvale platná aktiva",
+        "vymezuje kategorii aktiv třídy důveryhodná aktiva"
+      ]
+    },
+    {
+      "question": "Které z následujících představují de facto standardy?",
+      "correct": ["PKCS", "OWASP", "RFC", "ISF", "ISACA"],
+      "wrong": ["ISO"]
+    },
+    {
+      "question": "Jaké požadavky musí splňovat aktivum klasifikované jako 'střední' z hlediska dostupnosti?",
+      "correct": [
+        "Výpadek služby by neměl být delší než jeden den",
+        "Postačují pouze běžné metody zálohování bez nutnosti obnovy"
+      ],
+      "wrong": [
+        "Musí být zajištěny záložní systémy a obnova poskytovaných služeb podmíněná zásahem obsluhy",
+        "Nesmí dojít k žádnému výpadku, neboť jakýkoliv výpadek je kritický",
+        "Musí být zajištěna ochrana integrity a důvěrnosti namísto dostupnosti"
+      ]
+    },
+    {
+      "question": "Bezpečnostní infrastrukturu organizace definuje:",
+      "correct": ["celková bezpečnostní politika organizace"],
+      "wrong": [
+        "plán zvládání rizik organizace",
+        "politika ISMS",
+        "plán zachování kontinuity činnosti organizace"
+      ]
+    },
+    {
+      "question": "Zajištění integrity je možné pomocí:",
+      "correct": ["Digitální podpis", "Hashování"],
+      "wrong": ["Dvoufaktorová autentizace", "MAC (Media Access Control)"]
+    },
+    {
+      "question": "Které z následujících údajů se podle GDPR považují za osobní údaje?",
+      "correct": [
+        "Datum narození",
+        "Jméno a příjmení",
+        "Geolokační pohyb v rámci dne",
+        "IP adresa"
+      ],
+      "wrong": [
+        "Typ operačního systému zařízení",
+        "Obecná statistika provozu webu bez identifikace uživatele",
+        "Číslo verze softwaru nainstalovaného na serveru"
+      ]
+    },
+    {
+      "question": "Jakým způsobem může organizace formálně prokázat shodu s mezinárodním standardem informační bezpečnosti?",
+      "correct": [
+        "Získáním certifikátu vydaného akreditovaným certifikačním orgánem"
+      ],
+      "wrong": [
+        "Provedením interního hodnocení bez nezávislého ověření",
+        "Vydáním vlastního prohlášení o shodě bez auditu",
+        "Použitím loga normy ISO na webových stránkách bez certifikace"
+      ]
+    },
+    {
+      "question": "Jak je podle standardů rodiny ISO/IEC 27000 definován systém řízení informační bezpečnosti (ISMS)?",
+      "correct": [
+        "Dokumentovaný, systematicky implementovaný a řízený systém pro řízení informační bezpečnosti",
+        "Trvale vylepšovaný (aktualizovaný) systém pro řízení informační bezpečnosti",
+        "Důvěryhodný systém pro řízení informační bezpečnosti",
+        "Trvale přezkoumávaný, auditovaný a kontrolovaný systém pro řízení informační bezpečnosti"
+      ],
+      "wrong": []
+    },
+    {
+      "question": "Které faktory determinují velikost rizika pro aktivum v rámci řízení informační bezpečnosti?",
+      "correct": [
+        "Hodnota aktiva",
+        "Klasifikační kategorie aktiva",
+        "Zranitelnost aktiva",
+        "Existence potenciálních útočníků"
+      ],
+      "wrong": [
+        "Počet aplikovaných bezpečnostních opatření pro zajištění ochrany aktiva"
+      ]
+    },
+    {
+      "question": "Které z následujících organizací nepatří mezi evropské standardizační organizace?",
+      "correct": ["ANSI", "ISO", "IEC", "ČSNI", "RFC"],
+      "wrong": ["CENELEC"]
+    },
+    {
+      "question": "Na které z následujících standardů se může organizace certifikovat?",
+      "correct": ["ISO/IEC 27001", "ISO 9001"],
+      "wrong": ["ISO/IEC 27002", "ISO/IEC 27000", "RFC", "ISO 9000"]
+    },
+    {
+      "question": "Kdo nese odpovědnost za dokumenty 2. úrovně v dokumentové základně ISMS?",
+      "correct": ["Výkonný management"],
+      "wrong": [
+        "Management provozu + CISO",
+        "CSO + řídicí výbor",
+        "Vrcholový management + CISO",
+        "CISO + odbory",
+        "Vrcholový management"
+      ]
+    },
+    {
+      "question": "Na které subjekty se vztahuje působnost zákona o kybernetické bezpečnosti (ZoKB)?",
+      "correct": [
+        "Na provozovatele kritické informační infrastruktury a významných informačních systémů",
+        "Na poskytovatele základních služeb a digitálních služeb"
+      ],
+      "wrong": [
+        "Na všechny organizace s více než 20 zaměstnanci",
+        "Na všechny fyzické osoby, které vlastní nebo používají počítač",
+        "Pouze na orgány veřejné správy a ozbrojené složky"
+      ]
+    },
+    {
+      "question": "Která z následujících činností představují preventivní opatření v oblasti informační bezpečnosti?",
+      "correct": [
+        "Bezpečné a strukturované vedení kabeláže a fyzických připojení",
+        "Proškolování zaměstnanců o zásadách informační bezpečnosti",
+        "Řízení oprávnění a přístupových práv k systémům"
+      ],
+      "wrong": [
+        "Průběžná revize a úprava opatření po incidentech",
+        "Analýza příčin vzniklých bezpečnostních událostí",
+        "Obnova systémů po kybernetickém útoku"
+      ]
+    },
+    {
+      "question": "Kdo nese odpovědnost za dokumenty 4. úrovně v dokumentové základně ISMS?",
+      "correct": ["Management provozu + CISO"],
+      "wrong": [
+        "CSO + řídicí výbor",
+        "Vrcholový management",
+        "Vrcholový management + CISO",
+        "Výkonný management",
+        "CISO + šéfové odboru"
+      ]
+    },
+    {
+      "question": "Co představuje dokument Statement of Applicability (Prohlášení o aplikovatelnosti) podle standardů rodiny ISO/IEC 27000?",
+      "correct": [
+        "Je výstupem ohodnocení rizik a obsahuje seznam a zdůvodnění opatření, která mohou snížit nebo odstranit rizika v chráněné oblasti"
+      ],
+      "wrong": [
+        "Je výstupem akceptování rizik a obsahuje seznam a zdůvodnění opatření, která jsou určená pro snížení nebo odstranění rizik v chráněné oblasti",
+        "Je specifikací použitelnosti systému řízení informační bezpečnosti v organizaci"
+      ]
+    },
+    {
+      "correct": ["Asymetrická"],
+      "wrong": ["Symetrická", "Symetrická i Asymetrická"],
+      "question": "Digitální podpis je:"
+    },
+    {
+      "correct": [
+        "Politiky",
+        "Procedury",
+        "Pracovní instrukce",
+        "Zprávy a šablony"
+      ],
+      "wrong": ["Postupy", "Novely", "Interní zákony"],
+      "question": "Jak vypadá 4 vrstvá architektura ISMS:"
+    },
+    {
+      "correct": ["Externí audit autorizované organizace", "Certifikát"],
+      "wrong": ["Interní audit", "Plaketka na webu, že podporujeme standard"],
+      "question": "Jaký je nejlepší způsob ukázat světu, že opravdu podporují nějaký standard?"
+    },
+    {
+      "correct": ["Délka klíče"],
+      "wrong": ["Velikost bloku"],
+      "question": "Na čem závisí bezpečnost symetrického šifrování:"
+    },
+    {
+      "correct": ["Formální zápis"],
+      "wrong": ["Certifikovat systém", "Průběžně auditovat systém", "------"],
+      "question": "Jak zvýšit záruky za důvěryhodnost politiky informační bezpečnosti:"
+    },
+    {
+      "correct": [
+        "Firewall",
+        "Autentizační kalkulátor",
+        "Funkce řízení přístupu"
+      ],
+      "wrong": [
+        "Záložní zdroj energie",
+        "Směrnice o něčem",
+        "Protipožární ochrana"
+      ],
+      "question": "Mezi technologické opatření patří:"
+    },
+    {
+      "correct": ["Záložní zdroj energie", "Protipožární ochrana"],
+      "wrong": [
+        "Firewall",
+        "Autentizační kalkulátor",
+        "Směrnice o něčem",
+        "Funkce řízení přístupu"
+      ],
+      "question": "Mezi fyzické opatření patří:"
+    },
+    {
+      "correct": ["Funkce řízení přístupu"],
+      "wrong": [
+        "Záložní zdroj energie",
+        "Firewall",
+        "Autentizační kalkulátor",
+        "Směrnice o něčem",
+        "Protipožární ochrana"
+      ],
+      "question": "Mezi logické opatření patří (disclaimer: logicke opatreni v ISO 27002 neexistuje):"
+    },
+    {
+      "correct": ["Směrnice o něčem"],
+      "wrong": [
+        "Záložní zdroj energie",
+        "Firewall",
+        "Autentizační kalkulátor",
+        "Funkce řízení přístupu",
+        "Protipožární ochrana"
+      ],
+      "question": "Mezi administrativní opatření patří:"
+    },
+    {
+      "correct": ["Hlásí reporty"],
+      "wrong": ["Vytváří pravidla", "Vytváří nástroje"],
+      "question": "Operační centrum:"
+    },
+    {
+      "correct": ["ANSI", "ISO", "IEC", "ČSNI"],
+      "wrong": ["CENELEC"],
+      "question": "Mezi evropské organizace nepatří"
+    },
+    {
+      "correct": ["OWASP", "RFC", "PKCS", "ISF", "ISACA"],
+      "wrong": ["ISO"],
+      "question": "Mezi de facto standardy patří:"
+    },
+    {
+      "correct": ["Digitální služby", "Elektrické sítě firmy ČEZ"],
+      "wrong": [
+        "Na všechny, kdo vlastní počítač",
+        "Firmu, která má 23 zaměstnanců"
+      ],
+      "question": "Zákon o kybernetické bezpečnosti se vztahuje na:"
+    },
+    {
+      "correct": [
+        "Musí splnit zákonné předpisy",
+        "Požaduje to dodavatel",
+        "Definuje se tím závazná strategie",
+        "Vylepšuje interní efektivitu řízení IT"
+      ],
+      "wrong": ["Aby bylo kde utratit rozpočet na IT"],
+      "question": "Proč se musí ISMS řídit manažersky v organizaci:"
+    },
+    {
+      "correct": ["Poslat údaje", "Hlásit incident", "Zabezpečit"],
+      "wrong": ["Cosi"],
+      "question": "Co musí dělat digitální služby:"
+    },
+    {
+      "correct": [
+        "Jakákoliv operace a nebo soubor operací s osobními údaji",
+        "Uložení osobních údajů",
+        "Zaznamenání osobních údajů",
+        "Zasílání osobních údajů"
+      ],
+      "wrong": [],
+      "question": "Zpracování osobních údajů je:"
+    },
+    {
+      "correct": ["Dvoukfaktorová autentizace"],
+      "wrong": ["Hashování", "Veřejný klíč", "Protokol výzva odpověď"],
+      "question": "Za mechanismy pro opatření co se týče autentizace se považují:"
+    },
+    {
+      "correct": [
+        "Detekovat bezpečnostní hrozbu",
+        "Hlásit kontaktní údaje",
+        "Hlásit incidenty"
+      ],
+      "wrong": ["Varovat před bezpečnostní hrozbou"],
+      "question": "Zákon č. 181/2014 Sb. , o kybernetické bezpečnosti musí:"
+    },
+    {
+      "wrong": [
+        "protipožární ochrana",
+        "zajištění trvalosti dodávky energie",
+        "zajištění fyzické bezpečnosti"
+      ],
+      "correct": ["dvoufaktorová autentizace"],
+      "question": "Co nepatří mezi provozní opatření (Klasifikace opatření podle oblasti jejich nasazeni):"
+    },
+    {
+      "correct": [
+        "je revidována typicky v horizontu 5 až 10 let",
+        "je nezávislá na informačních technologiích použitých pro zpracování informací v organizaci"
+      ],
+      "wrong": [
+        "respektuje a zohledňuje informační technologie použité pro zpracování informací v organizaci",
+        "je revidována každý rok při vypracovávání výroční zprávy"
+      ],
+      "question": "Korporátní (celková) bezpečnostní politika zpracování informací v organizaci:"
+    },
+    {
+      "correct": ["ISO", "IEC", "CENELEC", "ETSI"],
+      "wrong": ["ČSNI", "ANSI"],
+      "question": "Mezi národní standardizační organizace nepatří:"
+    },
+    {
+      "correct": [
+        "Security through obscurity (zabezpečení na základě utajení)"
+      ],
+      "wrong": [
+        "Oddělení povinností",
+        "Nejmenší oprávnění",
+        "Obrana do hloubky"
+      ],
+      "question": "Která z následujicích bezpečnostních zásad NEpopisuje standardní osvěčený postup v oblasti kybernetické bezpečnosti"
+    },
+    {
+      "correct": [
+        "Provádení testování zabezpečení statickou analýzou",
+        "Řízení bezpečnostních rizik spojených s používáním komponent třetích stran",
+        "Používání schválených nástrojů"
+      ],
+      "wrong": [
+        "Definice bezpečnostních požadavků",
+        "Provádení penetračního testování",
+        "Modelování hrozeb"
+      ],
+      "question": "Do implementační fáze SDLC patří:"
+    },
+    {
+      "correct": [
+        "pozadavky na bezpenostní vlastnosti jistého chránēného prostiedí"
+      ],
+      "wrong": [
+        "architekturu a konceptuální návrh zabudování bezpenostních funkcí do jistého chránèného prostredí",
+        "sablonu bezpenostní politiky jistého chránéného prostředí",
+        "architekturu a konceptuální návrh dokumentové základny bezpenostních funkci zabudovaných do jistého chránèného prostredí"
+      ],
+      "question": "Profil ochran podle standardu ISO/IEC 15408 specifikuje:"
+    },
+    {
+      "correct": ["bezpečnostni vlastnosti konkrétního produktu / systému"],
+      "wrong": [
+        "cosi návrh zabudování bezpečnostních funkcí do produktu/systému",
+        "Dokument bezpečnostní politiky používání produktu/systému",
+        "dokumentaci bezpecnostnich funkci zabudovaných do produktu/systemu"
+      ],
+      "question": "Bezpečnostní cíl podle standardu ISO/IEC 15408 specifikuje:"
+    },
+    {
+      "correct": [
+        "Politiky - Procedury - Pracovní instrukce - Formuláře a zprávy"
+      ],
+      "wrong": [
+        "Celková bezpečnostní politika organizace - Celková bezpečnostní politika ISMS - Plán zvládání rizik ISMS - Manuál ISMS",
+        "Architektura ISMS - Detailní návrh ISMS - Manuál použití ISMS - Pracovní instrukce provozní verze ISMS"
+      ],
+      "question": "Standardy rodiny ISO/IEC 27000 požadují vypracování dokumentové základny ISMS v hierarchické struktuře vrstev:"
+    },
+    {
+      "correct": ["ISO/IEC 27001", "ISO 9001"],
+      "wrong": ["ISO/IEC 27002", "ISO/IEC 27000", "ISO 9000", "RFC"],
+      "question": "Můžeme se certifikovat na standard:"
+    },
+    {
+      "correct": [
+        "Je nutné, aby uživatelé/dodavatelé důvěřovali",
+        "Musí splňovat právní předpisy",
+        "Je nutné, aby organizace měla strukturu"
+      ],
+      "wrong": ["Je nutné, aby management měl co dělat"],
+      "question": "BP se musí řešit manažersky v organizacích protože:"
+    },
+    {
+      "correct": [
+        "bude se vztahovat na všechny digitální služby (HW i SW) prodávané v EU - "
+      ],
+      "wrong": [
+        "nebude se vztahovat na počítačové hry ",
+        "něco, že se už nebudou používat certifikáty, ale bude stačit tvrzení, že něco splňuješ",
+        "bude se vztahovat na i na služby, které nejsou poskytovány v EU, ale jsou tu testovány"
+      ],
+      "question": "Co platí o novém zákonu o kybernetické bezpečnosti č. 264/2025 Sb.?"
+    },
+    {
+      "correct": [
+        "Navrhnout pracovní verzi politiky informační bezpečnosti",
+        "Navrhuje vylepšení ITSec, úpravy",
+        "Hlásit vrcholovému managementu výsledky opatření",
+        "Navrhnout disciplinární řízení pro zaměstnance porušujícího pravidla bezpečnosti",
+        "vytvořit plán školení v informační bezpečnosti"
+      ],
+      "wrong": [
+        "vytvořit byznys plán",
+        "manuálně něco monitorovat, nebo spravovat",
+        "hustlit děvky",
+        "sellit piko"
+      ],
+      "question": "Co je v pracovní náplni CISO? K tomuto je kámo 9 (slovy DEVĚT) slajdů co dělá, najděte si to lol"
+    }
+  ]
+}

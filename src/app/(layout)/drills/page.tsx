@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const DrillsPage = async () => (
-  <div className="mt-10">
+  <div className="my-10">
     <PublicDrills />
   </div>
 );
