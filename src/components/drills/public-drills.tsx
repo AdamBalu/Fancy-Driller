@@ -21,7 +21,7 @@ export const PublicDrills = () => {
 
   return (
     <Transition>
-      <div className="mx-4 grid grid-cols-2 items-center justify-center gap-4 text-center sm:grid-cols-3">
+      <div className="mx-4 grid grid-cols-2 items-center justify-center gap-4 text-center md:grid-cols-3 xl:grid-cols-4">
         {data?.map((d, idx) => <DrillButton key={d.name + idx} drill={d} />)}
       </div>
     </Transition>

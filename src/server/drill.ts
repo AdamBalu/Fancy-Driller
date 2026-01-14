@@ -8,11 +8,33 @@ const parseDrills = (input: string) =>
 
 export const readDrills = async () => {
   try {
-    const filePath = path.join(process.cwd(), "public", "drills.json");
-    const file = await fs.readFile(filePath, "utf8");
+    const drillsDir = path.join(process.cwd(), "public", "drills");
+    const files = await fs.readdir(drillsDir);
 
-    return parseDrills(file || "[]");
+    const jsonFiles = files.filter((file) => file.endsWith(".json"));
+
+    const drillPromises = jsonFiles.map(async (file) => {
+      try {
+        const filePath = path.join(drillsDir, file);
+        const fileContent = await fs.readFile(filePath, "utf8");
+        const parsed = drillSchema.parse(JSON.parse(fileContent || "{}"));
+        return parsed;
+      } catch (error) {
+        console.error(`Error reading drill file ${file}:`, error);
+        return null;
+      }
+    });
+
+    const drills = await Promise.all(drillPromises);
+
+    // Filter out any null values from failed parses
+    const allDrills = drills.filter(
+      (drill): drill is z.infer<typeof drillSchema> => drill !== null,
+    );
+
+    return allDrills;
   } catch (error) {
+    console.error("Error reading drills directory:", error);
     return parseDrills("[]");
   }
 };
