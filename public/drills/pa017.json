@@ -1,0 +1,765 @@
+{
+  "name": "PA017",
+  "questions": [
+    {
+      "correct": ["programů.", "průvodní dokumentace.", "dat."],
+      "wrong": ["testovacích případů."],
+      "question": "SW se skládá z:"
+    },
+    {
+      "correct": ["prodávané na volném trhu libovolnému ze zákazníků."],
+      "wrong": [
+        "objednané konkrétním zákazníkem.",
+        "zpravidla vyvíjeny agilními postupy.",
+        "zpravidla dodávány na základě smlouvy o dílo."
+      ],
+      "question": "Generické SW produkty jsou:"
+    },
+    {
+      "correct": [
+        "analýza probíhá před návrhem.",
+        "implementace probíhá po návrhu."
+      ],
+      "wrong": [
+        "testování probíhá před návrhem.",
+        "implementace probíhá po analýze."
+      ],
+      "question": "Při vývoji SW by mělo platit, že",
+      "note": "Implementace probíhá až nějakou dobu po analýze. Záleží jak to myslí. Jestli to myslí jako že probíhá hned po analýze, tak to neplatí."
+    },
+    {
+      "correct": ["udržovatelnost."],
+      "wrong": ["spolehlivost.", "efektivita.", "použitelnost."],
+      "question": "Vlastnost SW, která umožňuje změny na základě měnících se potřeb zákazníka, se nazývá"
+    },
+    {
+      "correct": ["efektivita."],
+      "wrong": ["udržovatelnost.", "spolehlivost.", "použitelnost."],
+      "question": "Vlastnost, že SW neplýtvá prostředky (paměť, procesor apod.), se nazývá"
+    },
+    {
+      "correct": ["použitelnost."],
+      "wrong": ["udržovatelnost.", "spolehlivost.", "efektivita."],
+      "question": "Vlastnost, že SW má přiměřené uživatelské rozhraní odpovídající dokumentaci, se nazývá"
+    },
+    {
+      "correct": ["funkcionalitu", "operační omezení"],
+      "wrong": ["velikost kódu", "cenu."],
+      "question": "Specifikace SW definuje jeho"
+    },
+    {
+      "correct": [
+        "výpisy programů.",
+        "dokumentace.",
+        "data.",
+        "zdrojové soubory."
+      ],
+      "wrong": [],
+      "question": "Viditelné znaky výroby SW jsou"
+    },
+    {
+      "correct": ["viditelnost."],
+      "wrong": ["rychlost.", "udržovatelnost.", "použitelnost."],
+      "question": "Mezi charakteristiky výrobního procesu SW patří"
+    },
+    {
+      "correct": [
+        "zákazník musí být trpělivý.",
+        "reálné projekty nedodržují jednotlivé kroky v předepsaném pořadí."
+      ],
+      "wrong": [
+        "jsou dlouhé časové úseky mezi jednotlivými iteracemi.",
+        "inkrementy jsou malé a je jich velké množství."
+      ],
+      "question": "Mezi nevýhody vodopádového životního cyklu patří, že"
+    },
+    {
+      "correct": ["specifikace rozhraní.", "plán integračních testů."],
+      "wrong": ["specifikace architektury.", "plán testování jednotek."],
+      "question": "Výstupem návrhu rozhraní je"
+    },
+    {
+      "correct": ["specifikace návrhu.", "plán testování jednotek."],
+      "wrong": ["obrysová specifikace.", "protokol o testování jednotek."],
+      "question": "Výstupem podrobného návrhu je"
+    },
+    {
+      "correct": [
+        "prototypy vytváří za účelem získání poznatků.",
+        "prototypy v jisté fázi zahodí a provede se nová specifikace."
+      ],
+      "wrong": [
+        "systém buduje přírůstkově postupným přidáváním prototypů.",
+        "prototypování opakuje tak dlouho, dokud nevznikne funkční systém."
+      ],
+      "question": "Při životním cyklu „prototypování“ se"
+    },
+    {
+      "correct": [
+        "představuje vývoj na základě obrysové specifikace.",
+        "umožňuje předávat výsledný SW zákazníkovi po částech."
+      ],
+      "wrong": [
+        "je nevhodný pro velké SW produkty.",
+        "vytváří SW postupným přidáváním prototypů."
+      ],
+      "question": "Inkrementální životní cyklus"
+    },
+    {
+      "correct": [
+        "umožňuje inkrementální vývoj.",
+        "je iterativní.",
+        "umožňuje prototypování.",
+        "vychází z vodopádového životního cyklu."
+      ],
+      "wrong": [],
+      "question": "Spirálový životní cyklus",
+      "note": "Jeden cyklus spirálovitého životního cyklu odpovídá fázi iterativního waterfall modelu, takže asi se dá říct, že z něj vychází?"
+    },
+    {
+      "correct": [
+        "je ve srovnání s ostatními životními cykly obtížně manažersky řiditelný."
+      ],
+      "wrong": [
+        "je vhodný pro smluvní vývoj zákaznického SW.",
+        "vyvíjí SW na základě výzkumníky jasně definované specifikace.",
+        "klade důraz na testování a dokumentaci na konci každé iterace."
+      ],
+      "question": "Životní cyklus Výzkumník"
+    },
+    {
+      "correct": ["MS Word.", "MS Windows."],
+      "wrong": ["IS.MUNI."],
+      "question": "Který SW patří mezi generické produkty:"
+    },
+    {
+      "correct": ["Přírůstkový."],
+      "wrong": ["Vodopád.", "Prototypování."],
+      "question": "Který životní cyklus je vhodný pro rozsáhlé IS:"
+    },
+    {
+      "correct": ["Návrh."],
+      "wrong": ["Analýza.", "Psaní kódu."],
+      "question": "Plán testování by měl vznikat ve fázi:"
+    },
+    {
+      "correct": ["Přírůstkový."],
+      "wrong": ["Vodopád.", "Výzkumník."],
+      "question": "Mezi životní cykly vývoje dle obrysové specifikace patří:"
+    },
+    {
+      "correct": ["Iterativní.", "Inkrementální."],
+      "wrong": ["Lineární."],
+      "question": "Spirálový životní cyklus je:"
+    },
+    {
+      "correct": [
+        "Část kódu řešící uživatelské vstupy je větší než část řešící výstupy."
+      ],
+      "wrong": [
+        "Část kódu řešící uživatelské výstupy je větší než část řešící vstupy.",
+        "Obě části jsou přibližně stejně velké."
+      ],
+      "question": "Z pohledu složení aplikace obvykle platí, že:"
+    },
+    {
+      "correct": ["Dodatečné úpravy vyžádané uživateli."],
+      "wrong": [
+        "Havarijní zásahy a opravy.",
+        "Pravidelné kontroly a rutinní opravy chyb."
+      ],
+      "question": "Největší pracnost během údržby SW obvykle představují:"
+    },
+    {
+      "correct": [
+        "může být vyšší, než je cena za pořízení SW.",
+        "závisí na délce doby provozu SW."
+      ],
+      "wrong": ["je řádově nižší, než je cena za pořízení SW."],
+      "question": "Cena údržby SW v součtu za celé období jeho provozu: "
+    },
+    {
+      "correct": [
+        "Čím později v životním cyklu detekujeme chybu, tím nákladnější bude její oprava."
+      ],
+      "wrong": [
+        "Čím později v životním cyklu detekujeme chybu, tím levnější bude její oprava.",
+        "To, kdy v životním cyklu detekujeme chybu, nemá vliv na cenu její opravy."
+      ],
+      "question": "Vyberte správné tvrzení:"
+    },
+    {
+      "correct": [
+        "Systém používaný v reálném prostředí se neustále mění, dokud není levnější systém restrukturalizovat, nebo nahradit zcela novou verzí."
+      ],
+      "wrong": [
+        "Systém používaný v reálném prostředí se neustále mění, vždy je však levnější systém restrukturalizovat, než ho nahradit zcela novou verzí.",
+        "Systém používaný v reálném prostředí se obvykle nemění, proto obvykle není třeba systém restrukturalizovat, nebo nahradit zcela novou verzí."
+      ],
+      "question": "Lehmanův Zákon trvalé proměny říká, že:"
+    },
+    {
+      "correct": [
+        "Při evolučních změnách je program stále méně strukturovaný a vzrůstá jeho vnitřní složitost. Odstranění narůstající složitosti vyžaduje dodatečné úsilí."
+      ],
+      "wrong": [
+        "Při evolučních změnách je program stále stejně strukturovaný a nevzrůstá jeho vnitřní složitost. Odstranění narůstající složitosti nevyžaduje dodatečné úsilí.",
+        "Při evolučních změnách je program stále méně strukturovaný a vzrůstá jeho vnitřní složitost. Odstranění narůstající složitosti však nevyžaduje dodatečné úsilí."
+      ],
+      "question": "Lehmanův Zákon rostoucí složitosti říká, že:"
+    },
+    {
+      "correct": [
+        "Rychlost změn globálních atributů systému lze statisticky sledovat.",
+        "Rychlost změn globálních atributů systému lze předvídat."
+      ],
+      "wrong": ["Rychlost změn globálních atributů systému je náhodná."],
+      "question": "Lehmanův Zákon vývoje programu říká, že:"
+    },
+    {
+      "correct": ["klesá."],
+      "wrong": ["roste.", "zůstává stejná."],
+      "question": "Programátorská produktivita s množstvím přibývajícího kódu:"
+    },
+    {
+      "correct": ["Předpokládá se agilní přístup"],
+      "wrong": [
+        "Jsou na začátku projektu jasně stanovené požadavky na SW",
+        "Předpokládá se minimální zapojení zákazníka v průběhu realizace projektu"
+      ],
+      "question": "Metodika Scrum je vhodná v situaci, kdy:"
+    },
+    {
+      "correct": ["Inkrementální", "Iterativní", "Agilní"],
+      "wrong": [],
+      "question": "Metodika SCRUM je:"
+    },
+    {
+      "correct": ["user stories "],
+      "wrong": ["případů užití", "byznys procesů"],
+      "question": "Funkční požadavky na systém jsou (ve SCRUMu) v zachyceny formou:",
+      "note": "V originál otázce nebyla zmínka o SCRUMu, ale bylo to v jeho bloku, odhaduji že se bavil o něm a jen zapomněl zmínit to výslovně v otázce, proto jsem si dovolila upravit zadání otázky."
+    },
+    {
+      "correct": ["jedna iterace"],
+      "wrong": [
+        "krátká schůzka týmu pořádaná jedenkrát denně ",
+        "balíček požadavků, které mají být implementovány"
+      ],
+      "question": "Sprintem se metodice SCRUM rozumí:"
+    },
+    {
+      "correct": ["Požadavky na celý systém"],
+      "wrong": [
+        "Požadavky pro jedenu konkrétní iteraci",
+        "Již realizované požadavky"
+      ],
+      "question": "Product backlog obsahuje:"
+    },
+    {
+      "correct": ["tzv. hra "],
+      "wrong": ["tzv. předehra", "tzv. dohra"],
+      "question": "Fáze SCRUM, ve které dochází k psaní kódu je:"
+    },
+    {
+      "correct": ["Priority požadavků", "Odhady pracnosti"],
+      "wrong": ["Požadavky v podobě případů užití"],
+      "question": "Product backlog obsahuje mimo jiné:"
+    },
+    {
+      "correct": ["SCRUM", "Feature-Driven Development"],
+      "wrong": ["Unified Process"],
+      "question": "Které z následujících metodik jsou agilní:",
+      "note": "Všetky sú iteratívne aj inkrementálne"
+    },
+    {
+      "correct": [
+        "Iterativní a inkrementální vývoj s krátkými iteracemi",
+        "Komunikace mezi zákazníkem a vývojovým týmem"
+      ],
+      "wrong": ["Důkladná dokumentace všech pracovních postupů"],
+      "question": "Společnými rysy všech agilních metodik jsou"
+    },
+    {
+      "correct": [
+        "Individuality a interakce mají přednost před procesy a nástroji.",
+        "Fungující software má přednost před obsáhlou dokumentací.",
+        "Spolupráce se zákazníkem má přednost před sjednáváním smluv."
+      ],
+      "wrong": [],
+      "question": "Při agilním vývoji by mělo platit, že:"
+    },
+    {
+      "correct": ["Čas", "Zdroje"],
+      "wrong": ["Funkcionalita"],
+      "question": "Co je při agilním přístupu fixní:"
+    },
+    {
+      "correct": [
+        "Jsou na začátku projektu jasně stanovené požadavky na SW",
+        "Je požadováno, aby byl po celou dobu jasně stanovený plán prací"
+      ],
+      "wrong": ["Předpokládá se agilní přístup"],
+      "question": "Metodika Unified Process je vhodná v situaci, kdy:"
+    },
+    {
+      "correct": ["Inkrementální", "Iterativní"],
+      "wrong": ["Agilní"],
+      "question": "Metodika Unified Process je:"
+    },
+    {
+      "correct": ["tzv. use case driven"],
+      "wrong": ["tzv. user story driven", "tzv. business process driven"],
+      "question": "Metodika Unified Process je:"
+    },
+    {
+      "correct": ["Požadavky, analýza, návrh, implementace, testování"],
+      "wrong": [
+        "Požadavky, návrh, analýza, implementace, testování",
+        "Analýza, návrh, implementace, nasazení, testování"
+      ],
+      "question": "Pořadí workflow v metodice UP je:"
+    },
+    {
+      "correct": ["Inception, Elaboration, Construction, Transition"],
+      "wrong": [
+        "Inception, Elaboration, Implementation, Transition",
+        "Elaboration, Inception, Implementation, Transition"
+      ],
+      "question": "Pořadí fází metodiky UP je:"
+    },
+    {
+      "correct": ["Construction"],
+      "wrong": ["Elaboration ", "Transition"],
+      "question": "Ve které fázi metodiky UP probíhá největší část testování:",
+      "note": "Tato otázka nemusí být správně. V grafu ze slidů je testování dost i ve fázi Transition, nejen ve fázi Construction."
+    },
+    {
+      "correct": ["Elaboration "],
+      "wrong": ["Inception", "Construction"],
+      "question": "Ve které fázi metodiky UP probíhá největší část analýzy:"
+    },
+    {
+      "correct": ["Elaboration "],
+      "wrong": ["Inception", "Construction"],
+      "question": "Ve které fázi metodiky UP probíhá největší část návrhu:",
+      "note": " V jedné prezentaci to z grafu vypadá spíš na Construction, v druhé spíš na Elaboration. Shodli jsme se že větší smysl dává Elaboration, ale toto není ověřené, mějte to na paměti prosím."
+    },
+    {
+      "correct": ["Construction"],
+      "wrong": ["Elaboration ", "Transition"],
+      "question": "Ve které fázi metodiky UP probíhá největší část psaní kódu:"
+    },
+    {
+      "correct": ["Diagram posloupností (Sequence diagram)"],
+      "wrong": [
+        "Diagram případů užití (Use case diagram)",
+        "Entitně-relační diagram (ERD)"
+      ],
+      "question": "Které z následujících diagramů se používají v metodice UP při analýze:",
+      "note": " ERD není UML! Use case diagram se používá asi v requirements a ne v analýze."
+    },
+    {
+      "correct": ["Diagram případů užití (Use case diagram)"],
+      "wrong": [
+        "Diagram tříd (Class diagram)",
+        "Diagram posloupností (Sequence diagram)"
+      ],
+      "question": "Které z následujících diagramů se používají v metodice UP pro zachycení požadavků:"
+    },
+    {
+      "correct": ["3 modely výpočtu a velikost kódu"],
+      "wrong": [
+        "3 modely výpočtu a 2 vývojové módy",
+        "2 vývojové módy a velikost kódu"
+      ],
+      "question": "Původní COCOMO používá na vstupu:"
+    },
+    {
+      "correct": [
+        "na základě velikosti kódu",
+        "na základě vztahů, které lze odvodit z Putnamovy rovnice"
+      ],
+      "wrong": ["na základě počtu funkčních bodů"],
+      "question": "Původní COCOMO (tj. v základní verzi) odhaduje pracnost:"
+    },
+    {
+      "correct": [
+        "úsilí a doba potřebná na vývoj SW",
+        "doba potřebná na vývoj SW a pracnost "
+      ],
+      "wrong": ["velikost kódu v KSLOC"],
+      "question": "Pomocí COCOMO se odhaduje:"
+    },
+    {
+      "correct": ["člověkoměsíců nebo člověkodnů"],
+      "wrong": ["měsíců nebo dnů", "řádků zdrojového kódu nebo KSLOC"],
+      "question": "Pracnost vývoje SW se uvádí jako počet:"
+    },
+    {
+      "correct": ["měsíců"],
+      "wrong": ["člověkoměsíců ", "člověkodnů"],
+      "question": "Doba vývoje SW se uvádí jako počet:"
+    },
+    {
+      "correct": ["pracnosti vývoje", "době vývoje"],
+      "wrong": ["velikosti kódu"],
+      "question": "Složitost je úměrná:",
+      "note": "Tato otázka nemusí být správně, odpověď afaik není ověřená."
+    },
+    {
+      "correct": ["vázanému"],
+      "wrong": ["organickému", "bezprostřednímu"],
+      "question": "Kterému vývojovému módu v COCOMO  odpovídají nejsložitější projekty:"
+    },
+    {
+      "correct": ["střední", "pokročilý"],
+      "wrong": ["základní"],
+      "question": "Který výpočetní model COCOMO používá korekční faktor:"
+    },
+    {
+      "correct": [
+        "atributy SW produktu",
+        "atributy vývojového týmu",
+        "atributy projektu"
+      ],
+      "wrong": [],
+      "question": "Které atributy mají vliv na korekční faktor COCOMO:"
+    },
+    {
+      "correct": ["1"],
+      "wrong": ["0", "1/2"],
+      "question": "Pokud korekční faktor nemá vliv na výpočet COCOMO, je jeho hodnota:"
+    },
+    {
+      "correct": [
+        "Je součinem hodnot 15 atributů (cost drivers) specifických pro vývojový proces."
+      ],
+      "wrong": [
+        "Je součtem hodnot 15 atributů (cost drivers) specifických pro vývojový proces.",
+        "Se počítá na základě KSLOC."
+      ],
+      "question": "Korekční faktor v základním COCOMO:"
+    },
+    {
+      "correct": ["Aplication Composition Model"],
+      "wrong": ["Post Design Model", "Early Architecture Model"],
+      "question": "Které modely používá COCOMO2:",
+      "note": " Toto je chyták. Modely Post Design a Early Architecture v COCOMU neexistují! Existují modely Post Architecture a Early Design (a ty by byly rovněž správnou odpovědí)."
+    },
+    {
+      "correct": ["Post Architecture Model"],
+      "wrong": ["Aplication Composition Model", "Early Design Model"],
+      "question": "Nejvíce parametrů má výpočet pomocí COCOMO 2, když se použije:"
+    },
+    {
+      "correct": [
+        "Nejprve Aplication Composition Model, pak Early Design Model a nejpozději Post Architecture Model  "
+      ],
+      "wrong": [
+        "Nejprve Early Design Model, pak Post Architecture Model a nejpozději Aplication Composition Model",
+        "Nejprve Post Architecture Model, pak Aplication Composition Model a nejpozději Early Design Model"
+      ],
+      "question": "Výčty COCOMO 2 během vývoje SW se používají v průběhu životního cyklu v pořadí:"
+    },
+    {
+      "correct": ["Putnamova rovnice", "COCOMO 2"],
+      "wrong": ["Brooksův zákon"],
+      "question": "Vztah mezi velikostí SW, dobou vývoje a pracností udává:"
+    },
+    {
+      "correct": ["aplikační funkce", "aplikační data"],
+      "wrong": ["aplikační kód"],
+      "question": "Funkční body měří:"
+    },
+    {
+      "correct": ["Externí výstupy (EO - External Outputs)"],
+      "wrong": [
+        "Vnitřní logické soubory (ILF - Internal Logical Files)",
+        "Soubory vnějšího rozhraní (EIF - External Interface Files)"
+      ],
+      "question": "Funkční body vztažené k transakčním funkcím jsou:"
+    },
+    {
+      "correct": [
+        "Vnitřní logické soubory (ILF - Internal Logical Files)",
+        "Soubory vnějšího rozhraní (EIF - External Interface Files)"
+      ],
+      "wrong": ["Externí výstupy (EO - External Outputs)"],
+      "question": "Funkční body vztažené k datovým funkcím jsou:"
+    },
+    {
+      "correct": ["Vnitřní logický soubor (ILF - Internal Logical Files)"],
+      "wrong": [
+        "Externí vstup (EI - External Inputs)",
+        "Soubor vnějšího rozhraní (EIF - External Interface Files)"
+      ],
+      "question": "Uživatelem v aplikaci udržovaná tabulka nebo soubor je z pohledu FP:"
+    },
+    {
+      "correct": ["Soubor vnějšího rozhraní (EIF - External Interface Files)"],
+      "wrong": [
+        "Externí vstup (EI - External Inputs)",
+        "Vnitřní logický soubor (ILF - Internal Logical Files)"
+      ],
+      "question": "Databáze čtená pomocí jiné aplikace je z pohledu FP:"
+    },
+    {
+      "correct": ["Externí vstupy (EI - External Inputs)"],
+      "wrong": [
+        "Externí výstupy (EO - External Outputs)",
+        "Externí dotazy (EQ - External Enquiry)"
+      ],
+      "question": "Datová obrazovka s přidáním, změnou a rušením se z pohledu FP považuje za:"
+    },
+    {
+      "correct": ["3 Externí vstupy (EI - External Inputs)"],
+      "wrong": [
+        "1 Externí vstup (EI - External Inputs)",
+        "1 Externí dotaz (EQ - External Enquiry)"
+      ],
+      "question": "Datová obrazovka s přidáním, změnou a rušením se započítá jako:"
+    },
+    {
+      "correct": ["Externí výstup (EO - External Outputs)"],
+      "wrong": [
+        "Vnitřní logický soubor (ILF - Internal Logical Files)",
+        "Soubor vnějšího rozhraní (EIF - External Interface Files)"
+      ],
+      "question": "Automatická data nebo transakce směrem k jiným aplikacím se započítá jako:"
+    },
+    {
+      "correct": ["matice složitosti vstupů", "matice složitosti souborů"],
+      "wrong": ["14 charakteristik hodnocených podle stupně vlivu na aplikaci"],
+      "question": "Při výpočtu neupravených funkčních bodů se používá:"
+    },
+    {
+      "correct": [
+        "14 charakteristik hodnocených podle stupně vlivu na aplikaci"
+      ],
+      "wrong": ["matice složitosti vstupů", "matice složitosti souborů"],
+      "question": "Při výpočtu upravených funkčních bodů z neupravených funkčních bodů se používá:"
+    },
+    {
+      "correct": ["Velikost SW"],
+      "wrong": ["Délku zdrojového kódu", "Složitost"],
+      "question": "Funkční body měří:"
+    },
+    {
+      "correct": ["Velikost SW", "Délku zdrojového kódu"],
+      "wrong": ["Složitost kódu"],
+      "question": "Hodnota LOC (resp. SLOC) udává:",
+      "note": "Nejsem si jistá, jestli jsem ho dobře pochopila s tím, že Velikost SW je také správná odpověď."
+    },
+    {
+      "correct": ["Produktu"],
+      "wrong": ["Procesu", "Zdrojů"],
+      "question": "Poměr velikosti zdrojového kódu a dokumentace je metrika:"
+    },
+    {
+      "correct": ["Procesu"],
+      "wrong": ["Produktu", "Zdrojů"],
+      "question": "Úsilí vynaložené na jeden funkční bod při vývoji aplikace je metrika:"
+    },
+    {
+      "correct": ["Zdrojů"],
+      "wrong": ["Produktu", "Procesu"],
+      "question": "Počet vysokoškolsky vzdělaných členů vývojového týmu je metrika:"
+    },
+    {
+      "correct": ["Závislé na programátorovi"],
+      "wrong": ["Nezávislé na použitých technologiích", "Náročné na výpočet"],
+      "question": "Metrika LOC (Line of Code) je:"
+    },
+    {
+      "correct": ["Nezávislá na programovacím jazyku"],
+      "wrong": ["Závislá na programátorovi", "Závislá na velikosti týmu"],
+      "question": "Metrika FP (Function points) je:"
+    },
+    {
+      "correct": ["Oba programy mají stejný počet FP"],
+      "wrong": [
+        "Program napsaný v Javě má více FP",
+        "Program napsaný v asembleru má méně FP"
+      ],
+      "question": "Pro dva programy, které dělají totéž, přičemž jeden je napsaný v asembleru a druhý v Javě, bude platit:"
+    },
+    {
+      "correct": [
+        "Program napsaný v Javě má méně LOC",
+        "Program napsaný v asembleru má více LOC"
+      ],
+      "wrong": ["Oba programy mají stejný počet LOC"],
+      "question": "Pro dva programy, které dělají totéž, přičemž jeden je napsaný v asembleru a druhý v Javě, bude platit:"
+    },
+    {
+      "correct": [
+        "Udává minimální počet lineárně nezávislých cest skrz zdrojový kód.",
+        "Ukazuje, jak složité bude testování."
+      ],
+      "wrong": [
+        "Udává velikost zdrojového kódu v jednotlivých nezávislých cestách programem."
+      ],
+      "question": "Cyklomatická složitost:",
+      "note": "Cyklomatická složitost udává KOLIK jednotlivých nezávislých cest je, ne jak jsou dlouhé."
+    },
+    {
+      "correct": ["Funkční body"],
+      "wrong": ["Počet řádků zdrojového kódu", "Cyklomatická složitost"],
+      "question": "Která z následujících metrik velikosti SW je nejnáročnější na výpočet:"
+    },
+    {
+      "correct": ["požadavků", "standardů", "běžných zvyklostí"],
+      "wrong": [],
+      "question": "Mezi aspekty kvality SW patří odchylky od:"
+    },
+    {
+      "correct": [
+        "operační charakteristiky",
+        "schopnost akceptovat změny",
+        "adaptibilita na nové prostředí"
+      ],
+      "wrong": [],
+      "question": "Mezi kategorie faktorů kvality SW patří:",
+      "note": "aka co to dělá, jak je to udržovatelné, jak je to přenositelné"
+    },
+    {
+      "correct": ["Efektivita"],
+      "wrong": ["Spolehlivost", "Použitelnost"],
+      "question": "Množství výpočetních prostředků a kódu, které program potřebuje na splnění svých funkcí, se označuje jako:"
+    },
+    {
+      "correct": ["Udržovatelnost"],
+      "wrong": ["Testovatelnost", "Efektivita"],
+      "question": "Úsilí vyžadované na vyhledání a opravu chyby v programu, se označuje jako:"
+    },
+    {
+      "correct": ["Korektnost"],
+      "wrong": ["Použitelnost", "Spolehlivost"],
+      "question": "Rozsah toho, jak program splňuje specifikaci a uživatelovy záměry, se označuje jako:"
+    },
+    {
+      "correct": ["Činnost produktu", "Revize produktu", "Přemístění produktu"],
+      "wrong": [],
+      "question": "Mezi skupiny faktorů kvality (McCall) patří:",
+      "note": "aka to co to dělá, jak je to udržovatelné/opravitelné, a jak to jde přemístit/přenést"
+    },
+    {
+      "correct": [
+        "je dokončen se všemi specifikovanými rysy a funkcemi, ale překročil rozpočet nebo je opožděný.",
+        "je dokončen včas, bez překročení rozpočtu, ale má méně rysů a funkcí, než bylo původně specifikováno."
+      ],
+      "wrong": [
+        "je dokončen včas, bez překročení rozpočtu, se všemi specifikovanými rysy a funkcemi."
+      ],
+      "question": "SW projekt považujeme za dokončený s výhradami pokud:",
+      "note": "Podle toho jak dopadne sw trojúhelník (rohy: peníze, čas, co jsme vyrobili). První možnost splňuje všechny tři vrcholy, takže je dokončený bez výhrad. S výhradami znamená, že nějaký vrchol není úplně splněný (překročil rozpočet, je opožděný, nebo nemá všechny rysy a funkce co má být)."
+    },
+    {
+      "correct": [
+        "byl zastaven před dokončením,",
+        "nebyl implementován,",
+        "výsledek byl vyřazen po instalaci."
+      ],
+      "wrong": [],
+      "question": "SW projekt považujeme za neúspěšný pokud:",
+      "note": "Produkt je neúspěšný, pokud se nepoužívá. (Pokud se nevyvinul, pokud ho nikdo ani nepoužil nebo pokud se po instalaci zjistilo, že je nepoužitelný. Neřešíme kdo to zaplatil.)"
+    },
+    {
+      "correct": ["Provozu"],
+      "wrong": ["Analýzy", "Testování"],
+      "question": "Cena odstranění závady je zpravidla nejvyšší ve fázi:"
+    },
+    {
+      "correct": ["Určit etapu projektu, kdy defekt vznikl"],
+      "wrong": [
+        "Opravit defekt rychleji a efektivněji",
+        "Kvantifikovat počty defektů, které způsobily jednotlivé osoby v týmu"
+      ],
+      "question": "Klasifikace defektů (např. ODC) napomáhá:",
+      "note": "OCD – IBM zavedlo Ortogonal Defect Classification, která kategarizuje defekty podle příčiny, kvůli které vznikly, používali 8 typů defektů; Zmínil to tu aby bylo jasné, že jde o klasifikaci podle věcné příčiny defektů (a ne třeba podle závažnosti)."
+    },
+    {
+      "correct": ["časování/serializace"],
+      "wrong": ["sestavení/spojování", "přiřazení/ověřování"],
+      "question": "Chyby, které lze opravit zlepšeným řízením sdílených a RT prostředků, se označují jako chyby:"
+    },
+    {
+      "correct": ["Návrhu"],
+      "wrong": ["Analýzy", "Psaní kódu"],
+      "question": "Defekty typu „rozhraní“ mají své příčiny obvykle ve fázi:"
+    },
+    {
+      "correct": ["unit testy, integrační testy, systémové testy"],
+      "wrong": [
+        "integrační testy, unit testy, systémové testy,",
+        "systémové testy, integrační testy, unit testy"
+      ],
+      "question": "Obvyklé (správné) pořadí testů je:"
+    },
+    {
+      "correct": ["výkon", "chyby"],
+      "wrong": ["nepřítomnost defektů"],
+      "question": "Co ukazuje testování"
+    },
+    {
+      "correct": ["Verifikace", "Test typu „bílá skříňka“"],
+      "wrong": ["Validace"],
+      "question": "Test proti vnitřní činnosti SW se označuje jako:"
+    },
+    {
+      "correct": ["Validace", "Test typu „černá skříňka“"],
+      "wrong": ["Test typu „bílá skříňka“"],
+      "question": "Test proti specifikovaným funkcím SW se označuje jako:"
+    },
+    {
+      "correct": ["Unit testech", "Integračních testech zdola – nahoru"],
+      "wrong": ["Integračních testech shora – dolů"],
+      "question": "Drivery se používají při:"
+    },
+    {
+      "correct": ["Integračních testech shora – dolů"],
+      "wrong": ["Unit testech", "Integračních testech zdola – nahoru"],
+      "question": "Tzv. „stubs“ se používají při:"
+    },
+    {
+      "correct": ["Testování typu „bílá skříňka“"],
+      "wrong": ["Testování typu „černá skříňka“", "Integračních testů"],
+      "question": "Cyklomatická složitost ukazuje náročnost:"
+    },
+    {
+      "correct": ["Inspektor", "Autor"],
+      "wrong": ["Tester"],
+      "question": "Do týmu, který se účastní inspekce SW, patří:",
+      "note": "Tým inspekce SW tvoří: vedoucí týmu (neboli moderátor), zapisovatel, inspektor a autor."
+    },
+    {
+      "correct": ["Zajištění jednotného vývoje", "Odhalení chyb"],
+      "wrong": ["Zefektivnění vývojového procesu"],
+      "question": "Mezi cíle formálního přezkoušení SW patří:"
+    },
+    {
+      "correct": ["Kritické"],
+      "wrong": ["Středně závažné", "Kosmetické"],
+      "question": "Defekty, které způsobují pád systému a zabraňují tak v jeho používání, se označují jako:"
+    },
+    {
+      "correct": [
+        "Cca ve 40% doby trvání projektu",
+        "Před fází nasazení na produkční prostředí zákazníka"
+      ],
+      "wrong": ["Ihned na samém začátku projektu"],
+      "question": "Vrchol počtu pracovníků v průběhu SW projektu je:"
+    },
+    {
+      "correct": ["Odhady pracnosti", "Rizika", "Subdodávky"],
+      "wrong": [],
+      "question": "Projektová kalkulace SW projektu by měla zahrnovat:"
+    },
+    {
+      "correct": ["HW náklady", "Náklady na licence"],
+      "wrong": ["Odhady času"],
+      "question": "Projektová kalkulace SW projektu by měla zahrnovat:"
+    }
+  ]
+}
