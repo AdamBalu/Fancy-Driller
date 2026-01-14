@@ -1,6 +1,6 @@
 {
   "name": "PV017",
-  "note": "Půlsemestrálka z PV017 - Řízení informační bezpečnosti",
+  "chips": ["midterm"],
   "questions": [
     {
       "question": "Jaký je mezi pojmy 'Safety' a 'Security' rozdíl?",

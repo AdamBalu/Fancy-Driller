@@ -1,6 +1,6 @@
 {
   "name": "PA103",
-  "note": "Záverečná zkouška z PA103 - Object-oriented Methods for Design of Information Systems",
+  "chips": ["final"],
   "questions": [
     {
       "question": "Choose correct declarations about the Organization Hierarchies analysis pattern (choose two):",

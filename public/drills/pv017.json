@@ -1,6 +1,6 @@
 {
   "name": "PV017",
-  "note": "Záverečná zkouška z PV017 - Řízení informační bezpečnosti",
+  "chips": ["final"],
   "questions": [
     {
       "question": "Jaký je mezi pojmy 'Safety' a 'Security' rozdíl?",

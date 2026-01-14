@@ -1,6 +1,6 @@
 {
   "name": "PA179",
-  "note": "Záverečná zkouška z PA179 - Project Management",
+  "chips": ["final"],
   "questions": [
     {
       "correct": ["Temporary, Change driving, Uncertain, Unique"],

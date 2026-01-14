@@ -1,6 +1,6 @@
 {
   "name": "PA017",
-  "note": "Záverečná zkouška z PA017 - Information Systems Management",
+  "chips": ["final"],
   "questions": [
     {
       "correct": ["programů.", "průvodní dokumentace.", "dat."],

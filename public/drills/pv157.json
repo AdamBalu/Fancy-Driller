@@ -1,6 +1,6 @@
 {
   "name": "PV157",
-  "note": "Záverečná zkouška z PV157 - Autentizace a řízení přístupu",
+  "chips": ["final"],
   "questions": [
     {
       "question": "Generátory passcode slouží pro",

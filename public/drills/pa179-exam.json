@@ -1,6 +1,7 @@
 {
-  "name": "PA179 - exam questions",
-  "note": "Záverečná zkouška z PA179 - Project Management - ověřené správné odpovědi, přímo ze zkoušky",
+  "name": "PA179 - exam",
+  "note": "Záverečná zkouška z PA179 ‑ ověřené správné odpovědi (opravená zkouška)",
+  "chips": ["exam"],
   "questions": [
     {
       "question": "Choose true statements about Project",

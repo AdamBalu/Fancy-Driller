@@ -1,6 +1,6 @@
 {
   "name": "PV157",
-  "note": "Půlsemestrálka z PV157 - Autentizace a řízení přístupu",
+  "chips": ["midterm"],
   "questions": [
     {
       "question": "Digitální podpis ověříme pomocí",
