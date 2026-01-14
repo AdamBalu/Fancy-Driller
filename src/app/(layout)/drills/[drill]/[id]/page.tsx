@@ -10,7 +10,7 @@ const Page = async ({ params }: QuestionProps) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <Transition>
-        <div className="h-dvh">
+        <div className="flex min-h-dvh items-center justify-center">
           <QuestionPage id={params.id} />
         </div>
       </Transition>
