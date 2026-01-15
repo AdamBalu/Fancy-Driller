@@ -9,6 +9,7 @@ export const questionSchema = z.object({
 export type Question = z.infer<typeof questionSchema>;
 
 export const drillSchema = z.object({
+  id: z.string(),
   name: z.string(),
   note: z.string().optional(),
   chips: z.array(z.string()),

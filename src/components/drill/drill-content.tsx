@@ -23,10 +23,10 @@ const mapQuestionsToExtendedQuestions = (
 };
 
 export const DrillContent = ({
-  drillName,
+  drillId,
   calledFromCustomDrill,
 }: {
-  drillName: string;
+  drillId: string;
   calledFromCustomDrill: boolean;
 }) => {
   const drill = useDrillsQuery();
@@ -42,9 +42,7 @@ export const DrillContent = ({
     }),
   );
 
-  const currentDrill = drill?.data?.find(
-    (d) => d.name === decodeURI(drillName),
-  );
+  const currentDrill = drill?.data?.find((d) => d.id === drillId);
 
   const { selectedQuestions, setSelectedQuestions, setFastMode, fastMode } =
     questionsContext;

@@ -13,6 +13,8 @@ export type QuestionContextProps = {
   setFastMode: (i: boolean) => void;
   currentDrillName: string;
   setCurrentDrillName: (name: string) => void;
+  currentDrillId: string;
+  setCurrentDrillId: (id: string) => void;
 };
 
 export const QuestionContext = createContext<QuestionContextProps | null>(null);
@@ -24,6 +26,7 @@ export const QuestionContextProvider = ({ children }: PropsWithChildren) => {
     [],
   );
   const [currDrillName, setCurrDrillName] = useState<string>("");
+  const [currDrillId, setCurrDrillId] = useState<string>("");
 
   const setSelectedQuestions = (q: QuestionExtendedInfo[]) => {
     setQuestions(q);
@@ -35,6 +38,10 @@ export const QuestionContextProvider = ({ children }: PropsWithChildren) => {
 
   const setCurrentDrillName = (name: string) => {
     setCurrDrillName(name);
+  };
+
+  const setCurrentDrillId = (id: string) => {
+    setCurrDrillId(id);
   };
 
   const setQuestion = (q: QuestionExtendedInfo, value: Answer) => {
@@ -56,6 +63,8 @@ export const QuestionContextProvider = ({ children }: PropsWithChildren) => {
         setFastMode,
         currentDrillName: currDrillName,
         setCurrentDrillName,
+        currentDrillId: currDrillId,
+        setCurrentDrillId,
       }}
     >
       {children}
