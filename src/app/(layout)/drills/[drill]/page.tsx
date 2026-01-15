@@ -13,7 +13,7 @@ type DrillProps = {
 const Page = async ({ params }: DrillProps) => {
   return (
     <DrillContent
-      drillName={params.drill}
+      drillId={params.drill}
       calledFromCustomDrill={params.drill === "custom-drill"}
     />
   );

@@ -16,19 +16,19 @@ export const RestartDrillButton = () => {
     (context: QuestionContextProps | null) => ({
       setSelectedQuestions: context?.setSelectedQuestions,
       initialQuestions: context?.initialQuestions,
-      currentDrillName: context?.currentDrillName,
+      currentDrillId: context?.currentDrillId,
     }),
   );
 
   if (!questionContext) return;
 
-  const { setSelectedQuestions, initialQuestions, currentDrillName } =
+  const { setSelectedQuestions, initialQuestions, currentDrillId } =
     questionContext;
-  if (!setSelectedQuestions || !initialQuestions || !currentDrillName) return;
+  if (!setSelectedQuestions || !initialQuestions || !currentDrillId) return;
 
   const onClick = () => {
     setSelectedQuestions(initialQuestions);
-    router.push(`/drills/${currentDrillName}`);
+    router.push(`/drills/${currentDrillId}`);
   };
 
   return (

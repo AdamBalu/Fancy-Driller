@@ -16,28 +16,39 @@ export const DrillButton = ({ drill }: { drill: Drill }) => {
       setSelectedQuestions: context?.setSelectedQuestions,
       setInitialQuestions: context?.setInitialQuestions,
       setCurrentDrillName: context?.setCurrentDrillName,
+      setCurrentDrillId: context?.setCurrentDrillId,
     }),
   );
 
-  const { setSelectedQuestions, setInitialQuestions, setCurrentDrillName } =
-    contextSelectors;
+  const {
+    setSelectedQuestions,
+    setInitialQuestions,
+    setCurrentDrillName,
+    setCurrentDrillId,
+  } = contextSelectors;
 
   const router = useRouter();
 
   const onDrillClick = () => {
     const questionsExtendedInfo: QuestionExtendedInfo[] = drill.questions.map(
-      (question) => ({
+      (question, idx) => ({
         ...question,
         answer: "none",
-        order: 0,
+        order: idx + 1,
       }),
     );
-    if (setSelectedQuestions && setInitialQuestions && setCurrentDrillName) {
+    if (
+      setSelectedQuestions &&
+      setInitialQuestions &&
+      setCurrentDrillName &&
+      setCurrentDrillId
+    ) {
       setInitialQuestions(questionsExtendedInfo);
       setSelectedQuestions(questionsExtendedInfo);
       setCurrentDrillName(drill.name);
+      setCurrentDrillId(drill.id);
     }
-    router.push(`/drills/${drill.name}`);
+    router.push(`/drills/${drill.id}`);
   };
 
   return (
