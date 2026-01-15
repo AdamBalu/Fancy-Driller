@@ -78,7 +78,7 @@ export const AnswerButton = ({
       } ${currentQuestion.correct.includes(answer) && currentQuestion.answer !== "none" && "border-correctCard !bg-correctCard text-onAnsweredButton hover:border-correctCard hover:!text-onAnsweredButton dark:!border-correctCardDark dark:!bg-correctCardDark"} 
         ${currentQuestion.wrong.includes(answer) && currentQuestion.answer !== "none" && "border-incorrectCard !bg-incorrectCard text-onAnsweredButton hover:border-incorrectCard hover:!text-onAnsweredButton dark:!border-incorrectCardDark dark:!bg-incorrectCardDark"}`}
     >
-      {answer}
+      <div className="whitespace-pre-wrap">{answer}</div>
     </Button>
   );
 };

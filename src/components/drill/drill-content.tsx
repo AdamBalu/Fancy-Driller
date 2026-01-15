@@ -87,15 +87,15 @@ export const DrillContent = ({
             key={question.question + index}
             className="transition-background flex w-[90dvw] flex-col items-start justify-start gap-2 rounded-lg bg-primaryCard p-4 text-secondary duration-200 ease-in-out dark:bg-primaryCardDark dark:text-secondaryDark md:w-[70dvw] lg:w-[50dvw]"
           >
-            <div className="text-sm font-bold sm:text-base">
+            <div className="whitespace-pre-wrap text-sm font-bold sm:text-base">
               {question.question}
             </div>
-            <div className="border-l-2 border-correct pl-2 text-sm ease-in-out md:text-base">
+            <div className="whitespace-pre-wrap border-l-2 border-correct pl-2 text-sm ease-in-out md:text-base">
               {question.correct.map((a) => (
                 <div key={a}>{a}</div>
               ))}
             </div>
-            <div className="border-l-2 border-incorrect pl-2 text-sm ease-in-out md:text-base">
+            <div className="whitespace-pre-wrap border-l-2 border-incorrect pl-2 text-sm ease-in-out md:text-base">
               {question.wrong.map((a) => (
                 <div key={a}>{a}</div>
               ))}
