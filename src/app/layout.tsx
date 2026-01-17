@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import React from "react";
 import { Toaster } from "react-hot-toast";
 import { Providers } from "~/hooks/providers";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Fancy Driller",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className="min-h-screen">
         <Providers>{children}</Providers>
         <Toaster position="bottom-center" reverseOrder={false} />
+        <Analytics />
       </body>
     </html>
   );
