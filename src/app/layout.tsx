@@ -7,7 +7,7 @@ import { Providers } from "~/hooks/providers";
 
 export const metadata = {
   title: "Fancy Driller",
-  description: "Old driller with new look",
+  description: "Drill for exams in a fancy way",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

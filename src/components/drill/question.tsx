@@ -8,6 +8,7 @@ import {
   QuestionContext,
   type QuestionContextProps,
 } from "~/hooks/question-context";
+import { cn } from "~/lib/cn";
 
 type QuestionProps = {
   currentQuestion: QuestionExtendedInfo;
@@ -65,9 +66,20 @@ export const Question = ({
     !wasAnsweredCorrectly && toastError("Wrong");
   };
 
+  const isTable = currentQuestion.question
+    .split("\n")
+    .some((line) => line.trim().startsWith("|"));
+
   return (
     <div className="mx-2 flex min-h-[calc(100dvh-68px)] w-[90dvw] max-w-screen-md flex-col items-center justify-center gap-2 sm:mx-4 sm:w-[70dvw] sm:gap-5">
-      <h2 className="text-md whitespace-pre-wrap pb-5 text-center font-bold text-secondary transition-color duration-500 ease-in-out dark:text-secondaryDark sm:text-xl md:text-2xl">
+      <h2
+        className={cn(
+          "text-md w-max max-w-[min(90dvw,1200px)] overflow-scroll pb-5 font-bold text-secondary transition-color duration-500 ease-in-out dark:text-secondaryDark sm:text-xl md:text-2xl",
+          isTable
+            ? "whitespace-pre text-left font-mono"
+            : "whitespace-pre-wrap text-center",
+        )}
+      >
         {currentQuestion.question}
       </h2>
       {shuffledAnswers?.map((answer) => (
