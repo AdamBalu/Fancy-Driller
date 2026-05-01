@@ -3,6 +3,7 @@ import { CodeBlock, tomorrowNightEighties } from "react-code-blocks";
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import AccentCard from "~/components/common/accent-card";
+import Transition from "~/components/common/transition";
 
 export const ExampleJsonInput = () => {
   const { theme } = useTheme();
@@ -14,7 +15,7 @@ export const ExampleJsonInput = () => {
   }, []);
 
   if (!mounted) {
-    return null;
+    return <div className="mx-auto h-[360px] w-full max-w-96" />;
   }
 
   const code = `[
@@ -53,15 +54,17 @@ export const ExampleJsonInput = () => {
         };
 
   return (
-    <AccentCard className="max-w-96 text-xs sm:text-base">
-      <CodeBlock
-        codeBlockStyle={customStyle}
-        codeContainerStyle={customStyle}
-        text={code}
-        language="json"
-        theme={codeTheme}
-        showLineNumbers={false}
-      />
-    </AccentCard>
+    <Transition>
+      <AccentCard className="mx-auto max-w-96 text-xs sm:text-base">
+        <CodeBlock
+          codeBlockStyle={customStyle}
+          codeContainerStyle={customStyle}
+          text={code}
+          language="json"
+          theme={codeTheme}
+          showLineNumbers={false}
+        />
+      </AccentCard>
+    </Transition>
   );
 };

@@ -13,20 +13,19 @@ export const ChangeThemeButton = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
-
   return (
     <div>
       <Button
         name="change theme"
+        disabled={!mounted}
         className="static top-3 z-10 rounded-md py-2 font-semibold"
         onClick={() => {
           setTheme(theme === "light" ? "dark" : "light");
         }}
       >
-        {theme === "light" ? (
+        {!mounted ? (
+          <Moon className="invisible h-6 w-6" />
+        ) : theme === "light" ? (
           <Moon className="transition-translate duration-500 ease-in-out hover:-rotate-45 hover:fill-secondary" />
         ) : (
           <Sun className="transition-translate duration-500 ease-in-out hover:-rotate-45 hover:fill-secondaryDark" />

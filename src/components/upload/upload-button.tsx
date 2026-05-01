@@ -109,7 +109,7 @@ export const UploadButton = () => {
         }
       }}
       className={cn(
-        "flex w-full max-w-96 cursor-pointer flex-col items-center gap-3 rounded-lg border-2 border-dashed px-8 py-10 text-center text-secondary transition duration-200 dark:text-secondaryDark",
+        "flex w-full max-w-2xl cursor-pointer flex-col items-center gap-4 rounded-lg border-2 border-dashed px-10 py-14 text-center text-secondary transition duration-200 dark:text-secondaryDark",
         isDragging
           ? "border-primary bg-primary/10 dark:border-primaryDark dark:bg-primaryDark/10"
           : "border-border bg-primaryCard/30 hover:border-primary hover:bg-primary/5 dark:border-borderDark dark:bg-primaryCardDark/30 dark:hover:border-primaryDark dark:hover:bg-primaryDark/5",
@@ -122,12 +122,12 @@ export const UploadButton = () => {
         className="hidden"
         onChange={handleFileUpload}
       />
-      <Upload className="h-8 w-8 opacity-70" />
+      <Upload className="h-12 w-12 opacity-70" />
       <div className="flex flex-col gap-1">
-        <p className="text-sm font-bold sm:text-base">
+        <p className="text-base font-bold sm:text-lg">
           Drop your JSON file here
         </p>
-        <p className="text-xs text-secondary/60 dark:text-secondaryDark/60">
+        <p className="text-sm text-secondary/60 dark:text-secondaryDark/60">
           or click to browse
         </p>
       </div>

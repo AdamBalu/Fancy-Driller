@@ -21,10 +21,10 @@ const Checkbox = ({
   <label
     htmlFor={id}
     className={cn(
-      "flex cursor-pointer select-none items-center rounded-md border px-4 py-2 text-xs font-medium transition duration-300 ease-in-out sm:text-base",
+      "flex cursor-pointer select-none items-center rounded-md px-4 py-2 text-xs font-medium transition duration-300 ease-in-out sm:text-base",
       checked
-        ? "border-primaryCardHovered bg-primaryCard text-secondary dark:border-borderDark dark:bg-orderButton dark:text-secondaryDark"
-        : "border-sortBg bg-mainBackground text-secondary/60 hover:text-secondary dark:border-orderButton dark:bg-mainBackgroundDark dark:text-secondaryDark/60 dark:hover:text-secondaryDark",
+        ? "bg-primaryCardHovered text-secondary dark:bg-orderButton dark:text-secondaryDark"
+        : "bg-secondary/5 text-secondary/60 hover:bg-secondary/10 hover:text-secondary dark:bg-secondaryDark/5 dark:text-secondaryDark/60 dark:hover:bg-secondaryDark/10 dark:hover:text-secondaryDark",
       className,
     )}
   >
