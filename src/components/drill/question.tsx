@@ -77,7 +77,7 @@ export const Question = ({
         {showOrdering && (
           <div
             aria-hidden
-            className="pointer-events-none absolute left-1/2 top-0 z-0 -translate-x-1/2 -translate-y-[110%] select-none bg-gradient-to-b from-secondary/[0.13] from-50% to-secondary/[0.03] to-85% bg-clip-text text-7xl font-bold leading-none text-transparent dark:from-secondaryDark/[0.13] dark:to-secondaryDark/[0.03] sm:text-8xl"
+            className="pointer-events-none absolute left-1/2 top-0 z-0 -translate-x-1/2 -translate-y-[110%] select-none text-7xl font-bold leading-none text-secondary/[0.13] [-webkit-mask-image:linear-gradient(to_bottom,black_50%,transparent_85%)] [mask-image:linear-gradient(to_bottom,black_50%,transparent_85%)] dark:text-secondaryDark/[0.13] sm:text-8xl"
           >
             {currentQuestion.order}
           </div>
