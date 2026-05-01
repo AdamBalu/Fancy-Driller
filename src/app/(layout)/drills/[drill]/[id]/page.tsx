@@ -14,7 +14,7 @@ const Page = async ({ params }: QuestionProps) => {
           <QuestionPage id={params.id} />
         </div>
       </Transition>
-      <QuestionGrid />
+      <QuestionGrid currentId={params.id} />
     </div>
   );
 };

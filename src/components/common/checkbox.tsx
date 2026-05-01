@@ -21,10 +21,10 @@ const Checkbox = ({
   <label
     htmlFor={id}
     className={cn(
-      "flex cursor-pointer select-none items-center gap-2 rounded-md border px-3 py-2 text-xs transition duration-300 ease-in-out sm:text-base",
+      "flex cursor-pointer select-none items-center rounded-md border px-4 py-2 text-xs font-medium transition duration-300 ease-in-out sm:text-base",
       checked
         ? "border-primaryCardHovered bg-primaryCard text-secondary dark:border-borderDark dark:bg-orderButton dark:text-secondaryDark"
-        : "border-sortBg bg-mainBackground text-secondary/70 hover:text-secondary dark:border-orderButton dark:bg-mainBackgroundDark dark:text-secondaryDark/70 dark:hover:text-secondaryDark",
+        : "border-sortBg bg-mainBackground text-secondary/60 hover:text-secondary dark:border-orderButton dark:bg-mainBackgroundDark dark:text-secondaryDark/60 dark:hover:text-secondaryDark",
       className,
     )}
   >
@@ -34,12 +34,6 @@ const Checkbox = ({
       id={id}
       className="sr-only"
       checked={checked}
-    />
-    <span
-      className={cn(
-        "block h-3 w-3 rounded-sm border border-current transition-opacity",
-        checked ? "bg-current opacity-100" : "opacity-40",
-      )}
     />
     {children}
   </label>
