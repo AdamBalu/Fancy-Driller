@@ -7,29 +7,30 @@ const GreatVibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <header className="flex items-center justify-between border-b-4 border-b-mainBackground bg-mainBackground px-6 py-4 text-secondary transition-bgColor duration-500 dark:border-none dark:bg-mainBackgroundDark dark:text-secondaryDark">
-        <a href="/">
+      <header className="sticky top-0 z-50 flex items-center justify-between border-b border-border/30 bg-mainBackground/90 px-6 py-3 text-secondary backdrop-blur-md transition-bgColor duration-500 dark:border-borderDark/15 dark:bg-mainBackgroundDark/90 dark:text-secondaryDark">
+        <a href="/" className="flex-shrink-0">
           <h1
-            className={`text-xl font-bold text-primary sm:text-3xl ${GreatVibes.className}`}
+            className={`text-xl font-bold text-primary transition-colors hover:text-primaryDark sm:text-3xl ${GreatVibes.className}`}
           >
             F
           </h1>
         </a>
-        <div className="text-md xl:text-md flex w-full justify-center gap-4 font-bold uppercase sm:gap-12">
+        <nav className="flex w-full justify-center gap-10 text-sm font-bold uppercase tracking-[0.2em] sm:gap-14 sm:text-base">
           <a
             href="/drills"
-            className="transition duration-200 hover:text-primary dark:hover:text-primaryDark"
+            className="group relative py-1 transition-colors duration-200 hover:text-primary dark:hover:text-primaryDark"
           >
             Drills
+            <span className="absolute -bottom-0.5 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-primary transition-all duration-300 group-hover:w-full dark:bg-primaryDark" />
           </a>
-          <span className="border-button border-r-2 dark:border-mainBackgroundGradient" />
           <a
             href="/upload"
-            className="transition duration-200 hover:text-primary dark:hover:text-primaryDark"
+            className="group relative py-1 transition-colors duration-200 hover:text-primary dark:hover:text-primaryDark"
           >
             Upload
+            <span className="absolute -bottom-0.5 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-primary transition-all duration-300 group-hover:w-full dark:bg-primaryDark" />
           </a>
-        </div>
+        </nav>
         <ChangeThemeButton />
       </header>
       <main className="flex min-h-screen flex-1 flex-col items-center gap-4 bg-mainBackground transition-bgColor duration-500 ease-in-out dark:bg-mainBackgroundDark">

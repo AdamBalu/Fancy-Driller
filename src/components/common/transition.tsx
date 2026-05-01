@@ -13,6 +13,7 @@ const Transition = ({
   children: React.ReactNode;
 }) => (
   <motion.div
+    className="w-full"
     initial={{ y: 6, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{

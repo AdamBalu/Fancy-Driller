@@ -11,6 +11,8 @@ export type QuestionContextProps = {
   setQuestion: (q: QuestionExtendedInfo, value: Answer) => void;
   fastMode: boolean;
   setFastMode: (i: boolean) => void;
+  showOrdering: boolean;
+  setShowOrdering: (i: boolean) => void;
   currentDrillName: string;
   setCurrentDrillName: (name: string) => void;
   currentDrillId: string;
@@ -22,6 +24,7 @@ export const QuestionContext = createContext<QuestionContextProps | null>(null);
 export const QuestionContextProvider = ({ children }: PropsWithChildren) => {
   const [questions, setQuestions] = useState<QuestionExtendedInfo[]>([]);
   const [fastMode, setFastMode] = useState<boolean>(false);
+  const [showOrdering, setShowOrdering] = useState<boolean>(true);
   const [initialQuestions, setInitQuestions] = useState<QuestionExtendedInfo[]>(
     [],
   );
@@ -61,6 +64,8 @@ export const QuestionContextProvider = ({ children }: PropsWithChildren) => {
         setQuestion,
         fastMode,
         setFastMode,
+        showOrdering,
+        setShowOrdering,
         currentDrillName: currDrillName,
         setCurrentDrillName,
         currentDrillId: currDrillId,

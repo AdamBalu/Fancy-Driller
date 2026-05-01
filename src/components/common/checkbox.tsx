@@ -1,6 +1,7 @@
 "use client";
 
 import React, { type ReactNode } from "react";
+import { cn } from "~/lib/cn";
 
 type CheckboxProps = {
   id: string;
@@ -17,16 +18,25 @@ const Checkbox = ({
   onChange,
   className,
 }: CheckboxProps) => (
-  <div className="transition-color flex items-center gap-2 text-xs text-secondary duration-500 ease-in-out dark:text-secondaryDark sm:text-base">
+  <label
+    htmlFor={id}
+    className={cn(
+      "flex cursor-pointer select-none items-center rounded-md px-4 py-2 text-xs font-medium transition duration-300 ease-in-out sm:text-base",
+      checked
+        ? "bg-primaryCardHovered text-secondary dark:bg-orderButton dark:text-secondaryDark"
+        : "bg-secondary/5 text-secondary/60 hover:bg-secondary/10 hover:text-secondary dark:bg-secondaryDark/5 dark:text-secondaryDark/60 dark:hover:bg-secondaryDark/10 dark:hover:text-secondaryDark",
+      className,
+    )}
+  >
     <input
       onChange={onChange}
       type="checkbox"
       id={id}
-      className={`accent-primary dark:accent-primaryDark ${className}`}
+      className="sr-only"
       checked={checked}
     />
-    <label htmlFor={id}>{children}</label>
-  </div>
+    {children}
+  </label>
 );
 
 export default Checkbox;

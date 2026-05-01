@@ -50,7 +50,7 @@ export const StartDrillButton = ({
         );
         router.push(`/drills/current-drill/${finalQuestions[0]?.order}`);
       }}
-      className="w-[70dvw] sm:w-[90dvw]"
+      className="w-72 sm:w-80"
     >
       Start Drill
     </Button>
