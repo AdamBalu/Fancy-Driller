@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const DrillsPage = async () => (
-  <div className="my-10">
+  <div className="flex min-h-[calc(100dvh-68px)] items-center justify-center py-10">
     <PublicDrills />
   </div>
 );
