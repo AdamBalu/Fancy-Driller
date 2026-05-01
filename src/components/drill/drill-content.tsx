@@ -123,7 +123,7 @@ export const DrillContent = ({
             {showOrdering && (
               <div
                 aria-hidden
-                className="pointer-events-none absolute right-8 top-1/2 -translate-y-1/2 select-none text-6xl font-bold leading-none text-secondary/[0.08] [-webkit-mask-image:linear-gradient(to_right,black_50%,transparent_85%)] [mask-image:linear-gradient(to_right,black_50%,transparent_85%)] dark:text-secondaryDark/[0.08] sm:text-7xl md:text-8xl"
+                className="pointer-events-none absolute right-8 top-1/2 -translate-y-1/2 select-none text-6xl font-bold leading-none text-secondary/[0.08] [-webkit-mask-image:linear-gradient(to_left,black_calc(100%_-_50px),transparent)] [mask-image:linear-gradient(to_left,black_calc(100%_-_50px),transparent)] dark:text-secondaryDark/[0.08] sm:text-7xl md:text-8xl"
               >
                 {index + 1}
               </div>
