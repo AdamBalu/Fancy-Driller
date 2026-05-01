@@ -27,6 +27,7 @@ export const Question = ({
     (context: QuestionContextProps | null) => ({
       setQuestion: context?.setQuestion,
       fastMode: context?.fastMode,
+      showOrdering: context?.showOrdering,
     }),
   );
 
@@ -49,7 +50,7 @@ export const Question = ({
   }, [currentQuestion, shuffledAnswers]);
 
   if (!questionsContext) return;
-  const { setQuestion, fastMode } = questionsContext;
+  const { setQuestion, fastMode, showOrdering } = questionsContext;
   if (!setQuestion) return;
 
   const checkCorrectAnswers = () => {
@@ -72,16 +73,26 @@ export const Question = ({
 
   return (
     <div className="mx-2 flex min-h-[calc(100dvh-68px)] w-[90dvw] max-w-screen-md flex-col items-center justify-center gap-2 sm:mx-4 sm:w-[70dvw] sm:gap-5">
-      <h2
-        className={cn(
-          "text-md w-max max-w-[min(90dvw,1200px)] overflow-scroll pb-5 font-bold text-secondary transition-color duration-500 ease-in-out dark:text-secondaryDark sm:text-xl md:text-2xl",
-          isTable
-            ? "whitespace-pre text-left font-mono"
-            : "whitespace-pre-wrap text-center",
+      <div className="relative w-max max-w-[min(90dvw,1200px)]">
+        {showOrdering && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute left-1/2 top-0 z-0 -translate-x-1/2 -translate-y-[110%] select-none bg-gradient-to-b from-secondary/[0.13] from-50% to-secondary/[0.03] to-85% bg-clip-text text-7xl font-bold leading-none text-transparent dark:from-secondaryDark/[0.13] dark:to-secondaryDark/[0.03] sm:text-8xl"
+          >
+            {currentQuestion.order}
+          </div>
         )}
-      >
-        {currentQuestion.question}
-      </h2>
+        <h2
+          className={cn(
+            "text-md relative z-10 w-max max-w-[min(90dvw,1200px)] overflow-auto pb-5 font-bold text-secondary transition-color duration-500 ease-in-out dark:text-secondaryDark sm:text-xl md:text-2xl",
+            isTable
+              ? "whitespace-pre text-left font-mono"
+              : "whitespace-pre-wrap text-center",
+          )}
+        >
+          {currentQuestion.question}
+        </h2>
+      </div>
       {shuffledAnswers?.map((answer) => (
         <AnswerButton
           key={answer}

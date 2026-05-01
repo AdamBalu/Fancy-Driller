@@ -2,6 +2,7 @@
 import { CodeBlock, tomorrowNightEighties } from "react-code-blocks";
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import AccentCard from "~/components/common/accent-card";
 
 export const ExampleJsonInput = () => {
   const { theme } = useTheme();
@@ -52,7 +53,7 @@ export const ExampleJsonInput = () => {
         };
 
   return (
-    <div className="max-w-96 rounded-xl text-xs sm:text-base">
+    <AccentCard className="max-w-96 text-xs sm:text-base">
       <CodeBlock
         codeBlockStyle={customStyle}
         codeContainerStyle={customStyle}
@@ -61,6 +62,6 @@ export const ExampleJsonInput = () => {
         theme={codeTheme}
         showLineNumbers={false}
       />
-    </div>
+    </AccentCard>
   );
 };
